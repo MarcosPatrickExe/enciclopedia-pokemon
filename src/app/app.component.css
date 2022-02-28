@@ -1,0 +1,11 @@
+.text{
+    position: 'absolute';
+    transform: translate(50%, 50%);
+    transition-timing-function: ease-out;
+    transition-duration: .5s;
+}
+
+.text:hover{
+    transform: translate(0%, 50%);
+    opacity: 0.1;
+}
