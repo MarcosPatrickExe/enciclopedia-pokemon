@@ -1,6 +1,20 @@
-# IntroducaoAngular
+# Enciclopedia Pokémon
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.5.
+Site destinado aos fãs da franquia pokémon. Nele você poderá ter acesso à uma enciclopédia, bem como montar o seu time pokémon, conhecer outos, etc...
+<Hr />
+
+(This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.5.)
+
+## Linguagens/tecnologias & Framework(s):
+:large_blue_circle: Angular <Br />
+:large_blue_diamond: TypeScript <Br />
+:green_circle: NodeJS <Br />
+
+<Hr />
+
+<Br />
+<Br />
+<Br />
 
 ## Development server
 
