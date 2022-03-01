@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 // importando o decorator "@Component"
 
 
+
 // O decorator "@Component" é responsável por fornecer informações 
 // sobre o componente para que o compilador possa ler
 @Component({
@@ -20,6 +21,8 @@ export class AppComponent {
     constructor(){
         this.cursos = ['Java', 'Python' ,'PHP', 'JavaScript'];
         this.tamanhoNome = this.nomeSite.length;
+
+     //   var servico = new 
     }
 
 }
