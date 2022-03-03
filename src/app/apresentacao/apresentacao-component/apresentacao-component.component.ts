@@ -11,6 +11,7 @@ export class ApresentacaoComponent implements OnInit {
 
   nomePortal : string;
   pokemons: string[];
+  urlImagem :string = 'http://lorempixel.com/400/200/nature/';
 
   // o atributo privado "servico" faz com que ele seja automaticamente declarado
   // como atributo dessa classe "ApresentacaoComponent"....
@@ -29,4 +30,8 @@ export class ApresentacaoComponent implements OnInit {
 
   ngOnInit(): void { }
 
+  getValor():number {
+     return 5000;
+  }
+  
 }

@@ -12,10 +12,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-    cursos: string[];
+    cursos: string[]; //declarando o atributo
 
+    //declarando e inicializando atributo
     title : string = 'Esse eh um titulo escrito da classe AppComponent'; // texto que ira aparecer na tela inicial
-    nomeSite: string = 'http://loiane.training';
+    nomeSite: string = 'http://loiane.training';  //declarando e inicializando atributo
     tamanhoNome : number;
 
     constructor(){
