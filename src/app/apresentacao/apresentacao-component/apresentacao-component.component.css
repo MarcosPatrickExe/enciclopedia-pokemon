@@ -24,9 +24,10 @@
 }
 
 #navbar{
-    background-image: linear-gradient(to right bottom, black, rgb(51, 51, 51));
+    background-image: linear-gradient(to right bottom, black 40%, rgb(51, 51, 51));
    /* background-color: rgb(151, 48, 0); */
     height: 100%; 
+    overflow-y: hidden;
 }
 
 #navbar > ul{

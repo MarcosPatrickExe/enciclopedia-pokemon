@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 // importando o decorator "@Component"
 
 
-
 // O decorator "@Component" é responsável por fornecer informações 
 // sobre o componente para que o compilador possa ler
 @Component({

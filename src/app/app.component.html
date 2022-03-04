@@ -1,23 +1,95 @@
 <app-apresentacao-component></app-apresentacao-component>
 
 
-<h1>{{title}}</h1>
-<h2 class="text">Marcos Patrick</h2>
-<h3 class="text">Saraiva da</h3>
-<h4 class="text">Silva</h4>
+<div class="main-content">
 
-<h2>Nome do portal: <a href="http://loiane.training"> {{nomeSite}} </a> </h2>
-<h2>tamanho do nome: {{tamanhoNome}} </h2>
-<!-- utilizando interpolação para acessar a variavel "tamanhoNome" do typescript--> -->
+    <h1>{{title}}</h1>
+    <h2 class="text">Marcos Patrick</h2>
+    <h3 class="text">Saraiva da</h3>
+    <h4 class="text">Silva</h4>
 
-<!-- Verificandos cursos existentes atraves da diretiva '*ngFor' -->
-<ul>
-    <li *ngFor="let nomeCurso of cursos">
-        <h3>  {{nomeCurso}}  </h3>
-    </li>
-</ul>
+    <h2>Nome do portal: <a href="http://loiane.training"> {{nomeSite}} </a> </h2>
+    <h2>tamanho do nome: {{tamanhoNome}} </h2>
+    <!-- utilizando interpolação para acessar a variavel "tamanhoNome" do typescript--> -->
+
+    <!-- Verificandos cursos existentes atraves da diretiva '*ngFor' -->
+    <ul>
+        <li *ngFor="let nomeCurso of cursos">
+            <h3>  {{nomeCurso}}  </h3>
+        </li>
+    </ul>
 
 
-<Br />
+    <Br />
 
-<texto-teste></texto-teste>
+
+
+
+
+
+    <!----------------------------------------------------------------------------------->
+
+    <h3>Utilizando property bind junto com Style binding com Bootstrap: </h3>
+    <article>
+        <div> 
+            <!-- CRIANDO UMA VARIAVEL 'CLASSE' QUE VAI ARMAZENAR O VALOR
+                DO ITEM DO DROP DOWN OU COMBO BOX. O EVENTO CHANGE SERA CHAMADO MAS
+                NADA OCORRERA, POR ISSO O VALOR 0 -->
+            <select #classe (change)="0">
+                <option value="Celebi">Celebi</option>
+                <option value="Zapdos">Zapdos</option>
+                <option value="Moltres">Moltres</option>
+                <option value="Articuno">Articuno</option>
+            </select>
+
+            <br><br>
+
+        <!--    ADICIONANDO UM CLASS BINDING NO ELEMENTO DIV: -->
+            <div class="alert" role="alert"
+                [class.alert-success]= "classe.value == 'Celebi'"
+                > Celebi
+        <!-- [nome da classe que se deseja aplicar]  e "quando sera aplicada"-->
+            </div>
+
+            <!-- O class binding exige que vc utilize a palavra-chave "class" para que
+                vc possa adicionar uma determinada classe que sera declarada apos o ponto final.
+                Em seguida, vc deve adicionar uma condicao dentro das aspas para definir 
+                qual momento o elemento recebera determinada classse.... -->
+            <div class="alert" role="alert"
+                [class.alert-info]= "classe.value == 'Articuno'"
+                > Articuno
+            </div>
+
+            <div class="alert" role="alert"
+                [class.alert-warning]= "classe.value == 'Zapdos'"
+                > Zapdos
+            </div>
+
+            <div class="alert" role="alert"
+                [class.alert-danger]= "classe.value == 'Moltres'"
+                > Moltres 
+            </div>
+            
+
+            <!--UTILIZANDO O STYLE BINDING
+                Para usa-lo, basta escrever a palavra-chave "style" e logo depois, atraves do ponto,
+                definir a propriedade que deseja aplicar ao elemento. O valor dessa propriedade pode
+                ser definido atraves de uma condicao ternaria dentro das aspas, como ocorre abaixo:   -->
+            <div class="alert alert-warning" role="alert" 
+                [style.display] = "classe.value == 'Zapdos' ? 'block' : 'none'"
+                > Visivel somente quando o Zapdos for escolhido
+            </div>
+
+            <!-- A INTERPOLACAO TBM É UMA FORMA DE PROPERTY BIND ENTAO É POSSIVEL UTILIZA-LA COMO CLASS BIND-->
+            <div class="alert {{classe.value}}" role="alert"> 
+                Cor escolhida a partir da interpolacao da variavel "classe", definida dentro 
+                do elemento de "select".
+            </div>
+
+        </div>
+    </article>
+
+
+    <texto-teste></texto-teste>
+
+</div>
