@@ -101,10 +101,50 @@
             COMPONENTE -->
         <input type="text" (keyup)="inputClick ($event)" placeholder="Digite algo..." />
         <Br />
-        <p>Valor digitado: 
+        
+        <label>Valor digitado: 
             <span class="badge bg-danger">{{valorAtual}}</span>
-            <!-- ACESSANDO VALOR DA PROPRIEDADE "valorAtual" do componente-->
-        </p>
+     <!--   ACESSANDO VALOR DA PROPRIEDADE "valorAtual" do componente. 
+            ESSA VARIAVEL RECEBEU SEU VALOR ATRAVES DA FUNCAO "inputClick()",
+            A QUAL FOI EXECUTADA QUANDO O EVENTO "KEYUP" OCORREU NO ELEMENTO "input"
+     -->
+        </label>
+
+        <Br />
+
+        <!-- UM ELEMENTO HTML PODE APRESENTAR VARIOS EVENTOS
+             COMO É REALIZADO NO ELEMENTO ACIMA. TAMBÉM É POSSIVEL
+             CRIAR UMA VARIAVEL LOCAL AO ELEMENTO ADICIONANDO UM "#"
+             AFRENTE DE SEU NOME, COMO EM "#valorInput". AO INVÉS
+             DE UTILIZAR A VARIAVEL "$event" GERADA PELO DOM, PODE-SE
+             USAR TAMBÉM A VARIÁVEL LOCAL DO ELEMENTO COMO "#valorInput"
+             E PASSSAR ELA COMO PARAMETRO PARA AS FUNCOES DE CALLBACK SITUADAS
+             NO COMPONENTE "apresentacao-conteudo.component"
+        -->
+        <input type="text" 
+               (keyup)="inputClick ($event)" 
+               (blur)="mouseOut (valorInput.value)" 
+               
+               #valorInput 
+               placeholder="Escreva 'info' ou 'danger'"
+
+               [class.bg-info] = "valorInput.value == 'info'"
+               [class.bg-danger] = "valorInput.value == 'danger'"
+        />
+        <Br />
+        <h4> Valor do input salvo pelos eventos 'inputClick()' e 'mouseOut()': 
+            <span style="color: black;"> {{valorAtual}}</span>
+        </h4>
+
+
+        <button class="btn btn-warning" 
+                (click) = "btnClick( $event.target) ">
+      <!--  TAMBEM É POSSÍVEL PASSAR O VALOR DO ELEMENTO ($event.target)
+            DIRETAMENTE PARA A FUNCAO "btnClick" QUE SE ENCONTRA NO COMPONENTE
+    -->
+             Click aqui!!
+        </button>
+     
 
     </article>
 </section>
