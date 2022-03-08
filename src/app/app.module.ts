@@ -7,11 +7,13 @@ import { ApresentacaoModule } from './apresentacao/apresentacao.module';
 // A PARTIR DO NOME DA CLASSE QUE FOI EXPORTADA
 import { AppComponent } from './app.component'; 
 import { ComponenteTexto } from './testando-componentes/componente-texto.component';
+import { ApresentacaoConteudo } from './apresentacao-conteudo/apresentacao-conteudo.component';
 
 @NgModule({
   declarations: [ //Area destinada somente aos componente
      AppComponent,
-     ComponenteTexto
+     ComponenteTexto,
+     ApresentacaoConteudo
   ],
   imports: [
      BrowserModule, //somnente o modulo raiz do projeto importa esse modulo

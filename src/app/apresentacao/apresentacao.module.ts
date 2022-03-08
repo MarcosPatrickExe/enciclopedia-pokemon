@@ -1,7 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+
 import { ApresentacaoComponent } from './apresentacao-component/apresentacao-component.component';
-import { ApresentacaoService } from './apresentacao.service';
+
+import { ApresentacaoService } from './apresentacao-component/apresentacao.service';
 
 @NgModule({
   declarations: [

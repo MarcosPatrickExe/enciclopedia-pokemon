@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ApresentacaoService } from '../apresentacao.service';
+import { ApresentacaoService } from './apresentacao.service';
 // importando o servico que sera utilizado por esse componente....
 
 @Component({

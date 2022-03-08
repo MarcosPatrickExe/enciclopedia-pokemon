@@ -1,0 +1,134 @@
+<Br>
+<Br>
+<Hr>
+    
+<p>
+    Pokémon, previously referred to as "Pocket Monsters," are fascinating 
+    creatures that we have grown to love because of their unique shapes 
+    and sizes, and loveable habits. The Pokémon anime does a wonderful 
+    job of showing the facets of Pokémon, but as complex creatures, it 
+    is difficult for an animated series to capture their entirety.
+    The new Generation VII Rotom Pokédex is a tool that shows what Pokémon 
+    you've caught, can make phone calls, and work as a map, sort of like 
+    an iPhone or Android device. Okay, so maybe the Pokédex is about 
+    advanced as an average smartphone. The Pokédex also includes 
+    eye-catching Pokémon descriptions; some of which are intriguing, 
+    while others are unusual. These are 10 unusual Pokémon descriptions 
+    in the Pokédex. Enjoy!
+</p>
+
+<Br>
+<Br>
+<Hr>
+
+<!----------------------------------------------------------------------------------->
+
+<h3>Utilizando property bind junto com Style binding com Bootstrap: </h3>
+<article>
+    <div> 
+        <!-- CRIANDO UMA VARIAVEL 'CLASSE' QUE VAI ARMAZENAR O VALOR
+            DO ITEM DO DROP DOWN OU COMBO BOX. O EVENTO CHANGE SERA CHAMADO MAS
+            NADA OCORRERA, POR ISSO O VALOR 0 -->
+        <select #classe (change)="0">
+            <option value="Celebi">Celebi</option>
+            <option value="Zapdos">Zapdos</option>
+            <option value="Moltres">Moltres</option>
+            <option value="Articuno">Articuno</option>
+        </select>
+
+        <br><br>
+
+    <!--    ADICIONANDO UM CLASS BINDING NO ELEMENTO DIV: -->
+        <div class="alert" role="alert"
+            [class.alert-success]= "classe.value == 'Celebi'"
+            > Celebi
+    <!-- [nome da classe que se deseja aplicar]  e "quando sera aplicada"-->
+        </div>
+
+        <!-- O class binding exige que vc utilize a palavra-chave "class" para que
+            vc possa adicionar uma determinada classe que sera declarada apos o ponto final.
+            Em seguida, vc deve adicionar uma condicao dentro das aspas para definir 
+            qual momento o elemento recebera determinada classse.... -->
+        <div class="alert" role="alert"
+            [class.alert-info]= "classe.value == 'Articuno'"
+            > Articuno
+        </div>
+
+        <div class="alert" role="alert"
+            [class.alert-warning]= "classe.value == 'Zapdos'"
+            > Zapdos
+        </div>
+
+        <div class="alert" role="alert"
+            [class.alert-danger]= "classe.value == 'Moltres'"
+            > Moltres 
+        </div>
+        
+
+        <!--UTILIZANDO O STYLE BINDING
+            Para usa-lo, basta escrever a palavra-chave "style" e logo depois, atraves do ponto,
+            definir a propriedade que deseja aplicar ao elemento. O valor dessa propriedade pode
+            ser definido atraves de uma condicao ternaria dentro das aspas, como ocorre abaixo:   -->
+        <div class="alert alert-warning" role="alert" 
+            [style.display] = "classe.value == 'Zapdos' ? 'block' : 'none'"
+            > Visivel somente quando o Zapdos for escolhido
+        </div>
+
+        <!-- A INTERPOLACAO TBM É UMA FORMA DE PROPERTY BIND ENTAO É POSSIVEL UTILIZA-LA COMO CLASS BIND-->
+        <div class="alert {{classe.value}}" role="alert"> 
+            Cor escolhida a partir da interpolacao da variavel "classe", definida dentro 
+            do elemento de "select".
+        </div>
+
+    </div>
+</article>
+
+<Br>
+<Br>
+<Hr>
+
+
+<!-- TESTANDO O EVENT BINDING -->
+<h3>Testando o EVENT BINDING</h3>
+<section>
+    <article>
+        
+        <!-- PARA ATIVAR UM EVENTO NO ANGULAR
+            VC DEVE DEFINIR O NOME DO EVENTO ENTRE 
+            PARÊNTESIS E LOGO DEPOIS ATRIBUIR A ELE 
+            A VARIAVEL "$event" COMO PARAMETRO 
+            PARA A FUNCAO QUE VC DEFINIU NO SEU 
+            COMPONENTE -->
+        <input type="text" (keyup)="inputClick ($event)" placeholder="Digite algo..." />
+        <Br />
+        <p>Valor digitado: 
+            <span class="badge bg-danger">{{valorAtual}}</span>
+            <!-- ACESSANDO VALOR DA PROPRIEDADE "valorAtual" do componente-->
+        </p>
+
+    </article>
+</section>
+
+
+
+<Br>
+<Br>
+<Hr>
+
+<texto-teste></texto-teste>
+
+
+
+
+<!--
+LINK PARA O BOOTCAMP DO DEV SUPERIOR:
+
+https://devsuperior.com.br/evento-sds
+-->
+
+
+
+
+
+
+
