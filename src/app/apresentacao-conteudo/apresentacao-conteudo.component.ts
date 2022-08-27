@@ -5,10 +5,9 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './apresentacao-conteudo.component.html',
   styleUrls: ['./apresentacao-conteudo.component.css']
 })
-
 /* 
-    ASSIM COMO É POSSIVEL FAZER O TEMPLATE LITERALS COM O 
-    DECORATOR "templateUrl", TAMBÉM É POSSIVEL FAZER O MESMO
+    ASSIM COMO ï¿½ POSSIVEL FAZER O TEMPLATE LITERALS COM O 
+    DECORATOR "templateUrl", TAMBï¿½M ï¿½ POSSIVEL FAZER O MESMO
     COM O "styleUrls", COMO LOGO ABAIXO: 
 
     styles:[
@@ -22,10 +21,6 @@ import { Component, OnInit } from '@angular/core';
     ]
 
 */
-
-
-
-
 export class ApresentacaoConteudo { // implements OnInit 
 /*
   ngOnInit(): void {

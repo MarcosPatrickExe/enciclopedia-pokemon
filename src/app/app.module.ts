@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { ApresentacaoModule } from './apresentacao/apresentacao.module';
 
 // TODOS OS COMPONENTES QUE VC CRIAR DEVEM SER IMPORTADOS NESSE ARQUIVO 
@@ -8,19 +7,21 @@ import { ApresentacaoModule } from './apresentacao/apresentacao.module';
 import { AppComponent } from './app.component'; 
 import { ComponenteTexto } from './testando-componentes/componente-texto.component';
 import { ApresentacaoConteudo } from './apresentacao-conteudo/apresentacao-conteudo.component';
+import { HeaderMenuComponent } from './header-menu/header-menu.component';
 
 @NgModule({
-  declarations: [ //Area destinada somente aos componente
+  declarations: [ //Area destinada somente aos componentes, diretivas e pipes
      AppComponent,
      ComponenteTexto,
-     ApresentacaoConteudo
+     ApresentacaoConteudo,
+     HeaderMenuComponent
   ],
-  imports: [
+  imports: [ // adi
      BrowserModule, //somnente o modulo raiz do projeto importa esse modulo
-     ApresentacaoModule // importando o modulo do arquivo "cursos.module.ts"
+     ApresentacaoModule // importando o modulo do arquivo "apresentacao.module.ts"
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [], // area destinada somente aos services que serao visiveis somente para os componentes declarados, ou seja serao globais a aplicacao
+  bootstrap: [AppComponent] // componente principal
 })
 
 export class AppModule { }
