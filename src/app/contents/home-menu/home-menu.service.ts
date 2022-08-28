@@ -6,4 +6,11 @@ import { Injectable } from '@angular/core';
 export class HomeMenuService {
 
   constructor() { }
+
+  getPokemons(): string[] {
+   
+    return ['squirtle', 'charmander', 'treecko', 
+            'mudkip', 'torchic', 'blaziken', 'blastoise',
+            'combusken', 'eevee']
+  }
 }

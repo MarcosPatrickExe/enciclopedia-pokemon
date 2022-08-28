@@ -1,5 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
 
+/* USE A EXPRESSAO DE IMPORT ABAIXO PARA FORNECER 
+   ACESSO AOS ESTILOS DO BOOTSTRAP NO PROJETO AO INVÉS
+   DE COLOCA-LA NO ARQUIVO 'angular.json' */
+/*
+@import "./node_modules/bootstrap/dist/css/bootstrap.min.css";
+*/
+
 *{
     margin: 0;
     padding: 0;
