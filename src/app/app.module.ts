@@ -5,20 +5,22 @@ import { ContentsModule } from './contents/contents.module';
 // TODOS OS COMPONENTES QUE VC CRIAR DEVEM SER IMPORTADOS NESSE ARQUIVO 
 // A PARTIR DO NOME DA CLASSE QUE FOI EXPORTADA
 import { AppComponent } from './app.component'; 
-import { ComponenteTexto } from './componente-texto/componente-texto.component';
+//import { ComponenteTexto } from './componente-texto/componente-texto.component';
 import { HeaderMenuComponent } from './header-menu/header-menu.component';
 
+import {HeaderMenuService} from './header-menu/header-menu.service';
+
 @NgModule({
-  declarations: [ //Area destinada somente aos componentes, diretivas e pipes
+  declarations: [ //Area destinada somente aos componentes, diretivas e pipes que irao receber os seletores dos componentes do modulo importado chamado 'ContentsModule'
      AppComponent,
-     ComponenteTexto,
+   //  ComponenteTexto,
      HeaderMenuComponent
   ],
   imports: [ // adi
      BrowserModule, //somnente o modulo raiz do projeto importa esse modulo
      ContentsModule // importando o modulo do arquivo "content.module.ts", logo, nao precisa importa o componente que esta dentro dele, como o "home-menu.component"
    ],
-  providers: [], // area destinada somente aos services que serao visiveis somente para os componentes declarados, ou seja serao globais a aplicacao
+  providers: [HeaderMenuService], // area destinada somente aos services que serao visiveis somente para os componentes declarados, ou seja serao globais a aplicacao
   bootstrap: [AppComponent] // componente principal
 })
 

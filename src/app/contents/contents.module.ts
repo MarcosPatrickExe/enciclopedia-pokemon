@@ -3,15 +3,15 @@ import { CommonModule } from '@angular/common';
 
 // COMPONENTES
 import { HomeMenuComponent } from './home-menu/home-menu.component';
-//import { ComponenteTexto } from '../componente-texto/componente-texto.component';
+import { ComponenteTexto } from '../componente-texto/componente-texto.component';
 
 // SERVICES
 import { HomeMenuService } from './home-menu/home-menu.service';
 
 @NgModule({
   declarations: [
-    HomeMenuComponent
-   // ComponenteTexto
+    HomeMenuComponent,
+    ComponenteTexto
   ],
   imports: [
     CommonModule //modulos secundarios importam esse "common module"
