@@ -135,12 +135,12 @@
     
     
     <article>
-        <Br />
-        <h3>============= UTILIZANDO EVENT BIND ==============</h3>
-      <!-- PARA ATIVAR UM EVENTO NO ANGULAR VC DEVE DEFINIR O NOME DO 
-           EVENTO ENTRE PAR�NTESIS E LOGO DEPOIS ATRIBUIR A ELE A VARIAVEL 
-           "$event" COMO PARAMETRO PARA A FUNCAO QUE VC DEFINIU NO SEU 
-            COMPONENTE -->
+            <Br />
+            <h3>============= UTILIZANDO EVENT BIND ==============</h3>
+        <!-- PARA ATIVAR UM EVENTO NO ANGULAR VC DEVE DEFINIR O NOME DO 
+            EVENTO ENTRE PAR�NTESIS E LOGO DEPOIS ATRIBUIR A ELE A VARIAVEL 
+            "$event" COMO PARAMETRO PARA A FUNCAO QUE VC DEFINIU NO SEU 
+                COMPONENTE -->
 
             <button class="btn btn-primary"
                        (click)="botaoClicado()" > 
@@ -211,12 +211,9 @@
                     [class.highlight]="isMouseOver==true"> 
                  Passe o mouse sobre mim =) {{isMouseOver}}
             </h4>
-
-
-
-            <Br />
-            <Br />
-    
+            <!-- 'highlight' EH UMA CLASSE QUE FOI DEFINIDA NO ARQUIVO CSS, POR ISSO 
+                 EH POSSIVEL USA-LA DENTRO DE UM PROPERTY BIND, POREM, QUANDO O ATRIBUTO 'isMouseOver'
+                DO COMPONENTE 'home-menu.component' TIVER O VALOR TRUE -->
     </article>
     
     <Br>
@@ -226,6 +223,43 @@
     <h3>Testando componente com o seletor "texto-teste" </h3>
     <componente-texto></componente-texto>
 
+    <article>
+            <Br />
+            <h3>============= TWO WAY BINDING ==============</h3>
+
+            <label> Utilizando forma classica: </label> <Br />
+            <input type="text"
+                [value]="name"
+                (input)="name = inputValue.value"
+                #inputValue
+            />
+
+            <Br />
+            <Br />
+
+            <label> Utilizando property e event binding com 'ngModel': </label> <Br />
+            <input type="text"
+                [ngModel]="name"
+                (ngModelChange)="name = $event"
+            />
+
+            <Br />
+            <Br />
+
+            <label> Utilizando two-way-binding com 'ngModel': </label> <Br />
+            <input type="text" [(ngModel)]="name">
+            <!--ngModel TBM PODE SER ESCRITO COMO '[(bingon-ngModel)]' -->
+            <p>Você digitou: {{ name }}</p>
+
+
+            <h3>Exemplo de two-way-binding usando objetos do componente: </h3>
+            <input type="text" [(ngModel)]="person.name" />
+            <Br />
+            <Br />
+            <input type="text" [(ngModel)]="person.age" />
+
+            <p>Olá! Me chamo {{ person.name }} e tenho {{ person.age }} anos de idade. </p>
+    </article>
 </section>
     
     

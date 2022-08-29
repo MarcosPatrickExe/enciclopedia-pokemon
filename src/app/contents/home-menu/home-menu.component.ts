@@ -27,7 +27,13 @@ export class HomeMenuComponent {
     public componenteAtivado : boolean = true;
     public valorSalvo : string = '';
     public isMouseOver : boolean = false;
+    public name : string = 'write anything...';
 
+    public person : any = {
+        name : "fernanda",
+        age : 18
+    }
+    
     // o atributo privado "servico" faz com que ele seja automaticamente declarado
     // como atributo dessa classe "HomeMenuComponent"....
     // � como se fizesse o seguinte:
