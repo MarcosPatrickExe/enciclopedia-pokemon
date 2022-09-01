@@ -9,18 +9,21 @@ import { ComponenteTexto } from '../componente-texto/componente-texto.component'
 
 // SERVICES
 import { HomeMenuService } from './home-menu/home-menu.service';
+import { ViewPokemonComponent } from './view-pokemon/view-pokemon.component';
 
 @NgModule({
   declarations: [
     HomeMenuComponent,
-    ComponenteTexto
+    ComponenteTexto,
+    ViewPokemonComponent
   ],
   imports: [
     CommonModule,  //modulos secundarios importam esse "common module"
     FormsModule              
   ],
   exports: [
-    HomeMenuComponent           //exportando o componente para que seja utilzado no modulo raiz (ou app.module)
+    HomeMenuComponent,           //exportando o componente para que seja utilzado no modulo raiz (ou app.module)
+    ViewPokemonComponent
   ],
   providers: [
     HomeMenuService

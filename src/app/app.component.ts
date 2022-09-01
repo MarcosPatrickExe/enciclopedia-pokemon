@@ -2,16 +2,17 @@ import { Component } from '@angular/core';
 // importando o decorator "@Component"
 
 
-// O decorator "@Component" é responsável por fornecer informações 
+// O decorator "@Component" ï¿½ responsï¿½vel por fornecer informaï¿½ï¿½es 
 // sobre o componente para que o compilador possa ler
 @Component({
-    selector: 'app-root', // "app-root" é um seletor que faz referebcia a tag <app-root> la no "index.html"
+    selector: 'app-root', // "app-root" ï¿½ um seletor que faz referebcia a tag <app-root> la no "index.html"
     templateUrl: './app.component.html', // aponta para o arquivo html do componente
     styleUrls: ['./app.component.css'] // aponta para o arquivo CSS do componente
 })
 export class AppComponent {
 
     cursos: string[]; //declarando o atributo
+    pokemonDexNumber: string = '';
 
     //declarando e inicializando atributo
     title : string = 'Esse eh um titulo escrito da classe AppComponent'; // texto que ira aparecer na tela inicial
@@ -25,4 +26,10 @@ export class AppComponent {
      //   var servico = new 
     }
 
+    changePokemon( pokemonPokedexNumber : string){
+        
+        let urlImage : string = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${ pokemonPokedexNumber }.png`;
+
+        this.pokemonDexNumber = urlImage;
+    }
 }

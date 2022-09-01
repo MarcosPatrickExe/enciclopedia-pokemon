@@ -30,6 +30,22 @@
     padding-bottom: 40px;
 }
 
+.main-content2{
+    position: relative;
+    margin: 100px;
+    width: auto;
+    height: 450pt;
+    background-color: white;
+    border-top: 10px solid red;
+    border-left: 10px solid red;
+    border-right: 10px solid rgb(78, 78, 78);
+    border-bottom: 10px solid rgb(78, 78, 78);
+    padding-top: 40px;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-bottom: 40px;
+}
+
 h1, h2, h3{
     color: rgb(78, 78, 78);;
 }

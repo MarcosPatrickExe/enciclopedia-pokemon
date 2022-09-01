@@ -24,5 +24,31 @@
 
     <h3> Renderizando componente "app-home-menu" logo abaixo: </h3>
     <app-home-menu></app-home-menu>
+    <h3>============ Fim do componente "app-home-menu" ============</h3>
+
+</div>
+
+
+
+<div class="main-content2">
+
+    <h5>
+        Digite abaixo um número entre 1-898 - 
+        que equivale ao número da pokédex de um 
+        determinado pokémon): 
+    </h5>
+
+    <input 
+        type="text"
+        value="1"
+        (keyup)="changePokemon( inputValue.value )"
+        #inputValue
+    />
+    <Br />
+    <Br />
+    <Br />
+
+    <view-pokemon [dexN]="pokemonDexNumber"> 
+    </view-pokemon>
 
 </div>
