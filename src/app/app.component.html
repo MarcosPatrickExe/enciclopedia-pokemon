@@ -48,7 +48,9 @@
     <Br />
     <Br />
 
-    <view-pokemon [dexN]="pokemonDexNumber"> 
+    <view-pokemon 
+          [dexN]="pokemonDexNumber"
+          (imgHover)="pokemonFocused( $event )">
     </view-pokemon>
 
 </div>

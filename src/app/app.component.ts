@@ -32,4 +32,8 @@ export class AppComponent {
 
         this.pokemonDexNumber = urlImage;
     }
+
+    pokemonFocused( evento : any ){
+        console.log("Mensagem do evento: "+evento );
+    }
 }
