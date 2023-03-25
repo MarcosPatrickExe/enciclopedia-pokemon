@@ -8,7 +8,7 @@ import { AppComponent } from './app.component';
 //import { ComponenteTexto } from './componente-texto/componente-texto.component';
 import { HeaderMenuComponent } from './header-menu/header-menu.component';
 
-import {HeaderMenuService} from './header-menu/header-menu.service';
+import { HeaderMenuService } from './header-menu/header-menu.service';
 
 @NgModule({
   declarations: [ //Area destinada somente aos componentes, diretivas e pipes que irao receber os seletores dos componentes do modulo importado chamado 'ContentsModule'

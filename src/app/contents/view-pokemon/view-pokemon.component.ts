@@ -14,7 +14,8 @@ export class ViewPokemonComponent { //implements OnInit {
     // ngOnInit(): void { }
     
     // ESSE DECORATOR "Input" OBTEM O VALOR DA PROPRIEDADE PASSADA PARA ESSE COMPONENTE E O REPASSA PARA O ATRIBUTO PRIVADO "pokemon_pokedex_number"
-    @Input('dexN') dexNumber : string = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png";
+    @Input('dexN') 
+    dexNumber : string = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png"; // valor inicial (nao lido)
     // O PARÂMETRO PASSADO PODE SER OPCIONAL, E DEVE SER UTILIZADO QUANDO
     // SE QUER SOMENTE ADICIONAR UM "APELIDO" PARA A VARIAVEL INTERNA 
     // DA CLASSE, COMO O "dexNumber" QUE TEM APELIDO "dexN", E QUE ATRAVES
@@ -22,7 +23,8 @@ export class ViewPokemonComponent { //implements OnInit {
     // COMPONENTE, NO CASO, O "app.component.ts"
 
 
-    @Output('imgHover') imageHovered :any = new EventEmitter();
+    @Output('imgHover') 
+    imageHovered :any = new EventEmitter();
     // O PARÂMETRO PASSADO PODE SER OPCIONAL, E DEVE SER UTILIZADO QUANDO
     // SE QUER SOMENTE ADICIONAR UM "APELIDO" PARA A VARIAVEL INTERNA 
     // DA CLASSE, COMO O "imageHovered" QUE TEM APELIDO "imgHover", E QUE ATRAVES
@@ -45,6 +47,7 @@ export class ViewPokemonComponent { //implements OnInit {
 
     mouseOut(){
           this.imageHovered.emit( "Pokemon perdeu foco do mouse...." );
+          //tbm eh possivel fazer: { eventProperty: "Pokemon perdeu foco do mouse...."} 
     }
 }
 

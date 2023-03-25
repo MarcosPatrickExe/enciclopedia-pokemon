@@ -22,7 +22,7 @@ import { ViewPokemonComponent } from './view-pokemon/view-pokemon.component';
     FormsModule              
   ],
   exports: [
-    HomeMenuComponent,           //exportando o componente para que seja utilzado no modulo raiz (ou app.module)
+    HomeMenuComponent, //exportando o componente para que seja utilzado no modulo raiz (ou app.module)
     ViewPokemonComponent
   ],
   providers: [
