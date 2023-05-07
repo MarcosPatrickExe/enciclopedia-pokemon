@@ -2,11 +2,11 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 //import { EventEmitter } from 'stream';
 
 @Component({
-  selector: 'view-pokemon',
-  templateUrl: './view-pokemon.component.html',
-  styleUrls: ['./view-pokemon.component.css']
- // inputs: ['dexN : dexNumber']
- // O @Input TBM PODE SER UTILIZADO COMO METADADO, AO INVÉS DE UM DECORATOR, COMO LOGO ABAIXO
+    selector: 'view-pokemon',
+    templateUrl: './view-pokemon.component.html',
+    styleUrls: ['./view-pokemon.component.css']
+  // inputs: ['dexN : dexNumber']
+  // O @Input TBM PODE SER UTILIZADO COMO METADADO, AO INVÉS DE UM DECORATOR, COMO LOGO ABAIXO
 })
 
 
@@ -21,6 +21,7 @@ export class ViewPokemonComponent { //implements OnInit {
     // DA CLASSE, COMO O "dexNumber" QUE TEM APELIDO "dexN", E QUE ATRAVES
     // DESSE APELIDO, ELE PODERA SER VISTO PELO COMPONENTE Q CHAMOU ESTE 
     // COMPONENTE, NO CASO, O "app.component.ts"
+
 
 
     @Output('imgHover') 

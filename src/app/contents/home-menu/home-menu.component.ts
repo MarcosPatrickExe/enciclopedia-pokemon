@@ -7,8 +7,8 @@ import { HomeMenuService } from './home-menu.service';
   styleUrls: ['./home-menu.component.css']
 })
 /* 
-    ASSIM COMO � POSSIVEL FAZER O TEMPLATE LITERALS COM O 
-    DECORATOR "templateUrl" => "template", TAMB�M � POSSIVEL FAZER O MESMO
+    ASSIM COMO eh POSSIVEL FAZER O TEMPLATE LITERALS COM O 
+    DECORATOR "templateUrl" => "template", TAMBeM eh POSSIVEL FAZER O MESMO
     COM O "styleUrls", COMO LOGO ABAIXO: 
 
     styles:[`
@@ -40,8 +40,8 @@ export class HomeMenuComponent {
     // this.servico = servico;
     constructor( private servico : HomeMenuService ) { 
      // let buscarPokemons = new HomeMenuService();
-      // ao inv�s de instanciar um servico manualmente como em "this.nomePortal = new HomeMenuService()", 
-      // pode-se cham�-lo ou instancia-lo automaticamente 
+      // ao inves de instanciar um servico manualmente como em "this.nomePortal = new HomeMenuService()", 
+      // pode-se chama-lo ou instancia-lo automaticamente 
       // utilizando injecao de dependencia com o decorator "@injectable".... 
         
       this.pokemons = servico.getPokemons(); // acessando o servico via injecao de dependencia
