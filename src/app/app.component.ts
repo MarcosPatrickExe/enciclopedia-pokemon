@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 @Component({
     selector: 'app-root', // "app-root" eh um seletor que faz referebcia a tag <app-root> la no "index.html"
     templateUrl: './app.component.html', // aponta para o arquivo html do componente
-    styleUrls: ['./app.component.css'] // aponta para o arquivo CSS do componente
+    styleUrls: ['./app.component.scss'] // aponta para o arquivo de estilo do componente
 })
 export class AppComponent {
 

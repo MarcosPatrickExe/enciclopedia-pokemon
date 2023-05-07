@@ -1,6 +1,7 @@
-:root{
-    --largura-da-borda: 5px;
-}
+/* :root{ --largura-da-borda: 5px; }*/
+
+$colorContainer: white;
+
 
 .text{
     position: 'absolute';
@@ -14,12 +15,12 @@
     opacity: 0.1;
 }
 
-.main-content{
+.main-content {
     position: relative;
     margin: 100px;
     width: auto;
     height: auto;
-    background-color: white;
+    background-color: $colorContainer;
     border-top: 10px solid red;
     border-left: 10px solid red;
     border-right: 10px solid rgb(78, 78, 78);

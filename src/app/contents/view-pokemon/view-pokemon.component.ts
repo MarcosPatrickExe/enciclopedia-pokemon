@@ -4,7 +4,7 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 @Component({
     selector: 'view-pokemon',
     templateUrl: './view-pokemon.component.html',
-    styleUrls: ['./view-pokemon.component.css']
+    styleUrls: ['./view-pokemon.component.scss']
   // inputs: ['dexN : dexNumber']
   // O @Input TBM PODE SER UTILIZADO COMO METADADO, AO INVÉS DE UM DECORATOR, COMO LOGO ABAIXO
 })

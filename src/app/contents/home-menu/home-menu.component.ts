@@ -4,7 +4,7 @@ import { HomeMenuService } from './home-menu.service';
 @Component({
   selector: 'app-home-menu',
   templateUrl: './home-menu.component.html',
-  styleUrls: ['./home-menu.component.css']
+  styleUrls: ['./home-menu.component.scss']
 })
 /* 
     ASSIM COMO eh POSSIVEL FAZER O TEMPLATE LITERALS COM O 
