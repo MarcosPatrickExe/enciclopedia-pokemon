@@ -10,7 +10,7 @@
 #red_div, #pokemon-logo{
     width: inherit;
     height: inherit;
-    background: url('https://th.bing.com/th/id/R.ddd5084dff8d7606019645f62c1712c6?rik=RJm8gtkd41am8Q&riu=http%3a%2f%2fpluspng.com%2fimg-png%2fpokemon-logo-png-pokemon-logo-png-2000.png&ehk=%2bFdpvqx7Vk1jcWsSaxVIqArQSByK89fRtNQoRFktAhY%3d&risl=&pid=ImgRaw&r=0');
+    background-image: url('https://th.bing.com/th/id/R.ddd5084dff8d7606019645f62c1712c6?rik=RJm8gtkd41am8Q&riu=http%3a%2f%2fpluspng.com%2fimg-png%2fpokemon-logo-png-pokemon-logo-png-2000.png&ehk=%2bFdpvqx7Vk1jcWsSaxVIqArQSByK89fRtNQoRFktAhY%3d&risl=&pid=ImgRaw&r=0');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 30%;
@@ -28,16 +28,17 @@
    /* background-color: rgb(151, 48, 0); */
     height: 100%; 
     overflow-y: hidden;
+
+    ul{
+        position: relative;
+        list-style: none;
+        background-color: transparent; 
+        height: 100%;
+        width: 100%;
+    }
 }
 
-#navbar > ul{
-    position: relative;
-    list-style: none;
-   /* background-color: rgb(27, 209, 255);  */ 
-    margin-left: 30%;
-    height: 100%;
-    width: 90%;
-}
+/* #navbar > ul {...}  */
 
 #navbar > ul > li{
     background-color: rgb(77, 77, 77);
