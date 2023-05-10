@@ -13,7 +13,7 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 export class ViewPokemonComponent { //implements OnInit {
     // ngOnInit(): void { }
     
-    // ESSE DECORATOR "Input" OBTEM O VALOR DA PROPRIEDADE PASSADA PARA ESSE COMPONENTE E O REPASSA PARA O ATRIBUTO PRIVADO "pokemon_pokedex_number"
+    // ESSE DECORATOR "Input" OBTEM O VALOR DA PROPRIEDADE PASSADA PARA ESSE COMPONENTE E O REPASSA PARA O ATRIBUTO PRIVADO "dexNumber"
     @Input('dexN') 
     dexNumber : string = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png"; // valor inicial (nao lido)
     // O PARÂMETRO PASSADO PODE SER OPCIONAL, E DEVE SER UTILIZADO QUANDO
@@ -52,7 +52,8 @@ export class ViewPokemonComponent { //implements OnInit {
     }
 }
 
+
 interface objCustom extends String {
-  propQualquer : string
+      propQualquer : string
 
 }
