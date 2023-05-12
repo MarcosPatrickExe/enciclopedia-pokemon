@@ -19,46 +19,60 @@
 
 #head{
     position: relative;
-    /* margin-top: 2%;*/
     width: 102%;
     height: 80px;
-}
 
-#navbar{
-    background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.61) 70%, rgb(51, 51, 51));
-   /* background-color: rgb(151, 48, 0); */
-    background-size: contain;
-    height: 100%; 
-    overflow-y: hidden;
-
-    ul{
-        position: relative;
-        display: flex;
-        list-style: none;
-        background-color: transparent; 
-        height: 100%;
-        width: 100%;
-    }
-
-    li{
-        background-color: rgb(77, 77, 77);
-     /*   background-color: rgb(255, 72, 0); */
-        float: left;
-        margin-left: 10px;
-        margin-right: 10px;
-        text-align: center;
-        font-family: 'Advent Pro', sans-serif;
-        font-size: 24px;
-        min-width: 120px;
-        width: 10%;
-        height: 100%;
-        border-top: 2px solid white;
+    #navbar{
+        background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.61) 70%, rgb(51, 51, 51));
+       /* background-color: rgb(151, 48, 0); */
+        background-size: contain;
+        height: 100%; 
         overflow: hidden;
-        transform: skew(-20deg);
+        display: flex;
+        align-items: center; /* vertically */
+        justify-content: space-around; /* horizontally */
+    
+        ul{
+            position: relative;
+            list-style: none;
+            background-color: transparent; 
+            height: 100%;
+            width: auto; /* wrapping the content */
+            overflow: hidden;
+            margin: 0;
+        }
+    
+        li{
+            background-color: rgb(77, 77, 77);
+         /*   background-color: rgb(255, 72, 0); */
+            float: left;
+            margin-left: 10px;
+            margin-right: 10px;
+            text-align: center;
+            font-family: 'Advent Pro', sans-serif;
+            font-size: 24px;
+            min-width: 120px;
+            width: 10%;
+            height: 100%;
+            border-top: 2px solid white;
+            overflow: hidden;
+            transform: skewX(-20deg);
+        }
+
+        .menu-icon{
+            color: white;
+        }
     }
+    /* #navbar > ul {...}  */    
 }
 
-/* #navbar > ul {...}  */
+
+@media (max-width: 500px){
+
+    #head #navbar ul li{
+        display: none;
+    }
+}
 
 
 
@@ -70,12 +84,13 @@
     overflow: hidden;
 }
 
-#navbar > ul > li > a{
+#navbar ul li a{
+    margin: 0;
     margin-top: 20%;
     text-decoration: none;
     color: white;
-    transform: skew(20deg);
     display: inline-block;
+    transform: skewX(20deg);
 }
 
 #navbar > ul > li:hover{
