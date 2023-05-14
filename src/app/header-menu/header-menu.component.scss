@@ -51,15 +51,23 @@
             position: relative;
             margin-left: 10px;
             margin-right: 10px;
-            text-align: center;
+            display: inline-block;
+            padding: 3% 3%;
+            text-align: center; // horizontally
             font-family: 'Advent Pro', sans-serif;
             font-size: 24px;
-            min-width: 120px;
-            width: 10%;
             height: 100%;
             border-top: 2px solid white;
             overflow: hidden;
             transform: skewX(-20deg);
+
+
+            a{
+                text-decoration: none;
+                color: white;
+                display: inline-block;
+                transform: skewX(20deg);
+            }
         }
 
         .menu-icon{
@@ -105,7 +113,7 @@
     }
     
     #head {
-        height: 80px;
+        height: 50px;
     }
 }
 
@@ -124,16 +132,9 @@
     overflow: hidden;
 }
 
-#navbar ul li a{
-    margin: 0;
-    margin-top: 20%;
-    text-decoration: none;
-    color: white;
-    display: inline-block;
-    transform: skewX(20deg);
-}
 
-#navbar > ul > li:hover{
+
+#navbar ul li:hover{
     background-color: rgb(240, 240, 241);
     color: rgb(54, 54, 54);
 /*  border-radius: 50%; */
