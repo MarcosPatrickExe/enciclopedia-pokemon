@@ -20,7 +20,7 @@
 #head{
     position: relative;
     width: 100%;
-    height: 80px;
+    height: 23.3%;
 
     #navbar{
         background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.61) 30%, rgb(51, 51, 51));
@@ -42,32 +42,37 @@
             width: auto; /* wrapping the content */
             overflow: hidden;
             padding-left: 5px;
+            padding-right: 5px;
             margin: 0;
         }
     
         li{
             background-color: rgb(77, 77, 77);
-         /*   background-color: rgb(255, 72, 0); */
-            position: relative;
             margin-left: 10px;
             margin-right: 10px;
-            text-align: center; // horizontally
             font-family: 'Advent Pro', sans-serif;
-            font-size: 124%;
-            height: 100%;
-            padding: 0 0;
-            width: 17vh;
+            min-height: 100%; /* forces 'li' to 100% */
+            width: 10vw;/* viewport width */
             border-top: 2px solid white;
             overflow: hidden;
+            text-align: center; /* center horizontally */
             transform: skewX(-20deg);
-
+            padding: 1.5vh 0; /* vertically horizontally */
 
             a{
-                text-decoration: none;
-                color: white;
-                display: inline-block;
-                transform: skewX(20deg);
+               overflow: hidden;
+               text-decoration: none;
+               font-size: 1.9vw;
+               color: white;
+               display: inline-block; /*previne skewX of "li" */
+               transform: skewX(20deg); /*previne skewX of "li" */
             }
+        }
+
+        li:hover{
+            background-color: rgb(196, 29, 7);
+            color: rgb(54, 54, 54);
+            transition: background-color .5s ease;
         }
 
         .menu-icon{
@@ -88,10 +93,6 @@
     #head #navbar ul li{
         display: none;
     }
-    #head {
-        height: 70px;
-    }
-
     #menu-icon{
         display: block;
     }
@@ -111,10 +112,6 @@
     #pokemon-logo{
         height: 80%;
     }
-    
-    #head {
-        height: 50px;
-    }
 }
 
 @media (min-width: 923px) and (max-width: 2000px){
@@ -123,7 +120,7 @@
 
 
 
-
+/*
 #last-li{
     float: right;
     background-color: white; 
@@ -131,17 +128,4 @@
     height: 100%;
     overflow: hidden;
 }
-
-
-
-#navbar ul li:hover{
-    background-color: rgb(240, 240, 241);
-    color: rgb(54, 54, 54);
-/*  border-radius: 50%; */
-}
-
-#navbar > ul > li > a:hover{
-    text-decoration: none;
-    transform: skew(20deg);
-    color: rgb(54, 54, 54);
-}
+*/
