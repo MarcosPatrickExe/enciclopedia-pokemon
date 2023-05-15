@@ -51,12 +51,12 @@
             position: relative;
             margin-left: 10px;
             margin-right: 10px;
-            display: inline-block;
-            padding: 3% 3%;
             text-align: center; // horizontally
             font-family: 'Advent Pro', sans-serif;
-            font-size: 24px;
+            font-size: 124%;
             height: 100%;
+            padding: 0 0;
+            width: 17vh;
             border-top: 2px solid white;
             overflow: hidden;
             transform: skewX(-20deg);

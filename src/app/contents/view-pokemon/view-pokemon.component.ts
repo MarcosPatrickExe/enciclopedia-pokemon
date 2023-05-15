@@ -14,7 +14,7 @@ export class ViewPokemonComponent { //implements OnInit {
     // ngOnInit(): void { }
     
     // ESSE DECORATOR "Input" OBTEM O VALOR DA PROPRIEDADE PASSADA PARA ESSE COMPONENTE E O REPASSA PARA O ATRIBUTO PRIVADO "dexNumber"
-    @Input('dexN') 
+    @Input('dexN')
     dexNumber : string = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png"; // valor inicial (nao lido)
     // O PARÂMETRO PASSADO PODE SER OPCIONAL, E DEVE SER UTILIZADO QUANDO
     // SE QUER SOMENTE ADICIONAR UM "APELIDO" PARA A VARIAVEL INTERNA 
@@ -41,9 +41,8 @@ export class ViewPokemonComponent { //implements OnInit {
     
 
     mouseOver(){
-          this.imageHovered.emit( "Pokemon recebeu foco do mouse...."
+          this.imageHovered.emit( "Pokemon recebeu foco do mouse....");
             //   <objCustom>{ propQualquer: 'O mouse passou por cima!!' } 
-        );
     }
 
     mouseOut(){
