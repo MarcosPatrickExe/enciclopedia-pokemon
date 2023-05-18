@@ -22,22 +22,22 @@
             </div>
         </div>
 
-
-        <!-- MOBILE MENU --->
-        <div [ngClass]="menuDropDownIsOpen == true ? 'open' : ''" >
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Pokedex</a></li>
-                <li style="line-height: 1.1;"><a href="#">Montar time!</a></li>
-                <li><a href="#">Cadastro</a></li>
-                <li><a href="#">Login</a></li>
-                <li style="line-height: 1.1;"><a href="#">Sobre <br>   nos</a></li>
-            </ul>
-        </div>
-        <!-- MOBILE MENU -->
-
     </nav>
 </div>
+
+
+ <!-- MOBILE MENU --->
+ <div [ngClass]="menuDropDownIsOpen == true ? 'open' : 'drop-down-menu-box'" >
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Pokedex</a></li>
+        <li style="line-height: 1.1;"><a href="#">Montar time!</a></li>
+        <li><a href="#">Cadastro</a></li>
+        <li><a href="#">Login</a></li>
+        <li style="line-height: 1.1;"><a href="#">Sobre <br>   nos</a></li>
+    </ul>
+</div>
+<!-- MOBILE MENU -->
 
 <!--
 <div id="last-li">

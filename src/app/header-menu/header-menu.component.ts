@@ -11,7 +11,7 @@ export class HeaderMenuComponent { //implements OnInit
 
   nomePortal :string;
   urlImagem :string = 'http://lorempixel.com/400/200/nature/';
-  menuDropDownIsOpen :boolean = false;
+  menuDropDownIsOpen :boolean = true;
   styleClassOpen :string = "open";
 
   constructor() { 
