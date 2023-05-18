@@ -12,7 +12,7 @@ export class HeaderMenuComponent { //implements OnInit
   nomePortal :string;
   urlImagem :string = 'http://lorempixel.com/400/200/nature/';
   menuDropDownIsOpen :boolean = false;
-  styleClassIsOpen :string = "";
+  styleClassOpen :string = "open";
 
   constructor() { 
       this.nomePortal = 'http://loiane.training';
@@ -21,7 +21,7 @@ export class HeaderMenuComponent { //implements OnInit
 
   menuClicked(){
       this.menuDropDownIsOpen = !this.menuDropDownIsOpen;
-      this.styleClassIsOpen = this.menuDropDownIsOpen ? "open" : "";
+      this.styleClassOpen = this.menuDropDownIsOpen ? "open" : "";
   }
 
   //ngOnInit(): void { }

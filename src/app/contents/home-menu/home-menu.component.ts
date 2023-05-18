@@ -36,7 +36,7 @@ export class HomeMenuComponent {
     
     // o atributo privado "servico" faz com que ele seja automaticamente declarado
     // como atributo dessa classe "HomeMenuComponent"....
-    // � como se fizesse o seguinte:
+    // eh como se fizesse o seguinte:
     // this.servico = servico;
     constructor( private servico : HomeMenuService ) { 
      // let buscarPokemons = new HomeMenuService();
