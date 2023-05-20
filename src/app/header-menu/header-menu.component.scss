@@ -107,12 +107,13 @@
     }
 }
 
-@media (min-width: 501px ) and (max-width: 891px){
 
+@media (min-width: 501px ) and (max-width: 891px){
     #pokemon-logo{
         height: 80%;
     }
 }
+
 
 @media (min-width: 892px) and (max-width: 2000px){
    
@@ -125,7 +126,7 @@
 
 .open{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
    
     ul{
         align-items: center;
@@ -156,9 +157,6 @@
             }
         }
     }
-    
-
-
 }
 
 

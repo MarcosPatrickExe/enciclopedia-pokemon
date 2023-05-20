@@ -7,23 +7,22 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header-menu.component.scss']
 })
 
+
 export class HeaderMenuComponent { //implements OnInit
 
   nomePortal :string;
   urlImagem :string = 'http://lorempixel.com/400/200/nature/';
-  menuDropDownIsOpen :boolean = true;
+  menuDropDownIsOpen :boolean = false;
   styleClassOpen :string = "open";
 
-  constructor() { 
+  constructor(){
       this.nomePortal = 'http://loiane.training';
   }
 
-
   menuClicked(){
       this.menuDropDownIsOpen = !this.menuDropDownIsOpen;
-      this.styleClassOpen = this.menuDropDownIsOpen ? "open" : "";
+ //     this.styleClassOpen = this.menuDropDownIsOpen ? "open" : "";
   }
 
   //ngOnInit(): void { }
-
 }
