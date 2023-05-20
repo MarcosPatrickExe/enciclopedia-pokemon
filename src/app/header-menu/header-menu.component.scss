@@ -4,14 +4,14 @@
 #red-div{
     background-image: linear-gradient( to bottom, rgb(236, 32, 5) 60%, rgb(92, 12, 1) );
     width: 100%;
-    height: 180px;
+    height: 30vh;
     display: flex;
-    flex-direction: row;
     align-items: center;
+    justify-content: center;
 
     #pokemon-logo{
-        height: 80%;
-        width: 70%;
+        height: 20vh;
+        width: 50vw;
         background-image: url('https://th.bing.com/th/id/R.ddd5084dff8d7606019645f62c1712c6?rik=RJm8gtkd41am8Q&riu=http%3a%2f%2fpluspng.com%2fimg-png%2fpokemon-logo-png-pokemon-logo-png-2000.png&ehk=%2bFdpvqx7Vk1jcWsSaxVIqArQSByK89fRtNQoRFktAhY%3d&risl=&pid=ImgRaw&r=0');
         background-repeat: no-repeat;
         background-position: center center;
@@ -99,10 +99,14 @@
     #menu-icon{
         display: block;
     }
-
+/*
     #pokemon-logo{
         height: calc(100% - 10px);
         width: 100%;
+    }
+*/
+    #red-div{
+        height: 20vh;
     }
 
     #pokeball{
@@ -119,7 +123,6 @@
 
 
 @media (min-width: 892px) and (max-width: 2000px){
-   
 }
 
 
