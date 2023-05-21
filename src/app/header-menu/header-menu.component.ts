@@ -13,7 +13,6 @@ export class HeaderMenuComponent { //implements OnInit
   nomePortal :string;
   urlImagem :string = 'http://lorempixel.com/400/200/nature/';
   menuDropDownIsOpen :boolean = false;
-  styleClassOpen :string = "open";
 
   constructor(){
       this.nomePortal = 'http://loiane.training';
@@ -24,12 +23,13 @@ export class HeaderMenuComponent { //implements OnInit
  //     this.styleClassOpen = this.menuDropDownIsOpen ? "open" : "";
   }
 
-  resizeEvent(event :UIEvent ){
-      
-      if(event.view?.window.innerWidth != undefined ){
-            console.log("maior q 500");
-      }
+  
+  resizeEvent(event :any ){
+      console.log( event.constructor );  
 
+      if(event.target.innerWidth > 500 && this.menuDropDownIsOpen ){
+          this.menuDropDownIsOpen = false;
+      }
   }
 
   //ngOnInit(): void { }
