@@ -55,6 +55,21 @@ export class HomeMenuComponent {
         return 5000;
     }
 
+    switchStyleClass(value :string) :string | null {
+        switch(value){
+            case "Celebi":
+                return "alert-success";
+            case "Zapdos":
+                return "alert-warning";
+            case "Moltres":
+                return "alert-danger";
+            case "Articuno":
+                return "alert-info";
+        }
+
+        return null;
+    }
+
     botaoClicado(){
         alert('botao clicado!!');
     }

@@ -83,6 +83,11 @@
     
             <br><br>
     
+
+            <div class="alert {{switchStyleClass(classe.value)}}">
+                Cor selecionada: {{switchStyleClass(classe.value)}}
+            </div>
+
         <!--    ADICIONANDO UM CLASS BINDING NO ELEMENTO DIV: -->
             <div class="alert" role="alert"
                 [class.alert-success]= "classe.value == 'Celebi'"
@@ -119,7 +124,7 @@
                 > Visivel somente quando o Zapdos for escolhido
             </div>
     
-            <!-- A INTERPOLACAO TBM EH UMA FORMA DE PROPERTY BIND ENTAO � POSSIVEL UTILIZA-LA COMO CLASS BIND-->
+            <!-- A INTERPOLACAO TBM EH UMA FORMA DE PROPERTY BIND ENTAO EH POSSIVEL UTILIZA-LA COMO CLASS BIND-->
             <div class="alert {{ classe.value }}" role="alert"> 
                 Cor escolhida a partir da interpolacao da variavel "classe", definida dentro 
                 do elemento de "select".
