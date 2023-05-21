@@ -24,5 +24,13 @@ export class HeaderMenuComponent { //implements OnInit
  //     this.styleClassOpen = this.menuDropDownIsOpen ? "open" : "";
   }
 
+  resizeEvent(event :UIEvent ){
+      
+      if(event.view?.window.innerWidth != undefined ){
+            console.log("maior q 500");
+      }
+
+  }
+
   //ngOnInit(): void { }
 }
