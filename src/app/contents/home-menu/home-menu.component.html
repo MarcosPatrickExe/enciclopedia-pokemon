@@ -143,7 +143,7 @@
             <Br />
             <h3>============= UTILIZANDO EVENT BIND ==============</h3>
         <!-- PARA ATIVAR UM EVENTO NO ANGULAR VC DEVE DEFINIR O NOME DO 
-            EVENTO ENTRE PAR�NTESIS E LOGO DEPOIS ATRIBUIR A ELE A VARIAVEL 
+            EVENTO ENTRE PARENTESIS E LOGO DEPOIS ATRIBUIR A ELE A VARIAVEL 
             "$event" COMO PARAMETRO PARA A FUNCAO QUE VC DEFINIU NO SEU 
                 COMPONENTE -->
 
@@ -194,11 +194,12 @@
 
             <!--  (keyup.enter)="salvarValor($event.target.value)" DÁ ERRO -->
             <input type="text" 
+                   #valorInput
+
                    (keyup)="inputClick ($event)" 
                    (keyup.enter)="salvarValor(valorInput.value)"
                    (mouseout)="mouseOut (valorInput.value)" 
                    
-                   #valorInput 
                    placeholder="Escreva 'info' ou 'danger'"
     
                    [class.bg-info] = "valorInput.value == 'info'"
@@ -234,10 +235,11 @@
 
             <label> Utilizando forma classica: </label> <Br />
             <input type="text"
+                #inputValue
                 [value]="name"
                 (input)="name = inputValue.value"
-                #inputValue
             />
+            <!-- OU: $event.target.value -->
 
             <Br />
             <Br />
@@ -253,7 +255,7 @@
 
             <label> Utilizando two-way-binding com 'ngModel': </label> <Br />
             <input type="text" [(ngModel)]="name">
-            <!--ngModel TBM PODE SER ESCRITO COMO '[(bingon-ngModel)]' -->
+            <!--ngModel TBM PODE SER ESCRITO COMO 'bingon-ngModel="nome"' -->
             <p>Você digitou: {{ name }}</p>
 
 
@@ -262,6 +264,7 @@
             <Br />
             <Br />
             <input type="text" [(ngModel)]="person.age" />
+            <!-- para o ngModel funcionar ele deve estar em um module o qual importa o FormsModule -->
 
             <p>Olá! Me chamo {{ person.name }} e tenho {{ person.age }} anos de idade. </p>
     </article>
