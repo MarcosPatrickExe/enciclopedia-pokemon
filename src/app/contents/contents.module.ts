@@ -14,7 +14,7 @@ import { ViewPokemonComponent } from './view-pokemon/view-pokemon.component';
 @NgModule({
   declarations: [
     HomeMenuComponent,
-    ComponenteTexto,
+    ComponenteTexto, /*tbm eh possivel utilizar um componente que esteja em outra pasta. Mas isso nao eh uma boa pratica! */
     ViewPokemonComponent
   ],
   imports: [
