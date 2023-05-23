@@ -1,22 +1,22 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Component, Input, Output, EventEmitter, OnInit } from '@angular/core';
 //import { EventEmitter } from 'stream';
 
 @Component({
     selector: 'view-pokemon',
     templateUrl: './view-pokemon.component.html',
     styleUrls: ['./view-pokemon.component.scss']
-  // inputs: ['dexN : dexNumber']
+  // inputs: ['urlImg : urlImage']
   // outputs: ['imgHover : imageHovered']
   // O @Input TBM PODE SER UTILIZADO COMO METADADO, AO INVÉS DE UM DECORATOR, COMO LOGO ABAIXO
 })
 
 
-export class ViewPokemonComponent { //implements OnInit {
+export class ViewPokemonComponent implements OnInit{ //implements OnInit {
     // ngOnInit(): void { }
     
     // ESSE DECORATOR "Input" OBTEM O VALOR DA PROPRIEDADE PASSADA PARA ESSE COMPONENTE E O REPASSA PARA O ATRIBUTO PRIVADO "dexNumber"
-    @Input('dexN')
-    dexNumber : string = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png"; // valor inicial (nao lido)
+    @Input('urlImg')
+    urlImage : string = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png"; // valor inicial (nao lido)
     // O PARÂMETRO PASSADO PODE SER OPCIONAL, E DEVE SER UTILIZADO QUANDO
     // SE QUER SOMENTE ADICIONAR UM "APELIDO" PARA A VARIAVEL INTERNA 
     // DA CLASSE, COMO O "dexNumber" QUE TEM APELIDO "dexN", E QUE ATRAVES
@@ -40,6 +40,9 @@ export class ViewPokemonComponent { //implements OnInit {
     constructor() {  // alert(this.dexNumber);
     }
     
+    ngOnInit(){
+        console.log("valor urlImage value: "+this.urlImage);
+    }
 
     mouseOver(){
           this.imageHovered.emit( "Pokemon recebeu foco do mouse....");

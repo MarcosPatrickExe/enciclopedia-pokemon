@@ -9,7 +9,6 @@
     <h4 class="text">Silva</h4>
 
     <h2>Nome do portal: <a href="http://loiane.training"> {{nomeSite}} </a> </h2>
-    <h2>tamanho do nome: {{tamanhoNome}} </h2>
     <!-- utilizando interpolacao para acessar a variavel "tamanhoNome" do typescript--> -->
 
     <!-- Verificandos cursos existentes atraves da diretiva '*ngFor' -->
@@ -48,10 +47,24 @@
     <Br />
     <Br />
 
+
+    <!-- $event sera a argumento q ira receber o valor passado por emit() na classe "ViewPokemonComponent"  -->
     <view-pokemon 
-          [dexN]="pokemonDexNumber"
-          (imgHover)="pokemonFocused( $event )"><!-- $event sera a argumento q ira receber o valor passado por emit() na classe "ViewPokemonComponent"  -->
+          [urlImg]="pokemonUrlImage"
+          (imgHover)="pokemonFocused( $event )"
+          *ngIf="!closePokeView">
+          <!-- Enquando ngIf ser true, o componente eh renderizado, senao, nao eh renderizado -->
     </view-pokemon>
+
+
+
+    <button 
+         class="btn btn-info" 
+         (click)="closePokeView = !closePokeView"
+    > 
+               Toggle view pokemon...
+    </button>
+
 
 
     <h2> {{messageOfViewPokemonComponente}}</h2>

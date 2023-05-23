@@ -23,24 +23,23 @@ export class AppComponent implements OnInit, OnChanges,
                         AfterViewInit, AfterViewChecked, OnDestroy {
 
     cursos: string[]; //declarando o atributo
-    pokemonDexNumber: string = '';
+    pokemonUrlImage: string = '';
     messageOfViewPokemonComponente :string ="";
 
     //declarando e inicializando atributo
     title : string = 'Esse eh um titulo escrito da classe AppComponent'; // texto que ira aparecer na tela inicial
     nomeSite: string = 'http://loiane.training';  //declarando e inicializando atributo
-    tamanhoNome : number;
+    public closePokeView :boolean= false;
+
 
     constructor(){
         this.cursos = ['Java', 'Python' ,'PHP', 'JavaScript'];
-        this.tamanhoNome = this.nomeSite.length;
-        // let servico = new 
     }
 
-    public changePokemon( pokemonPokedexNumber : string) :void{
-        let urlImage : string = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${ pokemonPokedexNumber }.png`;
 
-        this.pokemonDexNumber = urlImage;
+    public changePokemon( pokemonPokedexNumber : string) :void{
+        let urlImage :string = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${ pokemonPokedexNumber }.png`;
+        this.pokemonUrlImage = urlImage;
     }
 
     // esse metodo so eh executado quando o componente seletor "view-pokemon" emite um evento do tipo "imgHover"
@@ -50,38 +49,35 @@ export class AppComponent implements OnInit, OnChanges,
     }
 
 
-    ngOnInit(){
+    ngOnInit():void{
         this.log("ngOnInt"); // ngOnInit eh mais indicado para componente sem input properties
     }
 
-    ngOnChanges(){ // ngOnChanges eh mais indicado pra quando se usar input properties
+    ngOnChanges():void{ // ngOnChanges eh mais indicado pra quando se usar input properties/property bind [property]=""
         this.log("onChanges");
     }
 
-    ngDoCheck(){
+    ngDoCheck() :void{
         this.log("ngDoCheck");
     }
 
-    ngAfterContentChecked():void{
+    ngAfterContentChecked() :void{
         this.log("ngAfterContentChecked");
     }
 
-    ngAfterViewChecked():void{
+    ngAfterViewChecked() :void{
         this.log("ngAfterViewChecked");
     }
 
-
-
-
-    ngAfterContentInit(){
+    ngAfterContentInit() :void{
         this.log("ngAfterContentInit");
     }    
 
-    ngOnDestroy(){
+    ngOnDestroy():void{
         this.log("ngOnDestroy");
     }
 
-    ngAfterViewInit(): void {
+    ngAfterViewInit():void {
         this.log("ngAfterViewInit");
     }
 
