@@ -6,6 +6,7 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
     templateUrl: './view-pokemon.component.html',
     styleUrls: ['./view-pokemon.component.scss']
   // inputs: ['dexN : dexNumber']
+  // outputs: ['imgHover : imageHovered']
   // O @Input TBM PODE SER UTILIZADO COMO METADADO, AO INVÉS DE UM DECORATOR, COMO LOGO ABAIXO
 })
 

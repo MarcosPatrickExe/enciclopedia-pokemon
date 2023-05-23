@@ -1,7 +1,16 @@
-import { Component } from '@angular/core';
+import { 
+    AfterContentInit, 
+    Component, 
+    OnChanges, 
+    OnDestroy, 
+    OnInit, 
+    DoCheck, 
+    AfterContentChecked, 
+    AfterViewInit, 
+    AfterViewChecked } from '@angular/core';
 // importando o decorator "@Component"
 
-
+ 
 // O decorator "@Component" eh responsavel por fornecer informacoes 
 // sobre o componente para que o compilador possa ler
 @Component({
@@ -9,7 +18,9 @@ import { Component } from '@angular/core';
     templateUrl: './app.component.html', // aponta para o arquivo html do componente
     styleUrls: ['./app.component.scss'] // aponta para o arquivo de estilo do componente
 })
-export class AppComponent {
+export class AppComponent implements OnInit, OnChanges, 
+                        DoCheck, AfterContentInit, AfterContentChecked,
+                        AfterViewInit, AfterViewChecked, OnDestroy {
 
     cursos: string[]; //declarando o atributo
     pokemonDexNumber: string = '';
@@ -36,5 +47,45 @@ export class AppComponent {
     public pokemonFocused( evento : any ) :void{
         this.messageOfViewPokemonComponente = evento;
         console.log("Mensagem do evento: "+evento );
+    }
+
+
+    ngOnInit(){
+        this.log("ngOnInt"); // ngOnInit eh mais indicado para componente sem input properties
+    }
+
+    ngOnChanges(){ // ngOnChanges eh mais indicado pra quando se usar input properties
+        this.log("onChanges");
+    }
+
+    ngDoCheck(){
+        this.log("ngDoCheck");
+    }
+
+    ngAfterContentChecked():void{
+        this.log("ngAfterContentChecked");
+    }
+
+    ngAfterViewChecked():void{
+        this.log("ngAfterViewChecked");
+    }
+
+
+
+
+    ngAfterContentInit(){
+        this.log("ngAfterContentInit");
+    }    
+
+    ngOnDestroy(){
+        this.log("ngOnDestroy");
+    }
+
+    ngAfterViewInit(): void {
+        this.log("ngAfterViewInit");
+    }
+
+    private log(hook: string):void {
+        console.log(hook);
     }
 }

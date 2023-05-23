@@ -154,7 +154,7 @@
 
             <button class="btn btn-warning" 
                        (click) = "btnClick( $event.target) ">
-              <!--TAMBEM � POSS�VEL PASSAR O VALOR DO ELEMENTO ($event.target)
+              <!--TAMBEM EH POSSIVEL PASSAR O VALOR DO ELEMENTO ($event.target)
                   DIRETAMENTE PARA A FUNCAO "btnClick" QUE SE ENCONTRA NO COMPONENTE
                 -->
                Click aqui!!
@@ -167,7 +167,8 @@
             <input 
                type="text" 
                   (keyup)="inputClick ($event)" 
-                     placeholder="Digite algo..." />
+                     placeholder="Digite algo..." 
+            />
 
             <Br />
             
@@ -183,11 +184,11 @@
             <Br />
     
             <!-- UM ELEMENTO HTML PODE APRESENTAR VARIOS EVENTOS
-                 COMO � REALIZADO NO ELEMENTO ACIMA. TAMB�M � POSSIVEL
+                 COMO EH REALIZADO NO ELEMENTO ACIMA. TAMB�M � POSSIVEL
                  CRIAR UMA VARIAVEL LOCAL AO ELEMENTO ADICIONANDO UM "#"
                  AFRENTE DE SEU NOME, COMO EM "#valorInput". AO INV�S
                  DE UTILIZAR A VARIAVEL "$event" GERADA PELO DOM, PODE-SE
-                 USAR TAMB�M A VARI�VEL LOCAL DO ELEMENTO COMO "#valorInput"
+                 USAR TAMBEM A VARIAVEL LOCAL DO ELEMENTO COMO "#valorInput"
                  E PASSSAR ELA COMO PARAMETRO PARA AS FUNCOES DE CALLBACK SITUADAS
                  NO COMPONENTE "apresentacao-conteudo.component"
             -->
