@@ -17,7 +17,7 @@ $colorContainer: white;
 
 .main-content {
     position: relative;
-    margin: 100px;
+    margin: 5% 10vw;
     width: auto;
     height: auto;
     background-color: $colorContainer;
@@ -25,26 +25,20 @@ $colorContainer: white;
     border-left: 10px solid red;
     border-right: 10px solid rgb(78, 78, 78);
     border-bottom: 10px solid rgb(78, 78, 78);
-    padding-top: 40px;
-    padding-left: 70px;
-    padding-right: 70px;
-    padding-bottom: 40px;
+    padding: 4% 3%;
 }
 
 .main-content2{
     position: relative;
-    margin: 100px;
+    margin: 5% 10vw;
     width: auto;
-    height: 450pt;
+    height: auto;
     background-color: white;
     border-top: 10px solid red;
     border-left: 10px solid red;
     border-right: 10px solid rgb(78, 78, 78);
     border-bottom: 10px solid rgb(78, 78, 78);
-    padding-top: 40px;
-    padding-left: 70px;
-    padding-right: 70px;
-    padding-bottom: 40px;
+    padding: 4% 3%;
 }
 
 h1, h2, h3{

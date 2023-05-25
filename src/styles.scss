@@ -14,6 +14,16 @@
     overflow-x: hidden;
 }
 
+
+@media (max-width: 500px){
+    *{
+        font-size: 2.2vw;
+    }
+}
+
+
+
+
 body{
     background-color: rgb(88, 88, 88);  
 }
