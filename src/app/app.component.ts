@@ -7,7 +7,9 @@ import {
     DoCheck, 
     AfterContentChecked, 
     AfterViewInit, 
-    AfterViewChecked } from '@angular/core';
+    AfterViewChecked,
+    ViewChild, 
+    ElementRef} from '@angular/core';
 // importando o decorator "@Component"
 
  
@@ -30,6 +32,10 @@ export class AppComponent implements OnInit, OnChanges,
     title : string = 'Esse eh um titulo escrito da classe AppComponent'; // texto que ira aparecer na tela inicial
     nomeSite: string = 'http://loiane.training';  //declarando e inicializando atributo
     public closePokeView :boolean= false;
+
+   
+    @ViewChild('elementRefVar') //fazendo referencia ao a variavel que armazena a referencia do elemento 'input' dentro do DOM
+    valueInputField :ElementRef | null = null;
 
 
     constructor(){

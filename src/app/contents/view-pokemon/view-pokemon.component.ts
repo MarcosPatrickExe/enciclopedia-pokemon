@@ -1,4 +1,4 @@
-import { Component, Input, Output, EventEmitter, OnInit } from '@angular/core';
+import { Component, Input, Output, EventEmitter, OnInit, ViewChild } from '@angular/core';
 //import { EventEmitter } from 'stream';
 
 @Component({
@@ -37,8 +37,6 @@ export class ViewPokemonComponent implements OnInit{ //implements OnInit {
 
 
 
-    constructor() {  // alert(this.dexNumber);
-    }
     
     ngOnInit(){
         console.log("valor urlImage value: "+this.urlImage);
