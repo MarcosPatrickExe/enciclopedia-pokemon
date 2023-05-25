@@ -44,8 +44,8 @@ export class AppComponent implements OnInit, OnChanges,
 
     // esse metodo so eh executado quando o componente seletor "view-pokemon" emite um evento do tipo "imgHover"
     public pokemonFocused( evento : any ) :void{
-        this.messageOfViewPokemonComponente = evento;
-        console.log("Mensagem do evento: "+evento );
+        this.messageOfViewPokemonComponente = (Object.getOwnPropertyNames(evento).length ==1) ? evento.message : evento;
+
     }
 
 

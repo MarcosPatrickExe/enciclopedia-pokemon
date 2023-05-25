@@ -50,7 +50,7 @@ export class ViewPokemonComponent implements OnInit{ //implements OnInit {
     }
 
     mouseOut(){
-          this.imageHovered.emit( "Pokemon perdeu foco do mouse...." );
+          this.imageHovered.emit( {message: "Pokemon perdeu foco do mouse...."} );
           //tbm eh possivel fazer: { eventProperty: "Pokemon perdeu foco do mouse...."} 
     }
 }
