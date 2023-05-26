@@ -152,8 +152,7 @@
                   Me clique! 
             </button>
 
-            <button class="btn btn-warning" 
-                       (click) = "btnClick( $event.target) ">
+            <button class="btn btn-warning"  (click)= "btnClick( $event.target) ">
               <!--TAMBEM EH POSSIVEL PASSAR O VALOR DO ELEMENTO ($event.target)
                   DIRETAMENTE PARA A FUNCAO "btnClick" QUE SE ENCONTRA NO COMPONENTE
                 -->
@@ -166,8 +165,8 @@
             <!-- PASSANDO EVENTO PARA O METODO 'inputClick()' DO COMPONENTE 'home-menu.component'-->
             <input 
                type="text" 
-                  (keyup)="inputClick ($event)" 
-                     placeholder="Digite algo..." 
+               (keyup)="inputClick ($event)" 
+               placeholder="Digite algo..." 
             />
 
             <Br />

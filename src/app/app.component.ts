@@ -9,7 +9,7 @@ import {
     AfterViewInit, 
     AfterViewChecked,
     ViewChild, 
-    ElementRef} from '@angular/core';
+    ElementRef } from '@angular/core';
 // importando o decorator "@Component"
 
  
@@ -55,11 +55,11 @@ export class AppComponent implements OnInit, OnChanges,
     }
 
 
-    ngOnInit():void{
+    ngOnInit() :void{
         this.log("ngOnInt"); // ngOnInit eh mais indicado para componente sem input properties
     }
 
-    ngOnChanges():void{ // ngOnChanges eh mais indicado pra quando se usar input properties/property bind [property]=""
+    ngOnChanges() :void{ // ngOnChanges eh mais indicado pra quando se usar input properties/property bind [property]=""
         this.log("onChanges");
     }
 
@@ -73,17 +73,18 @@ export class AppComponent implements OnInit, OnChanges,
 
     ngAfterViewChecked() :void{
         this.log("ngAfterViewChecked");
+        console.log("value of input: "+this.valueInputField?.nativeElement.value);
     }
 
     ngAfterContentInit() :void{
         this.log("ngAfterContentInit");
     }    
 
-    ngOnDestroy():void{
+    ngOnDestroy() :void{
         this.log("ngOnDestroy");
     }
 
-    ngAfterViewInit():void {
+    ngAfterViewInit() :void {
         this.log("ngAfterViewInit");
     }
 

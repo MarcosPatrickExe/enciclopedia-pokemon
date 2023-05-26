@@ -56,13 +56,14 @@
           <!-- Enquando ngIf ser true, o componente eh renderizado, senao, nao eh renderizado -->
     </view-pokemon>
 
-    <input style="margin-top: 3%;" readonly #elementRefVar />
+    <input style="margin-top: 3%;" [value]="inputValue.value" readonly #elementRefVar />
+    <!-- #elementRefVar representa o elemento 'input' dentro do DOM -->
 
 
     <button 
          class="btn btn-info" 
          (click)="closePokeView = !closePokeView"
-         style="margin-top: 3%;"
+         style="margin-top: 7%;"
     > 
                Toggle view pokemon...
     </button>
