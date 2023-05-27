@@ -1,11 +1,16 @@
 import { TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import { HeaderMenuComponent } from './header-menu/header-menu.component';
+
 
 describe('AppComponent', () => {
   beforeEach(async () => {
+    //addProviders([AppComponent]);
+
     await TestBed.configureTestingModule({
       declarations: [
-        AppComponent
+        AppComponent,
+        HeaderMenuComponent // resolving a follow error 'app-header-menu' is not a known element
       ],
     }).compileComponents();
   });
