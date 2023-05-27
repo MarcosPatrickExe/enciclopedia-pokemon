@@ -20,8 +20,8 @@ import {
     templateUrl: './app.component.html', // aponta para o arquivo html do componente
     styleUrls: ['./app.component.scss'] // aponta para o arquivo de estilo do componente
 })
-export class AppComponent implements OnInit, OnChanges, 
-                        DoCheck, AfterContentInit, AfterContentChecked,
+export class AppComponent implements OnInit, OnChanges, // DoCheck,
+                         AfterContentInit, AfterContentChecked,
                         AfterViewInit, AfterViewChecked, OnDestroy {
 
     cursos: string[]; //declarando o atributo
@@ -54,7 +54,7 @@ export class AppComponent implements OnInit, OnChanges,
         this.messageOfViewPokemonComponente = (Object.getOwnPropertyNames(evento).length ==1) ? evento.message : evento;
     }
 
-
+   
     ngOnInit() :void{
         this.log("ngOnInt"); // ngOnInit eh mais indicado para componente sem input properties
     }
@@ -62,11 +62,11 @@ export class AppComponent implements OnInit, OnChanges,
     ngOnChanges() :void{ // ngOnChanges eh mais indicado pra quando se usar input properties/property bind [property]=""
         this.log("onChanges");
     }
-
+/*
     ngDoCheck() :void{
         this.log("ngDoCheck");
     }
-
+*/
     ngAfterContentChecked() :void{
         this.log("ngAfterContentChecked");
     }

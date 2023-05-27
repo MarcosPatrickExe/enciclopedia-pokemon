@@ -90,7 +90,7 @@
 
         <!--    ADICIONANDO UM CLASS BINDING NO ELEMENTO DIV: -->
             <div class="alert" role="alert"
-                [class.alert-success]= "classe.value == 'Celebi'"
+                [class.alert-success]= "classe.value === 'Celebi'"
                 > Celebi
         <!-- [class.<nome da classe que se deseja aplicar>]  e "CONDICAO PARA QUE A CLASSE SEJA APLICADA"-->
             </div>
@@ -100,17 +100,17 @@
                 Em seguida, vc deve adicionar uma condicao dentro das aspas para definir 
                 qual momento o elemento recebera determinada classse.... -->
             <div class="alert" role="alert"
-                [class.alert-info]= "classe.value == 'Articuno'"
+                [class.alert-info]= "classe.value === 'Articuno'"
                 > Articuno
             </div>
     
             <div class="alert" role="alert"
-                [class.alert-warning]= "classe.value == 'Zapdos'"
+                [class.alert-warning]= "classe.value === 'Zapdos'"
                 > Zapdos
             </div>
     
             <div class="alert" role="alert"
-                [class.alert-danger]= "classe.value == 'Moltres'"
+                [class.alert-danger]= "classe.value === 'Moltres'"
                 > Moltres 
             </div>
             
@@ -120,7 +120,7 @@
                 definir a propriedade que deseja aplicar ao elemento. O valor dessa propriedade pode
                 ser definido atraves de uma condicao ternaria dentro das aspas, como ocorre abaixo:   -->
             <div class="alert alert-warning" role="alert" 
-                [style.display] = "classe.value == 'Zapdos' ? 'block' : 'none'"
+                [style.display] = "classe.value === 'Zapdos' ? 'block' : 'none'"
                 > Visivel somente quando o Zapdos for escolhido
             </div>
     
@@ -202,8 +202,8 @@
                    
                    placeholder="Escreva 'info' ou 'danger'"
     
-                   [class.bg-info] = "valorInput.value == 'info'"
-                   [class.bg-danger] = "valorInput.value == 'danger'"
+                   [class.bg-info] = "valorInput.value === 'info'"
+                   [class.bg-danger] = "valorInput.value === 'danger'"
             />
             <!-- A VARIAVEL LOCAL DO TEMPLATE '#valorInput' QUE PODE SER DECLARADA DENTRO DE TAGS HTML,
             RECEBE AUTOMATICAMENTE O VALOR QUE EQUIVALE À '$event.target'-->
@@ -214,7 +214,7 @@
             <h4 style="color: black;"
                     (mouseover) = "onMouseOverOut()"
                     (mouseout) = "onMouseOverOut()"
-                    [class.highlight]="isMouseOver==true"> 
+                    [class.highlight]="isMouseOver === true"> 
                  Passe o mouse sobre mim =) {{isMouseOver}}
             </h4>
             <!-- 'highlight' EH UMA CLASSE QUE FOI DEFINIDA NO ARQUIVO CSS, POR ISSO 
