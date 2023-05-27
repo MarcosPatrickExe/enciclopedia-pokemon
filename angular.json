@@ -6,9 +6,7 @@
     "introducao-angular": {
       "projectType": "application",
       "schematics": {
-        "@schematics/angular:component": {
-          "styleext": "scss"
-        }
+        
       },
       "root": "",
       "sourceRoot": "src",
@@ -95,7 +93,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.scss"
             ],
             "scripts": []
           }

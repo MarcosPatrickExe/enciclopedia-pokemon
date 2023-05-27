@@ -12,5 +12,6 @@ describe('HomeMenuService', () => {
 
   it('should be created', () => {
     expect(service).toBeTruthy();
+    //verificando se existe uma instancia desse componente, podendo ainda ser undefined
   });
 });

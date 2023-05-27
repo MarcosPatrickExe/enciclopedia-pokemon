@@ -29,7 +29,8 @@ export class AppComponent implements OnInit, OnChanges,
     messageOfViewPokemonComponente :string ="";
 
     //declarando e inicializando atributo
-    title : string = 'Esse eh um titulo escrito da classe AppComponent'; // texto que ira aparecer na tela inicial
+    title :string = "introducao-angular";
+    title2 : string = 'Esse eh um titulo escrito da classe AppComponent'; // texto que ira aparecer na tela inicial
     nomeSite: string = 'http://loiane.training';  //declarando e inicializando atributo
     public closePokeView :boolean= false;
 

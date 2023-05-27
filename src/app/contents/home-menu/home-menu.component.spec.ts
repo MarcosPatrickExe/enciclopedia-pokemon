@@ -20,6 +20,9 @@ describe('HomeMenuComponent', () => {
   });
 
   it('should create', () => {
-    expect(component).toBeTruthy();
+      expect(component).toBeTruthy();
+
+      // exemplo de teste direto no componente. Esse codigo abaixo eh opcional!!
+      expect(component.name).toEqual('write anything...');
   });
 });
