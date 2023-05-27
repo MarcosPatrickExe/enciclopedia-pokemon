@@ -14,9 +14,15 @@ import { Component, Input, Output, EventEmitter, OnInit, ViewChild } from '@angu
 export class ViewPokemonComponent implements OnInit{ //implements OnInit {
     // ngOnInit(): void { }
     
+
+    constructor(){
+        this.urlImage = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png";
+    }
+
+
     // ESSE DECORATOR "Input" OBTEM O VALOR DA PROPRIEDADE PASSADA PARA ESSE COMPONENTE E O REPASSA PARA O ATRIBUTO PRIVADO "dexNumber"
     @Input('urlImg')
-    urlImage : string = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png"; // valor inicial (nao lido)
+    urlImage : string; // valor inicial (nao lido)
     // O PARÂMETRO PASSADO PODE SER OPCIONAL, E DEVE SER UTILIZADO QUANDO
     // SE QUER SOMENTE ADICIONAR UM "APELIDO" PARA A VARIAVEL INTERNA 
     // DA CLASSE, COMO O "dexNumber" QUE TEM APELIDO "dexN", E QUE ATRAVES
