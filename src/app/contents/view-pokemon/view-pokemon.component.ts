@@ -1,7 +1,12 @@
 import { Component, Input, Output, EventEmitter, OnInit, ViewChild } from '@angular/core';
 //import { EventEmitter } from 'stream';
+import { ViewPokemonService } from './view-pokemon.service';
+import { Pokemon, Type } from '../../types/pokemon';
+
 
 import * as _ from 'lodash';
+
+
 
 @Component({
     selector: 'app-view-pokemon',
@@ -12,13 +17,17 @@ import * as _ from 'lodash';
   // O @Input TBM PODE SER UTILIZADO COMO METADADO, AO INVÉS DE UM DECORATOR, COMO LOGO ABAIXO
 })
 
-
 export class ViewPokemonComponent implements OnInit{ //implements OnInit {
     // ngOnInit(): void { }
     
     listLodash = _.map([1, 2, 3], (n)=> `# ${n}`);// utilizando o Lodash
+    public pokemonList :Pokemon[];
+    type = Type;
 
-    constructor(){
+
+    constructor( private pokeService :ViewPokemonService ){
+        this.pokemonList = pokeService.pokemons;
+
         this.urlImage = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png";
     }
 
@@ -48,7 +57,6 @@ export class ViewPokemonComponent implements OnInit{ //implements OnInit {
 
 
 
-    
     ngOnInit(){
         console.log("valor urlImage value: "+this.urlImage);
     }
