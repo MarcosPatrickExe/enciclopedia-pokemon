@@ -1,8 +1,10 @@
 import { Component, Input, Output, EventEmitter, OnInit, ViewChild } from '@angular/core';
 //import { EventEmitter } from 'stream';
 
+import * as _ from 'lodash';
+
 @Component({
-    selector: 'view-pokemon',
+    selector: 'app-view-pokemon',
     templateUrl: './view-pokemon.component.html',
     styleUrls: ['./view-pokemon.component.scss']
   // inputs: ['urlImg : urlImage']
@@ -21,6 +23,7 @@ export class ViewPokemonComponent implements OnInit{ //implements OnInit {
 
 
     // ESSE DECORATOR "Input" OBTEM O VALOR DA PROPRIEDADE PASSADA PARA ESSE COMPONENTE E O REPASSA PARA O ATRIBUTO PRIVADO "dexNumber"
+    // eslint-disable-next-line @angular-eslint/no-input-rename
     @Input('urlImg')
     urlImage : string; // valor inicial (nao lido)
     // O PARÂMETRO PASSADO PODE SER OPCIONAL, E DEVE SER UTILIZADO QUANDO
@@ -31,6 +34,7 @@ export class ViewPokemonComponent implements OnInit{ //implements OnInit {
 
 
 
+    // eslint-disable-next-line @angular-eslint/no-output-rename
     @Output('imgHover') 
     imageHovered :any = new EventEmitter();
     // O PARÂMETRO PASSADO PODE SER OPCIONAL, E DEVE SER UTILIZADO QUANDO

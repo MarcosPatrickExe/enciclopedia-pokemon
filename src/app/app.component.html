@@ -49,12 +49,12 @@
 
 
     <!-- $event sera a argumento q ira receber o valor passado por emit() na classe "ViewPokemonComponent"  -->
-    <view-pokemon 
+    <app-view-pokemon 
           [urlImg]="pokemonUrlImage"
           (imgHover)="pokemonFocused( $event )"
           *ngIf="!closePokeView">
           <!-- Enquando ngIf ser true, o componente eh renderizado, senao, nao eh renderizado -->
-    </view-pokemon>
+    </app-view-pokemon>
 
     <input style="margin-top: 3%;" [value]="inputValue.value" readonly #elementRefVar />
     <!-- #elementRefVar representa o elemento 'input' dentro do DOM -->
