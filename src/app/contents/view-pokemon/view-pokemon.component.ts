@@ -16,6 +16,7 @@ import * as _ from 'lodash';
 export class ViewPokemonComponent implements OnInit{ //implements OnInit {
     // ngOnInit(): void { }
     
+    listLodash = _.map([1, 2, 3], (n)=> `# ${n}`);// utilizando o Lodash
 
     constructor(){
         this.urlImage = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png";
