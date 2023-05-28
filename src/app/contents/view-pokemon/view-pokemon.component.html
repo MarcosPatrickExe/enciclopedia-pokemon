@@ -13,18 +13,20 @@
         (mouseout)="mouseOut()"
     />
 
-    
-    <div class="row">
-        <div class="col-sm-6 col-md-4">
-          <div class="thumbnail">
-            <img src="..." alt="...">
-            <div class="caption">
-              <h3>Thumbnail label</h3>
-              <p>...</p>
-              <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+    <div class="container">
+        <div class="row">
+            <div *ngFor="let count of [0, 1, 2, 3]; let count2 = index" class="col- col-sm-6 col-md-4 col-lg-4 p-1 col-xs-1 text-center">
+                    <img src="https://projectpokemon.org/images/normal-sprite/infernape.gif" alt="infernape">
+                    <div class="caption">
+                        <h3>infernape {{count2}}</h3>
+                        <p>A fire-fighting type pokémon of sinnoh region...</p>
+                        <p>
+                            <a href="#" class="btn fire-type" role="button">Fire</a> 
+                            <a href="#" class="btn fight-type" role="button">Fight</a>
+                        </p>
+                    </div>
             </div>
-          </div>
         </div>
-    </div>
+     </div>
 
 </div>

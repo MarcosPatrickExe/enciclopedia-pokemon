@@ -1,1 +1,13 @@
 
+$fire-type: rgb(228, 123, 2);
+$fight-type: rgb(228, 2, 2);
+
+.fire-type{
+    background-color: $fire-type;
+}
+
+.fight-type{
+    background-color: $fight-type;
+}
+
+
