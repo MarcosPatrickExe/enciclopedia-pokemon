@@ -28,7 +28,7 @@ export class ViewPokemonComponent implements OnInit{ //implements OnInit {
     constructor( private pokeService :ViewPokemonService ){
         this.pokemonList = pokeService.pokemons;
 
-        this.urlImage = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png";
+        this.urlImage = "";
     }
 
 
@@ -56,7 +56,6 @@ export class ViewPokemonComponent implements OnInit{ //implements OnInit {
     // O QUAL PODERÁ ACESSA-LO UTILIZANDO A SINTAXE DE 'EVENT-BIND'
 
 
-
     ngOnInit(){
         console.log("valor urlImage value: "+this.urlImage);
     }
@@ -70,10 +69,5 @@ export class ViewPokemonComponent implements OnInit{ //implements OnInit {
           this.imageHovered.emit( {message: "Pokemon perdeu foco do mouse...."} );
           //tbm eh possivel fazer: { eventProperty: "Pokemon perdeu foco do mouse...."} 
     }
-}
-
-
-interface objCustom extends String {
-      propQualquer : string
 
 }

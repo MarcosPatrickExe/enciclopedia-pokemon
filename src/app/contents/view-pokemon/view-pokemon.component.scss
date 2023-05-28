@@ -1,15 +1,43 @@
 
-$fire-type: rgb(228, 123, 2);
-$fight-type: rgb(228, 2, 2);
+$typeColors: (
+    "fire": rgb(253, 6, 6),
+    "water": rgb(6, 1, 255),
+    "grass": rgb(34, 185, 3),
+    "electric": rgb(255, 155, 4),
+    "rock": rgb(78, 49, 5),
+    "ground": rgb(161, 119, 1),
+    "steel": rgb(114, 113, 111),
+    "ghost": rgb(107, 4, 167),
+    "dark": rgb(54, 54, 54),
+    "psychic": rgb(255, 105, 94),
+    "dragon": rgb(21, 10, 119),
+    "fairy": rgb(217, 7, 224),
+    "normal": rgb(127, 133, 87),
+    "poison": rgb(139, 12, 112),
+    "bug": rgb(55, 102, 1),
+    "ice": rgb(15, 188, 201),
+    "flying": rgb(77, 148, 177),
+    "fighting": rgb(145, 13, 6),
+);
 
+.Fire{ background-color: map-get($typeColors, "fire" ); }
+.Water{ background-color: map-get($typeColors, "water" ); }
+.Grass{ background-color: map-get($typeColors, "grass" ); }
+.Eletric{ background-color: map-get($typeColors, "electric" ); }
+.Rock{ background-color: map-get($typeColors, "rock" ); }
+.Ground{ background-color: map-get($typeColors, "ground" ); }
+.Steel{ background-color: map-get($typeColors, "steel" ); }
+.Ghost{ background-color: map-get($typeColors, "ghost" ); }
+.Dark{ background-color: map-get($typeColors, "dark" ); }
+.Psychic{ background-color: map-get($typeColors, "psychic" ); }
+.Dragon{ background-color: map-get($typeColors, "dragon" ); }
+.Fairy{ background-color: map-get($typeColors, "fairy" ); }
+.Normal{ background-color: map-get($typeColors, "normal" ); }
+.Poison{ background-color: map-get($typeColors, "poison" ); }
+.Bug{ background-color: map-get($typeColors, "bug" ); }
+.Ice{ background-color: map-get($typeColors, "ice" ); }
+.Flying{ background-color: map-get($typeColors, "flying" ); }
+.Fighting{ background-color: map-get($typeColors, "fighting" ); }
 
-
-.fire-type{
-    background-color: $fire-type;
-}
-
-.fight-type{
-    background-color: $fight-type;
-}
 
 

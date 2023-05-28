@@ -25,7 +25,7 @@ export class AppComponent implements OnInit, OnChanges, // DoCheck,
                         AfterViewInit, AfterViewChecked, OnDestroy {
 
     cursos: string[]; //declarando o atributo
-    pokemonUrlImage: string = '';
+    pokemonUrlImage: string = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png";
     messageOfViewPokemonComponente :string ="";
 
     //declarando e inicializando atributo
@@ -43,10 +43,9 @@ export class AppComponent implements OnInit, OnChanges, // DoCheck,
         this.cursos = ['Java', 'Python' ,'PHP', 'JavaScript'];
     }
 
-
-    public changePokemon( pokemonPokedexNumber : string) :void{
-        let urlImage :string = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${ pokemonPokedexNumber }.png`;
-        this.pokemonUrlImage = urlImage;
+    // alterando a imagem do pokemon de acordo com o numero da pokédex q eh digitado
+    public changePokemon( pokemonPokedexNumber :string) :void{
+        this.pokemonUrlImage= `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${ pokemonPokedexNumber }.png`;
     }
 
     // esse metodo so eh executado quando o componente seletor "view-pokemon" emite um evento do tipo "imgHover"

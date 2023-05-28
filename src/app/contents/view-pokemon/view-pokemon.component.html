@@ -21,10 +21,10 @@
                         <h3>{{ pokeIndex+1 }} - {{ pokemon.name }} </h3>
                         <p>A fire-fighting type pokémon of sinnoh region...</p>
                         <p>
-                            <a href="#" class="btn fire-type text-white" role="button"> 
+                            <a href="#" class="btn text-white" role="button" [ngClass]="[ pokemon.types[0] ]"> 
                                 {{ pokemon.types[0] }} 
-                            </a> 
-                            <a href="#" *ngIf="pokemon.types[1] !== type.EMPTY"  class="btn fight-type text-white" role="button"> 
+                            </a>
+                            <a href="#" *ngIf="pokemon.types[1] !== type.EMPTY" class="btn text-white" role="button" [ngClass]="[ pokemon.types[1] ]"> 
                                 {{ pokemon.types[1] }} 
                             </a>
                         </p>

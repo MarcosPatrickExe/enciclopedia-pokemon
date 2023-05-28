@@ -22,9 +22,9 @@ export class ViewPokemonService {
             types : [Type.ELECTRIC, Type.EMPTY]
           },
           {
-            name :"Empoleon",
-            imgLink :"https://projectpokemon.org/images/normal-sprite/empoleon.gif",
-            types : [Type.WATER, Type.STEEL]
+            name :"Staraptor",
+            imgLink :"https://projectpokemon.org/images/normal-sprite/staraptor-f.gif",
+            types : [Type.NORMAL, Type.FLYING]
           },
           {
             name :"Ambipon",
@@ -47,9 +47,9 @@ export class ViewPokemonService {
             types : [Type.GHOST, Type.DARK]
           },
           {
-            name :"Staraptor",
-            imgLink :"https://projectpokemon.org/images/normal-sprite/staraptor-f.gif",
-            types : [Type.NORMAL, Type.FLYING]
+            name :"Empoleon",
+            imgLink :"https://projectpokemon.org/images/normal-sprite/empoleon.gif",
+            types : [Type.WATER, Type.STEEL]
           },
       ];
   }
