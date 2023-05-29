@@ -3,9 +3,7 @@ import { Component, Input, Output, EventEmitter, OnInit, ViewChild } from '@angu
 import { ViewPokemonService } from './view-pokemon.service';
 import { Pokemon, Type } from '../../types/pokemon';
 
-
 import * as _ from 'lodash';
-
 
 
 @Component({
