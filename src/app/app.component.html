@@ -34,7 +34,7 @@
     <h5>
         Digite abaixo um número entre 1-898 - 
         que equivale ao número da pokédex de um 
-        determinado pokémon): 
+        determinado pokémon: 
     </h5>
 
     <input 
@@ -45,7 +45,25 @@
     />
     <Br />
     <Br />
+
+    <label for="in">Input de somente de leitura (readonly):</label>   
     <Br />
+    <input id="in" style="margin-top: 3%;" [value]="inputValue.value" readonly #elementRefVar />
+    <!-- #elementRefVar representa o elemento 'input' dentro do DOM -->
+
+    <Br />
+
+    <button
+         class="btn btn-info" 
+         (click)="closePokeView = !closePokeView"
+         style="margin-top: 7%;"
+    >
+               Toggle view pokemon...
+    </button>
+
+    
+    <Br />
+    <h2 style="margin-top: 3%;"> {{messageOfViewPokemonComponente}}</h2>
 
 
     <!-- $event sera a argumento q ira receber o valor passado por emit() na classe "ViewPokemonComponent"  -->
@@ -56,27 +74,15 @@
           <!-- Enquando ngIf ser true, o componente eh renderizado, senao, nao eh renderizado -->
     </app-view-pokemon>
 
-    <input style="margin-top: 3%;" [value]="inputValue.value" readonly #elementRefVar />
-    <!-- #elementRefVar representa o elemento 'input' dentro do DOM -->
-
-
-    <button
-         class="btn btn-info" 
-         (click)="closePokeView = !closePokeView"
-         style="margin-top: 7%;"
-    >
-               Toggle view pokemon...
-    </button>
-
-
-    <h2 style="margin-top: 3%;"> {{messageOfViewPokemonComponente}}</h2>
-
-
-    
+  
+  
+    <p> Escolha um tipo: </p>
     <div class="btn-group" role="group" aria-label="Basic example">
-        <button type="button" class="btn btn-primary">Left</button>
-        <button type="button" class="btn btn-primary">Middle</button>
-        <button type="button" class="btn btn-primary">Right</button>
+        <button type="button" class="btn btn-danger" [class.active]="">Fire</button>
+        <button type="button" class="btn btn-primary" [class.active]="">Water</button>
+        <button type="button" class="btn btn-warning" [class.active]="">Eletric</button>
     </div>
+
+
 
 </div>
