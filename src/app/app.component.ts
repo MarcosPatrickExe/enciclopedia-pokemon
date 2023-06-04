@@ -27,6 +27,7 @@ export class AppComponent implements OnInit, OnChanges, // DoCheck,
     cursos: string[]; //declarando o atributo
     pokemonUrlImage: string = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png";
     messageOfViewPokemonComponente :string ="";
+    typeSelected ?: string;
 
     //declarando e inicializando atributo
     title :string = "introducao-angular";

@@ -76,13 +76,19 @@
 
   
   
-    <p> Escolha um tipo: </p>
+    <p>Escolha um tipo: </p>
     <div class="btn-group" role="group" aria-label="Basic example">
-        <button type="button" class="btn btn-danger" [class.active]="">Fire</button>
-        <button type="button" class="btn btn-primary" [class.active]="">Water</button>
-        <button type="button" class="btn btn-warning" [class.active]="">Eletric</button>
+        <button type="button" class="btn btn-danger" [class.grow-padding]="typeSelected==='fire'" (click)="typeSelected='fire'">Fire</button>
+        <button type="button" class="btn btn-primary" [class.grow-padding]="typeSelected==='water'" (click)="typeSelected='water'">Water</button>
+        <button type="button" class="btn btn-warning" [class.grow-padding]="typeSelected==='eletric'" (click)="typeSelected='eletric'">Eletric</button>
     </div>
 
+    <div class="container" [ngSwitch]="typeSelected">
+        <p *ngSwitchCase="'fire'">Fogo</p>
+        <p *ngSwitchCase="'water'">Água</p>
+        <p *ngSwitchCase="'eletric'">Elétrico</p>
+        <p *ngSwitchDefault>Clique em um tipo acima...</p>
+    </div>
 
 
 </div>
