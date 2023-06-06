@@ -9,7 +9,8 @@ import {
     AfterViewInit, 
     AfterViewChecked,
     ViewChild, 
-    ElementRef } from '@angular/core';
+    ElementRef, 
+    TemplateRef} from '@angular/core';
 // importando o decorator "@Component"
 
  
@@ -39,6 +40,10 @@ export class AppComponent implements OnInit, OnChanges, // DoCheck,
     @ViewChild('elementRefVar') //fazendo referencia ao a variavel que armazena a referencia do elemento 'input' dentro do DOM
     valueInputField :ElementRef | null = null;
 
+/*
+    @ViewChild('templateRef')
+    templateReference :TemplateRef<string> | null = null;
+*/
 
     constructor(){
         this.cursos = ['Java', 'Python' ,'PHP', 'JavaScript'];

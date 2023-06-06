@@ -18,13 +18,18 @@
         </li>
     </ul>
 
+<!-- Ou tbm pode ser escrito com o uso do ng-template: -->
+    <ng-template ngFor let-nomeCurso let-count="index" [ngForOf]="cursos">
+        <h3> -> {{count}} Testando o "template" com o "ngFor"</h3>
+    </ng-template>
+<!--
 
     <Br />
 
     <h3> Renderizando componente "app-home-menu" logo abaixo: </h3>
     <app-home-menu></app-home-menu>
     <h3>============ Fim do componente "app-home-menu" ============</h3>
-
+-->
 </div>
 
 
@@ -61,11 +66,25 @@
                Toggle view pokemon...
     </button>
 
-    
+
     <Br />
     <h2 style="margin-top: 3%;"> {{messageOfViewPokemonComponente}}</h2>
 
 
+
+<!--  A diretiva ngIf usada abaixo:  
+        <div [ngIf]="!closePokeView" > 
+            Teste
+        </div>
+
+    Eh o mesmo que escrever:   -->
+    <ng-template [ngIf]="!closePokeView">
+        <h3> Testando o "ng-template" com "ngIf" como property-bind</h3>
+    </ng-template>
+<!--
+     Ou seja, o asterisco simplesmente representa um property-bind
+     por debaixo dos panos e aplica ele na tag "template" do Angular
+-->
     <!-- $event sera a argumento q ira receber o valor passado por emit() na classe "ViewPokemonComponent"  -->
     <app-view-pokemon 
           [urlImg]="pokemonUrlImage"
@@ -74,7 +93,8 @@
           <!-- Enquando ngIf ser true, o componente eh renderizado, senao, nao eh renderizado -->
     </app-view-pokemon>
 
-  
+
+
   
     <p>Escolha um tipo: </p>
     <div class="btn-group" role="group" aria-label="Basic example">
@@ -88,6 +108,23 @@
         <p *ngSwitchCase="'water'">Água</p>
         <p *ngSwitchCase="'eletric'">Elétrico</p>
         <p *ngSwitchDefault>Clique em um tipo acima...</p>
+    </div>
+
+
+<!-- Ou tbm pode ser escrito com o uso do ng-template: -->
+    <div class="container" [ngSwitch]="typeSelected">
+        <ng-template [ngSwitchCase]="'fire'">
+            <p>Fogo</p>
+        </ng-template>
+
+        <ng-template [ngSwitchCase]="'water'">
+            <p>Água</p>
+        </ng-template>
+
+        <!-- Com o 'ng-template' podemos usar o 'ngSwitchDefault' na mesma tag com o 'ng-template' -->
+        <ng-template [ngSwitchCase]="'eletric'" ngSwitchDefault >
+            <p>Elétrico</p>
+        </ng-template>
     </div>
 
 
