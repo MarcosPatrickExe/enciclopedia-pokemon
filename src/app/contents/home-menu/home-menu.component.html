@@ -95,6 +95,17 @@
         <!-- [class.<nome da classe que se deseja aplicar>]  e "CONDICAO PARA QUE A CLASSE SEJA APLICADA"-->
             </div>
     
+            <h1>
+                <i class="star"
+                    [ngClass]="{
+                        'star-half': classe.value === 'Celebi' ,
+                        'star-fill': classe.value !== 'Zapdos'
+                    }"
+                >
+                </i>
+            </h1>
+
+
             <!-- O class binding exige que vc utilize a palavra-chave "class" para que
                 vc possa adicionar uma determinada classe que sera declarada apos o ponto final.
                 Em seguida, vc deve adicionar uma condicao dentro das aspas para definir 
@@ -113,6 +124,14 @@
                 [class.alert-danger]= "classe.value === 'Moltres'"
                 > Moltres 
             </div>
+             <!--Ou entao:
+                <i class="glyphicon"
+                    [ngClass]="{
+                        'glyphicon-star-empty': !meuFavorito,
+                        'glyphicon-star': meuFavorito
+                    }"
+                ></i>
+             -->
             
     
             <!--UTILIZANDO O STYLE BINDING
