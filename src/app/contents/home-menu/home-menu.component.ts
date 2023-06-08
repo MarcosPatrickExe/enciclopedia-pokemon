@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HomeMenuService } from './home-menu.service';
 
+
 @Component({
   selector: 'app-home-menu',
   templateUrl: './home-menu.component.html',
