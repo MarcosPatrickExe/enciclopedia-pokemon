@@ -96,7 +96,7 @@
             </div>
     
             <h1>
-                <i  [ngClass]=" (classe.value === 'Celebi') ? 'stars': 'apple'"></i>
+                <i [ngClass]=" (classe.value === 'Celebi') ? 'stars': 'apple'"></i>
                Simbolo aqui
             </h1>
 
@@ -172,6 +172,13 @@
                 -->
                Click aqui!!
             </button>
+
+            <h1 [ngStyle]="{
+                'color': (true ? 'blue' :'black'),
+                'fontSize': (false ? '23px' :'50px')
+            }">
+                 Click aqui!!
+            </h1>
 
             <Br />
             <Br />
