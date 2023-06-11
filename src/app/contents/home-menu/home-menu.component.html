@@ -114,19 +114,31 @@
                 [class.alert-danger]= "classe.value === 'Moltres'"
                 > Moltres 
             </div>
-             <!--Ou entao:
-                <i class="glyphicon"
-                    [ngClass]="{
-                        'glyphicon-star-empty': !meuFavorito,
-                        'glyphicon-star': meuFavorito
-                    }"
-                ></i>
-             -->
             
-            <h1>
-                <i [ngClass]=" (classe.value === 'Celebi') ? 'stars': 'apple'"></i>
-                Simbolo aqui
-            </h1>
+
+            <div style="font-size: 65px;" 
+                    [style.color]=" (classe.value === 'Moltres' ? 'rgb(235, 17, 1)' : false) ||
+                                    (classe.value === 'Zapdos' ? 'rgb(219, 125, 2)' : false) ||
+                                    (classe.value === 'Articuno' ? 'rgb(4, 49, 145)' : false) ||
+                                    (classe.value === 'Celebi' ? 'rgb(3, 131, 24)' :'')
+            ">  
+                <i 
+                   [ngClass]="{
+                        'bi-fire': classe.value === 'Moltres',
+                        'bi-water': classe.value === 'Articuno',
+                        'bi-thunderbolt-fill': classe.value === 'Zapdos',
+                        'bi-tree-fill': classe.value === 'Celebi'
+                   }"
+                ></i>
+
+                {{classe.value}}
+            </div>  
+
+            
+            <h5 *ngIf="classe.value==='Celebi'">
+                <i [ngClass]=" (classe.value === 'Celebi') ? 'bi bi-6-square-fill': 'apple'"></i>
+                Simbolo com [ngClass] convecional
+            </h5>
     
             <!--UTILIZANDO O STYLE BINDING
                 Para usa-lo, basta escrever a palavra-chave "style" e logo depois, atraves do ponto,
@@ -140,7 +152,7 @@
             <!-- A INTERPOLACAO TBM EH UMA FORMA DE PROPERTY BIND ENTAO EH POSSIVEL UTILIZA-LA COMO CLASS BIND-->
             <div class="alert {{ classe.value }}" role="alert"> 
                 Cor escolhida a partir da interpolacao da variavel "classe", definida dentro 
-                do elemento de "select".
+                do elemento "select".
             </div>
     
         </div>
@@ -185,9 +197,10 @@
                 (click)="active = !active"
             >
             <!-- 
-                EH O EQUIVALENT AO SEGUINTE STYLE BIND:
+                EH O EQUIVALENTE AO SEGUINTE STYLE BIND:
                 <h1 [style.color]=" true ? 'blue' : 'black'"
                     [style.fontSize]=" false ? '13px' : '23px'"
+                    ....
                 >
                 </h1>
             -->

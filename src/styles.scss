@@ -6,6 +6,10 @@
 /*
 @import "./node_modules/bootstrap/dist/css/bootstrap.min.css";
 */
+@import "~bootstrap-icons/font/bootstrap-icons.scss";
+// o import acima eh o mesmo que:
+// @import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+
 
 *{
     margin: 0;
