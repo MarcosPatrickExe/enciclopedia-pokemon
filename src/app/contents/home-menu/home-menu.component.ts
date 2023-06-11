@@ -29,7 +29,10 @@ export class HomeMenuComponent {
     public valorSalvo : string = '';
     public isMouseOver : boolean = false;
     public name : string = 'write anything...';
+    active :boolean = false;
+    fontsize :number=20;
 
+    
     public person : any = {
         name : "fernanda",
         age : 18

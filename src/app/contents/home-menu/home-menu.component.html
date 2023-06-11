@@ -67,7 +67,7 @@
 
     <article>
         <Br />
-        <h3>============= UTILIZANDO CLASS E STYLE BINDING COM BOOTSTRAP ==============</h3>
+        <h3>==== UTILIZANDO CLASS E STYLE BINDING COM BOOTSTRAP ====</h3>
         <!-- CLASS E STYLE BINDING SAO UMA FORMA DE PROPERTY BIND, POREM, AS VARIAVEM SE ORIGINAM NAO MAIS DO COMPONENTE, E SIM DO CSS -->
 
         <div>
@@ -88,18 +88,13 @@
                 Cor selecionada: {{switchStyleClass(classe.value)}}
             </div>
 
-        <!--    ADICIONANDO UM CLASS BINDING NO ELEMENTO DIV: -->
+
+            <!--    ADICIONANDO UM CLASS BINDING NO ELEMENTO DIV: -->
             <div class="alert" role="alert"
                 [class.alert-success]= "classe.value === 'Celebi'"
                 > Celebi
         <!-- [class.<nome da classe que se deseja aplicar>]  e "CONDICAO PARA QUE A CLASSE SEJA APLICADA"-->
             </div>
-    
-            <h1>
-                <i [ngClass]=" (classe.value === 'Celebi') ? 'stars': 'apple'"></i>
-               Simbolo aqui
-            </h1>
-
 
             <!-- O class binding exige que vc utilize a palavra-chave "class" para que
                 vc possa adicionar uma determinada classe que sera declarada apos o ponto final.
@@ -128,6 +123,10 @@
                 ></i>
              -->
             
+            <h1>
+                <i [ngClass]=" (classe.value === 'Celebi') ? 'stars': 'apple'"></i>
+                Simbolo aqui
+            </h1>
     
             <!--UTILIZANDO O STYLE BINDING
                 Para usa-lo, basta escrever a palavra-chave "style" e logo depois, atraves do ponto,
@@ -173,12 +172,30 @@
                Click aqui!!
             </button>
 
-            <h1 [ngStyle]="{
-                'color': (true ? 'blue' :'black'),
-                'fontSize': (false ? '23px' :'50px')
-            }">
-                 Click aqui!!
-            </h1>
+            <br />
+            <br />
+
+            <button [ngStyle]="{
+                    'color': (active ? 'white' :'black'),
+                    'background-color': (active ? 'blue' : 'gray'),
+                    'fontSize': (active ? fontsize+'px' :'13px'),
+                    'fontWeight': (active ? 'bold' : 'normal'),
+                    'padding': (active ? '18px' : '8px' )
+                }"
+                (click)="active = !active"
+            >
+            <!-- 
+                EH O EQUIVALENT AO SEGUINTE STYLE BIND:
+                <h1 [style.color]=" true ? 'blue' : 'black'"
+                    [style.fontSize]=" false ? '13px' : '23px'"
+                >
+                </h1>
+            -->
+                 Testando o ngStyle como property bind !!
+            </button>
+
+            <p>Digite um numero para mudar o tamanho da fonte: </p>
+            <input type="text" [(ngModel)]="fontsize" />
 
             <Br />
             <Br />
