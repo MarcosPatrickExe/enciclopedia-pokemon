@@ -25,7 +25,7 @@ export class HeaderMenuComponent { //implements OnInit
 
   
   resizeEvent(event :any ){
-      console.log( event.constructor );  
+      console.log("window:resize event oject: "+event.constructor );  
 
       if(event.target.innerWidth > 500 && this.menuDropDownIsOpen ){
           this.menuDropDownIsOpen = false;

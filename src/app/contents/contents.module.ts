@@ -5,7 +5,7 @@ import { FormsModule } from '@angular/forms';
 
 // COMPONENTES
 import { HomeMenuComponent } from './home-menu/home-menu.component';
-import { ComponenteTexto } from '../componente-texto/componente-texto.component';
+import { ComponenteTextoComponent } from '../componente-texto/componente-texto.component';
 
 // SERVICES
 import { HomeMenuService } from './home-menu/home-menu.service';
@@ -14,7 +14,7 @@ import { ViewPokemonComponent } from './view-pokemon/view-pokemon.component';
 @NgModule({
   declarations: [
     HomeMenuComponent,
-    ComponenteTexto, /*tbm eh possivel utilizar um componente que esteja em outra pasta. Mas isso nao eh uma boa pratica! */
+    ComponenteTextoComponent, /*tbm eh possivel utilizar um componente que esteja em outra pasta. Mas isso nao eh uma boa pratica! */
     ViewPokemonComponent
   ],
   imports: [
@@ -23,7 +23,8 @@ import { ViewPokemonComponent } from './view-pokemon/view-pokemon.component';
   ],
   exports: [
     HomeMenuComponent, //exportando o componente para que seja utilzado no modulo raiz (ou app.module)
-    ViewPokemonComponent
+    ViewPokemonComponent,
+    ComponenteTextoComponent
   ],
   providers: [
     HomeMenuService
