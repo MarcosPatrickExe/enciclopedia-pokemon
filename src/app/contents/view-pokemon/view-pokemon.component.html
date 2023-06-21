@@ -38,15 +38,18 @@
     </div>
 
     <!-- TESTANDO O NG CONTENT -->
-    <div class="panel panel-default">
-        <div class="panel-heading">
-            <ng-content select=".headd"></ng-content>
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">
+                <ng-content select=".headd"></ng-content>
+            </h4>
+            <p class="card-text">
+                <ng-content select=".bodyy"></ng-content>
+            </p>
+            <ng-content></ng-content>
+             <!-- Renderizando o conteudo colocado dentro do seletor 'app-view-pokemon' no arquivo 'app.component.html'-->
         </div>
-        <div class="panel-body">
-            <ng-content select=".bodyy"></ng-content>
-        </div>
-        <ng-content></ng-content>
-         <!-- Renderizando o conteudo colocado dentro do seletor 'app-view-pokemon' no arquivo 'app.component.html'-->
+       
     </div>
 
 
