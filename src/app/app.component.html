@@ -20,7 +20,7 @@
 
 <!-- Ou tbm pode ser escrito com o uso do ng-template: -->
     <ng-template ngFor let-nomeCurso let-count="index" [ngForOf]="cursos">
-        <h3> -> {{count}} Testando o "template" com o "ngFor"</h3>
+        <h3> -> {{count}} Testando o "ng-template" com o "ngFor"</h3>
     </ng-template>
 <!--
 
@@ -92,7 +92,15 @@
           [urlImg]="pokemonUrlImage"
           (imgHover)="pokemonFocused( $event )"
           *ngIf="!closePokeView">
-                 Passando essa frase como valor do ng-content
+                <div class="headd">
+                    Passando essa frase como valor do ng-content, mas com a classe '.headd'
+                </div>
+                <div class="bodyy">
+                    Passando essa frase como valor do ng-content, com classe '.bodyy'
+                </div>
+                
+                <app-componente-texto></app-componente-texto>
+                 
           <!-- Enquando ngIf ser true, o componente eh renderizado, senao, nao eh renderizado -->
     </app-view-pokemon>
 
