@@ -43,10 +43,10 @@ export class HomeMenuComponent {
     // eh como se fizesse o seguinte:
     // this.servico = servico;
     constructor( private servico : HomeMenuService ) { 
-     // let buscarPokemons = new HomeMenuService();
-      // ao inves de instanciar um servico manualmente como em "this.nomePortal = new HomeMenuService()", 
-      // pode-se chama-lo ou instancia-lo automaticamente 
-      // utilizando injecao de dependencia com o decorator "@injectable".... 
+    // let buscarPokemons = new HomeMenuService();
+    // ao inves de instanciar um servico manualmente como em "this.nomePortal = new HomeMenuService()", 
+    // pode-se chama-lo ou instancia-lo automaticamente 
+    // utilizando injecao de dependencia com o decorator "@injectable".... 
         
       this.pokemons = servico.getPokemons(); // acessando o servico via injecao de dependencia
     }
