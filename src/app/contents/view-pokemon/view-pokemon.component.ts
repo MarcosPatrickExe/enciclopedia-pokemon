@@ -24,7 +24,7 @@ export class ViewPokemonComponent implements OnInit{ //implements OnInit {
 
 
     constructor( private pokeService :ViewPokemonService ){
-        this.pokemonList = pokeService.pokemons;
+        this.pokemonList = pokeService.pokemons; // acessando propriedade ja inicializada pelo construtor da propria classe ViewPokemonService
 
         this.urlImage = "";
     }
