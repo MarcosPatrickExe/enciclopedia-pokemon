@@ -23,7 +23,7 @@ export class HeaderMenuComponent { //implements OnInit
     //  this.styleClassOpen = this.menuDropDownIsOpen ? "open" : "";
   }
 
-  
+  // evento acionado toda vez que a janela é redimensionada
   resizeEvent(event :any ){
       console.log("window:resize event oject: "+event.constructor );  
 
