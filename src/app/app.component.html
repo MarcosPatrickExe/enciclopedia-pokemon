@@ -55,10 +55,10 @@
     <!-- '#inputValue' armazena o valor do campo input -->
     
 
-    <label for="in">Input de somente de leitura (readonly):</label>   
+    <label ngFor="in">Input de somente de leitura (readonly):</label>   
     <Br />
     <input id="in" style="margin-top: 3%;" [value]="inputValue.value" readonly #elementRefVar />
-    <!-- #elementRefVar representa o elemento 'input' dentro do DOM -->
+    <!-- #elementRefVar representa o elemento 'input' dentro do DOM, que eh acessado atraves do decorator @ViewChild((blur)="" na classe "AppComponent"-->
 
     <Br />
 

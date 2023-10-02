@@ -37,7 +37,7 @@ export class AppComponent implements OnInit, OnChanges, // DoCheck,
     public closePokeView :boolean= false;
 
    
-    @ViewChild('elementRefVar') //fazendo referencia ao a variavel que armazena a referencia do elemento 'input' dentro do DOM
+    @ViewChild('elementRefVar') //fazendo referencia a variavel que armazena a referencia do elemento 'input' dentro do DOM
     valueInputField :ElementRef | null = null;
 
 /*
@@ -91,9 +91,10 @@ export class AppComponent implements OnInit, OnChanges, // DoCheck,
 
     ngAfterViewInit() :void {
         this.log("ngAfterViewInit");
+        console.log("no elemento atual chamado ngAfterViewInit");
     }
 
-    private log(hook: string):void {
+    private log(hook: string) :void {
         console.log(hook);
     }
 }
