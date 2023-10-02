@@ -21,8 +21,8 @@ enum Type {
 }
 
 interface Pokemon{
-    name :string;
-    imgLink :string;
+    name :string
+    imgLink :string
     types: Type[]
 }
 
