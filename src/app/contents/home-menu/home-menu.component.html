@@ -51,10 +51,14 @@
 
         <img src="{{ urlImage }}" alt="teste" title="teste" />
         <Br>
-        <img [src]="urlImage" alt="teste" title="teste" />
+        <!--
+            <img [src]="urlImage" alt="teste" title="teste" />
+        -->
         <!-- UTILIZANDO PROPERTY BIND NO ATRIBUTO 'SRC' ATRAVES DA SINTAXE: '[src]' -->
         <!-- OU: -->
-        <img bind-src="urlImage" alt="teste" title="teste" />
+        <!--
+            <img bind-src="urlImage" alt="teste" title="teste" />
+        -->
 
         <!-- QUANDO NAO EXISTIR UMA PROPRIEDADE PARA UMA TAG, USE 'attr' PARA ATRIBUILA E DEPOIS USE O PROPERTY BIND PARA DEFINIR SEU VALOR -->
         <p [attr.colspan]="valorAtual"></p>
@@ -121,7 +125,7 @@
                                     (classe.value === 'Zapdos' ? 'rgb(219, 125, 2)' : false) ||
                                     (classe.value === 'Articuno' ? 'rgb(4, 49, 145)' : false) ||
                                     (classe.value === 'Celebi' ? 'rgb(3, 131, 24)' :'')
-            ">  
+            "> 
                 <i 
                    [ngClass]="{
                         'bi-fire': classe.value === 'Moltres',
