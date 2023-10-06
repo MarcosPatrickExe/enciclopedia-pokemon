@@ -8,8 +8,8 @@ import { HomeMenuService } from './home-menu.service';
     styleUrls: ['./home-menu.component.scss']
 })
 /* 
-    ASSIM COMO eh POSSIVEL FAZER O TEMPLATE LITERALS COM O 
-    DECORATOR "templateUrl" => "template", TAMBeM eh POSSIVEL FAZER O MESMO
+    ASSIM COMO EH POSSIVEL FAZER O TEMPLATE LITERALS COM O 
+    DECORATOR "templateUrl" => "template", TAMBEM EH POSSIVEL FAZER O MESMO
     COM O "styleUrls", COMO LOGO ABAIXO: 
 
     styles:[`
