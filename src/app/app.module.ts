@@ -9,13 +9,15 @@ import { AppComponent } from './app.component';
 import { HeaderMenuComponent } from './header-menu/header-menu.component';
 
 import { HeaderMenuService } from './header-menu/header-menu.service';
+import { ColorDirectiveDirective } from './shared/color-directive.directive';
 
 
 @NgModule({
   declarations: [ //Area destinada somente aos componentes, diretivas e pipes que irao receber os seletores dos componentes do modulo importado chamado 'ContentsModule'
      AppComponent,
    //  ComponenteTexto,
-     HeaderMenuComponent
+     HeaderMenuComponent,
+   ColorDirectiveDirective
   ],
   imports: [ // adi
      BrowserModule, //somnente o modulo raiz do projeto importa esse modulo

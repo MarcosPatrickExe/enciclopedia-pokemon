@@ -36,7 +36,7 @@ export class AppComponent implements OnInit, OnChanges, // DoCheck,
     nomeSite: string = 'http://loiane.training';  //declarando e inicializando atributo
     public closePokeView :boolean= false;
 
-   
+    // testando esse feature
     @ViewChild('elementRefVar') //fazendo referencia a variavel que armazena a referencia do elemento 'input' dentro do DOM
     valueInputField :ElementRef | null = null;
 
