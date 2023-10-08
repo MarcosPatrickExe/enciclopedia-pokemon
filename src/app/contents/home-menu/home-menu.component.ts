@@ -80,7 +80,7 @@ export class HomeMenuComponent {
 
 
     inputClick( evento: KeyboardEvent){ // AO TIPAR O OBJETO DO EVENTO RECEBIDO EH ATIVADO A FERRAMENTA DE INTELI SENSE QUE PODERA EXIBIR AS PROPRIEDADES DESSE OBJETO
-      console.log( 
+      console.log(
         (<HTMLInputElement> evento.target) // CONVERTENDO UM OBJETO DO TIPO "EventTarget" 
               // para o tipo da interface "<HTMLInputElement>" 
               // para assim, poder acessar o atributo 'value'
