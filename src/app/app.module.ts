@@ -17,7 +17,7 @@ import { ColorDirectiveDirective } from './shared/color-directive.directive';
      AppComponent,
    //  ComponenteTexto,
      HeaderMenuComponent,
-   ColorDirectiveDirective
+     ColorDirectiveDirective
   ],
   imports: [ // adi
      BrowserModule, //somnente o modulo raiz do projeto importa esse modulo
