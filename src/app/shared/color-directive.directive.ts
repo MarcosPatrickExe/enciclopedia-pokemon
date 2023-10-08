@@ -7,7 +7,11 @@ import { Directive, ElementRef, Renderer2 } from '@angular/core';
 })
 /*
   eh possivel aplicar diretivas para alguns componentes HTML especificos, como o 'p', 'h1', e em 
-  outros componentes personalizaveis que criamos via codigo. 
+  outros componentes personalizaveis que criamos via codigo. Ex:
+
+  selector: 'p[appColorDirective]' ou
+  selector: 'h1[appColorDirective]' ou
+  selector: 'div[appColorDirective]'
 */
 
 
