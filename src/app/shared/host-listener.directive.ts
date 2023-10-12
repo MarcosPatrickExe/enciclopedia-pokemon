@@ -8,14 +8,23 @@ import { Directive, HostListener, ElementRef, Renderer2} from '@angular/core';
 export class HostListenerDirective {
 
 
-  @HostListener('mouseenter', ['isDragged']) 
+  @HostListener('mouseout', ['isDragged']) 
   mouseDragOverDetect( isDrag :string) :void{
-      alert("Host Listener detected a mouse dragged over!!!!  Valor do parametro recebido: "+isDrag);
+      alert("Host Listener detected a mouse dragged out!!!!  Valor do parametro recebido: "+isDrag);
 
       this._rend.setProperty(
-         this._elemRef,
-         'display','block'
+          this._elemRef,
+          'display','none'
       );
+  }
+
+  @HostListener('click') mouseClick(){
+    alert("Host Listener detected a mouse click over!");
+
+    this._rend.setProperty(
+          this._elemRef,
+          'display','block'
+    );
   }
 
 
