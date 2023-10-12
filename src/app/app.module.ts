@@ -10,6 +10,7 @@ import { HeaderMenuComponent } from './header-menu/header-menu.component';
 
 import { HeaderMenuService } from './header-menu/header-menu.service';
 import { ColorDirectiveDirective } from './shared/color-directive.directive';
+import { HostListenerDirective } from './shared/host-listener.directive';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { ColorDirectiveDirective } from './shared/color-directive.directive';
      AppComponent,
    //  ComponenteTexto,
      HeaderMenuComponent,
-     ColorDirectiveDirective
+     ColorDirectiveDirective,
+     HostListenerDirective
   ],
   imports: [ // adi
      BrowserModule, //somnente o modulo raiz do projeto importa esse modulo
