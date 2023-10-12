@@ -108,7 +108,8 @@
 
 
 
-  
+    <p><strong>Usando diretivas-padrao com *ngSwitch, *ngSwitchCase, *ngSwitchDefault:  </strong></p>
+    
     <p>Escolha um tipo: </p>
     <div class="btn-group" role="group" aria-label="Basic example">
         <button type="button" class="btn btn-danger" [class.grow-padding]="typeSelected==='fire'" (click)="typeSelected='fire'">Fire</button>
@@ -116,6 +117,8 @@
         <button type="button" class="btn btn-warning" [class.grow-padding]="typeSelected==='eletric'" (click)="typeSelected='eletric'">Eletric</button>
     </div>
 
+
+    
     <div class="container" [ngSwitch]="typeSelected">
         <p *ngSwitchCase="'fire'">Fogo</p>
         <p *ngSwitchCase="'water'">Água</p>
@@ -123,7 +126,9 @@
         <p *ngSwitchDefault>Clique em um tipo acima...</p>
     </div>
 
+    <Br />
 
+    <p><strong>Usando as diretivas da familia 'switch', porem, usando 'ng-template' de acordo com o valor selecionado no switch anterior </strong></p>
 <!-- Ou tbm pode ser escrito com o uso do ng-template: -->
     <div class="container" [ngSwitch]="typeSelected">
         <ng-template [ngSwitchCase]="'fire'">
