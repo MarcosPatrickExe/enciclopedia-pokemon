@@ -30,7 +30,7 @@ export class HomeMenuComponent {
     public isMouseOver : boolean = false;
     public name : string = 'write anything...';
     active :boolean = false;
-    fontsize :number=20;
+    fontsize :number = 20;
 
     
     public person : any = {

@@ -8,7 +8,7 @@ import { Directive, HostListener, ElementRef, Renderer2} from '@angular/core';
 export class HostListenerDirective {
 
 
-  @HostListener('mouseout', ['isDragged']) 
+  @HostListener('mouseout', ['isDragged'] )
   mouseDragOverDetect( isDrag :string) :void{
       alert("Host Listener detected a mouse dragged out!!!!  Valor do parametro recebido: "+isDrag);
 
@@ -18,6 +18,7 @@ export class HostListenerDirective {
       );
   }
 
+  // outro metodo de definir o HostListener eh definindo o mesmo afrente da assinatura do metodo, como abaixo:
   @HostListener('click') mouseClick(){
     alert("Host Listener detected a mouse click over!");
 
