@@ -17,7 +17,7 @@ import { Directive, ElementRef, Renderer2 } from '@angular/core';
 
 export class ColorDirectiveDirective {
 
-            // inserindo injecao de dependencia com o ElementRef
+            // realizando a injecao de dependencia com o ElementRef
   constructor( 
       private _elemRef : ElementRef,
       private _rend: Renderer2 ) {
@@ -27,7 +27,7 @@ export class ColorDirectiveDirective {
      //  console.log("elementRef object: "+_elemRef);
 
      // _elemRef.nativeElement.style.backgroundColor = 'yellow';
-     // no entanto o metodo acima oferece riscos a seguranca contra ataques web. Para evitar isso, usa-se o Renderer:
+     // no entanto o metodo acima oferece riscos para a seguranca, facilitando contra ataques web. Para evitar isso, usa-se o Renderer:
 
       this._rend.setStyle(_elemRef.nativeElement, "background-color", "yellow");
       //setando style direto num elemento DOM que use dessa diretiva

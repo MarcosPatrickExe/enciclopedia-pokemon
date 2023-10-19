@@ -12,9 +12,10 @@ export class HostListenerDirective {
   mouseDragOverDetect( isDrag :string) :void{
       alert("Host Listener detected a mouse dragged out!!!!  Valor do parametro recebido: "+isDrag);
 
-      this._rend.setProperty(
+      this._rend.setStyle(
           this._elemRef,
-          'display','none'
+          'color',  // property
+          'blue' // color
       );
   }
 
