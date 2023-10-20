@@ -55,7 +55,7 @@ export class AppComponent implements OnInit, OnChanges, // DoCheck,
     }
 
     // esse metodo so eh executado quando o componente seletor "view-pokemon" emite um evento do tipo "imgHover"
-    public pokemonFocused( evento : any ) :void{
+    public pokemonFocused( evento :any) :void{
         this.messageOfViewPokemonComponente = (Object.getOwnPropertyNames(evento).length ==1) ? evento.message : evento;
     }
 
@@ -94,7 +94,7 @@ export class AppComponent implements OnInit, OnChanges, // DoCheck,
         console.log("no elemento atual chamado ngAfterViewInit");
     }
 
-    private log(hook: string) :void {
-        console.log(hook);
+    private log( currentHook: string) :void {
+        console.log( currentHook );
     }
 }
