@@ -77,9 +77,10 @@ export class HomeMenuComponent {
     botaoClicado(){
         alert('botao clicado!!');
     }
+    
 
-
-    inputClick( evento: KeyboardEvent){ // AO TIPAR O OBJETO DO EVENTO RECEBIDO EH ATIVADO A FERRAMENTA DE INTELI SENSE QUE PODERA EXIBIR AS PROPRIEDADES DESSE OBJETO
+ // AO TIPAR O OBJETO DO EVENTO RECEBIDO EH ATIVADO A FERRAMENTA DE INTELI SENSE QUE PODERA EXIBIR AS PROPRIEDADES DESSE OBJETO
+    inputClick( evento: KeyboardEvent){
       console.log(
         (<HTMLInputElement> evento.target) // CONVERTENDO UM OBJETO DO TIPO "EventTarget" 
               // para o tipo da interface "<HTMLInputElement>" 

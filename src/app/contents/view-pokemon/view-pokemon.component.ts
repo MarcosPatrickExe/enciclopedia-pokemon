@@ -43,7 +43,7 @@ export class ViewPokemonComponent implements OnInit{ //implements OnInit {
 
 
     // eslint-disable-next-line @angular-eslint/no-output-rename
-    @Output('imgHover') 
+    @Output('imgHover')
     imageHovered :any = new EventEmitter();
     // O PARÂMETRO PASSADO PODE SER OPCIONAL, E DEVE SER UTILIZADO QUANDO
     // SE QUER SOMENTE ADICIONAR UM "APELIDO" PARA A VARIAVEL INTERNA 

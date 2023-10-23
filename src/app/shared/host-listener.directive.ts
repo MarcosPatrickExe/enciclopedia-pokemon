@@ -10,8 +10,7 @@ export class HostListenerDirective {
 
   @HostListener('mouseout', ['isDragged'] )
   mouseDragOverDetect( isDrag :string) :void{
-      alert("Host Listener detected a mouse dragged out!!!!  Valor do parametro recebido: "+isDrag);
-
+    
       this._rend.setStyle(
            this._elemRef.nativeElement,
            'background-color',  // property
@@ -28,6 +27,13 @@ export class HostListenerDirective {
   // outro metodo de definir o HostListener eh definindo o mesmo afrente da assinatura do metodo, como abaixo:
   @HostListener('click') mouseClick() :void{
       alert("Host Listener detected a mouse click over!");
+
+      this._rend.setStyle(
+          this._elemRef.nativeElement,
+          'background-color',
+          ''
+      );
+
 
       this._rend.setProperty(
            this._elemRef.nativeElement, // utilizando o "_elementRef" que foi instanciado e enviado para o construtor dessa classe
