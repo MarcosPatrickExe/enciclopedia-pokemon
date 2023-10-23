@@ -91,10 +91,9 @@ export class AppComponent implements OnInit, OnChanges, // DoCheck,
 
     ngAfterViewInit() :void {
         this.log("ngAfterViewInit");
-        console.log("no elemento atual chamado ngAfterViewInit");
     }
 
     private log( currentHook: string) :void {
-        console.log( currentHook );
+        console.log("No elemento atual chamado: " +currentHook );
     }
 }

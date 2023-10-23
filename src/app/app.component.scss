@@ -10,7 +10,7 @@ $colorContainer: rgba(255, 255, 255, 0.89);
     transition-duration: .5s;
 }
 
-.text:hover{
+.text :hover {
     transform: translate(0%, 50%);
     opacity: 0.1;
 }
@@ -28,7 +28,7 @@ $colorContainer: rgba(255, 255, 255, 0.89);
     padding: 4% 3%;
 }
 
-.main-content2{
+.main-content2 {
     position: relative;
     margin: 5% 10vw;
     width: auto;
@@ -45,6 +45,6 @@ h1, h2, h3{
     color: rgb(78, 78, 78);;
 }
 
-.grow-padding{
+.grow-padding {
     border: 4px solid rgb(110, 110, 110);
 }

@@ -22,7 +22,7 @@ export class HostListenerDirective {
            this._elemRef.nativeElement,
            'display',
            'block'
-      )
+      );
   }
 
   // outro metodo de definir o HostListener eh definindo o mesmo afrente da assinatura do metodo, como abaixo:
