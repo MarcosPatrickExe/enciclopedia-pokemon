@@ -30,7 +30,7 @@ export class HostListenerDirective {
       alert("Host Listener detected a mouse click over!");
 
       this._rend.setProperty(
-           this._elemRef.nativeElement,
+           this._elemRef.nativeElement, // utilizando o "_elementRef" que foi instanciado e enviado para o construtor dessa classe
           'display','none'
       );
   }

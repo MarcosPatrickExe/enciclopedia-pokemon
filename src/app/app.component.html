@@ -58,7 +58,10 @@
     <label ngFor="in">Input de somente de leitura (readonly):</label>   
     <Br />
     <input id="in" style="margin-top: 3%;" [value]="inputValue.value" readonly #elementRefVar />
-    <!-- #elementRefVar representa o elemento 'input' dentro do DOM, que eh acessado atraves do decorator @ViewChild((blur)="" na classe "AppComponent"-->
+                                                                         <!-- #elementRefVar
+                                                                             representa o elemento 'input' dentro
+                                                                             do DOM, que eh acessado atraves do decorator 
+                                                                             @ViewChild((blur)="" na classe "AppComponent"  -->
 
     <Br />
 
@@ -67,7 +70,7 @@
          (click)="closePokeView = !closePokeView"
          style="margin-top: 7%;"
     >
-               Toggle view pokemon...
+               Click here to Toggle view pokemon...
     </button>
 
 
