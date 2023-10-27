@@ -29,6 +29,16 @@ export class HostListenerDirective {
       );
   }
 
+  @HostListener('mouseenter') onMouseEnter(){
+       this._rend.setStyle(
+            this._elemRef.nativeElement,
+            'background-color',
+            'none'
+       );
+  }
+
+
+
   // outro metodo de definir o HostListener eh definindo o mesmo afrente da assinatura do metodo, como abaixo:
   @HostListener('click') mouseClick() :void{
       alert("Host Listener detected a mouse click over!");
