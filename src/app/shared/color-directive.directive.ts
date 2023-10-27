@@ -28,6 +28,7 @@ export class ColorDirectiveDirective {
       // _elemRef.nativeElement.style.backgroundColor = 'yellow';
       // no entanto o metodo acima oferece riscos para a seguranca, facilitando contra ataques web. Para evitar isso, usa-se o Renderer:
 
+        console.log(_elemRef);
         this._rend.setStyle(_elemRef.nativeElement, "background-color", "yellow");
         //setando style direto num elemento DOM que use dessa diretiva
    }

@@ -7,6 +7,11 @@ import { Directive, HostListener, ElementRef, Renderer2} from '@angular/core';
 })
 export class HostListenerDirective {
 
+  constructor(
+      private _elemRef: ElementRef,
+      private _rend :Renderer2
+  ){ }
+
 
   @HostListener('mouseout', ['isDragged'] )
   mouseDragOverDetect( isDrag :string) :void{
@@ -40,12 +45,6 @@ export class HostListenerDirective {
           'display','none'
       );
   }
-
-
-  constructor(
-      private _elemRef: ElementRef,
-      private _rend :Renderer2
-  ){ }
 }
 
 /* OBSERVACAO!!
