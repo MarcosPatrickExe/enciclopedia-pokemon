@@ -13,6 +13,8 @@ export class HostListenerDirective {
   ){ }
 
 
+  // o 'HostListener' associa qualquer tipo de evento com um método que, 
+  // por sua vez eh associado à elemento html ao qual essa diretiva esteja atreladsa
   @HostListener('mouseout', ['isDragged'] )
   mouseDragOverDetect( isDrag :string) :void{
     
@@ -33,7 +35,7 @@ export class HostListenerDirective {
        this._rend.setStyle(
             this._elemRef.nativeElement,
             'background-color',
-            'none'
+            'red'
        );
   }
 
