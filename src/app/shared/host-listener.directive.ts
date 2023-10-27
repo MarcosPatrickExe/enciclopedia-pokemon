@@ -47,3 +47,14 @@ export class HostListenerDirective {
       private _rend :Renderer2
   ){ }
 }
+
+/* OBSERVACAO!!
+
+AS DIRETIVAS PADROES DO ANGULAR PODEM SER SEPARADAS EM DOIS GRUPOS:
+
+ESTRUTURAIS:
+*NgFor, *NgIf e *NgSwitch
+ 
+ATRIBUTOS:
+NgClass e NgStyle
+*/
