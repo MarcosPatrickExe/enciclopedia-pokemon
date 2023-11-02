@@ -1,4 +1,4 @@
-import { Directive, HostListener, ElementRef, Renderer2} from '@angular/core';
+import { Directive, HostListener, HostBinding, ElementRef, Renderer2} from '@angular/core';
 // O 'HostListener' permite 'escutar' um elemento HTML ao qual essa diretiva esta atrelada
 
 
@@ -57,6 +57,9 @@ export class HostListenerDirective {
           'display','none'
       );
   }
+
+    @HostBinding("style.background-color")
+    backgroundColor?: string;
 }
 
 /* OBSERVACAO!!

@@ -14,7 +14,7 @@ import { Directive, ElementRef, Renderer2 } from '@angular/core';
   selector: 'div[appColorDirective]'
 */
 
-export class ColorDirectiveDirective {
+export class ColorDirectiveDirective { 
 
             // realizando a injecao de dependencia com o ElementRef
   constructor( 
