@@ -47,11 +47,18 @@ export class HostListenerDirective {
 
       this.backgroundColor = "gray";
   }
+  
+  // caso seja necessario realizar a manipulacao dovalor do 'backgroundColor', use o metodo abaixo ao inves da propriedade acima
+ /*
+  @HostListener('style.backgroundColor') get getColor(){
+      return this.backgroundColor;
+  }
+*/
 
 
   // esse decorator permite fazer a associacao entre a propriedade da classe e o atributo CSS
   @HostBinding("style.backgroundColor")
-  backgroundColor?: string;
+  private backgroundColor?: string;
 }
 
 /* OBSERVACAO!!
