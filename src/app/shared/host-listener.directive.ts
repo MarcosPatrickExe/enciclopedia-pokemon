@@ -58,6 +58,7 @@ export class HostListenerDirective {
       );
   }
 
+    // esse decorator permite fazer a associacao entre a propriedade da classe e o atributo CSS
     @HostBinding("style.background-color")
     backgroundColor?: string;
 }
