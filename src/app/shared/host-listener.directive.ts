@@ -33,7 +33,7 @@ export class HostListenerDirective {
 
   @HostListener('mouseenter') onMouseEnter(){
        this._rend.setStyle(
-            this._elemRef.nativeElement,
+            this._elemRef.nativeElement, // utilizando o "_elementRef" que foi instanciado e enviado para o construtor dessa classe
             'background-color',
             'red'
        );
@@ -45,22 +45,13 @@ export class HostListenerDirective {
   @HostListener('click') mouseClick() :void{
       alert("Host Listener detected a mouse click over!");
 
-      this._rend.setStyle(
-          this._elemRef.nativeElement,
-          'background-color',
-          ''
-      );
-
-
-      this._rend.setProperty(
-           this._elemRef.nativeElement, // utilizando o "_elementRef" que foi instanciado e enviado para o construtor dessa classe
-          'display','none'
-      );
+      this.backgroundColor = "gray";
   }
 
-    // esse decorator permite fazer a associacao entre a propriedade da classe e o atributo CSS
-    @HostBinding("style.background-color")
-    backgroundColor?: string;
+
+  // esse decorator permite fazer a associacao entre a propriedade da classe e o atributo CSS
+  @HostBinding("style.backgroundColor")
+  backgroundColor?: string;
 }
 
 /* OBSERVACAO!!
