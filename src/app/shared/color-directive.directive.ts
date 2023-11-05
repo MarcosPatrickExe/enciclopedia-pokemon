@@ -34,15 +34,17 @@ export class ColorDirectiveDirective {
    }
 
 
-
   // esse decorator permite fazer a associacao entre a propriedade essa 
   // propriedade "backgroundColor" da classe com o atributo CSS da tag html 
   // hospedeira dessa diretiva
   @HostBinding("style.backgroundColor")
   private backgroundColor?: string;
 
+
   private readonly defaultColor = 'gray';
   @Input() public highLightColor = null;
+
+
 
   @HostListener('mouseenter') mouseEnterr() :void{
       this.backgroundColor = "skyblue";
@@ -56,7 +58,7 @@ export class ColorDirectiveDirective {
   @HostBinding('style.backgroundColor') get getColor(){
       return this.backgroundColor;
   }
-
+  
 
   ngOnInit(){
       this.backgroundColor = this.defaultColor;
