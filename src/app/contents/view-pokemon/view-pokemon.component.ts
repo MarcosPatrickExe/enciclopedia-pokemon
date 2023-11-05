@@ -25,7 +25,6 @@ export class ViewPokemonComponent implements OnInit{ //implements OnInit {
 
     constructor( private pokeService :ViewPokemonService ){
         this.pokemonList = pokeService.pokemons; // acessando propriedade ja inicializada pelo construtor da propria classe ViewPokemonService
-
         this.urlImage = "";
     }
 
@@ -36,7 +35,7 @@ export class ViewPokemonComponent implements OnInit{ //implements OnInit {
     urlImage : string; // valor inicial (nao lido)
     // O PARÂMETRO PASSADO PODE SER OPCIONAL, E DEVE SER UTILIZADO QUANDO
     // SE QUER SOMENTE ADICIONAR UM "APELIDO" PARA A VARIAVEL INTERNA 
-    // DA CLASSE, COMO O "urkImage" QUE TEM APELIDO "dexN", E QUE ATRAVES
+    // DA CLASSE, COMO O "urlImage" QUE TEM APELIDO "dexN", E QUE ATRAVES
     // DESSE APELIDO, ELE PODERA SER VISTO PELO COMPONENTE Q CHAMOU ESTE 
     // COMPONENTE, NO CASO, O "app.component.ts"
 
