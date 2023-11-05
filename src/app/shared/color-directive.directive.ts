@@ -41,15 +41,24 @@ export class ColorDirectiveDirective {
   @HostBinding("style.backgroundColor")
   private backgroundColor?: string;
 
+  private readonly defaultColor = 'gray';
 
-  // outro metodo de definir o HostListener eh definindo o mesmo afrente da assinatura do metodo, como abaixo:
-  @HostListener('click') mouseClick() :void{
-      alert("Host Listener detected a mouse click over!");
+
+  @HostListener('mouseenter') mouseEnterr() :void{
+      this.backgroundColor = "skyblue";
+  }
+
+  @HostListener('mouseleave') mouseLeavee() :void{
       this.backgroundColor = "gray";
   }
 
   // caso seja necessario realizar a manipulacao do valor do 'backgroundColor', use o metodo abaixo ao inves da propriedade acima
   @HostBinding('style.backgroundColor') get getColor(){
       return this.backgroundColor;
+  }
+
+
+  ngOnInit(){
+      this.backgroundColor = 
   }
 }
