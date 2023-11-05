@@ -1,4 +1,4 @@
-import { Directive, ElementRef, Renderer2 } from '@angular/core';
+import { Directive, ElementRef, Renderer2, HostBinding, HostListener } from '@angular/core';
 
 //ElementRef eh uma classe q representa a ref de qualquer elemento ou tag html no DOM
 
@@ -14,7 +14,7 @@ import { Directive, ElementRef, Renderer2 } from '@angular/core';
   selector: 'div[appColorDirective]'
 */
 
-export class ColorDirectiveDirective { 
+export class ColorDirectiveDirective {
 
             // realizando a injecao de dependencia com o ElementRef
   constructor( 
@@ -33,4 +33,23 @@ export class ColorDirectiveDirective {
         //setando style direto num elemento DOM que use dessa diretiva
    }
 
+
+
+  // esse decorator permite fazer a associacao entre a propriedade essa 
+  // propriedade "backgroundColor" da classe com o atributo CSS da tag html 
+  // hospedeira dessa diretiva
+  @HostBinding("style.backgroundColor")
+  private backgroundColor?: string;
+
+
+  // outro metodo de definir o HostListener eh definindo o mesmo afrente da assinatura do metodo, como abaixo:
+  @HostListener('click') mouseClick() :void{
+      alert("Host Listener detected a mouse click over!");
+      this.backgroundColor = "gray";
+  }
+
+  // caso seja necessario realizar a manipulacao do valor do 'backgroundColor', use o metodo abaixo ao inves da propriedade acima
+  @HostBinding('style.backgroundColor') get getColor(){
+      return this.backgroundColor;
+  }
 }
