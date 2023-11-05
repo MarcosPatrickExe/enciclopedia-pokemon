@@ -1,4 +1,4 @@
-import { Directive, ElementRef, Renderer2, HostBinding, HostListener } from '@angular/core';
+import { Directive, ElementRef, Renderer2, HostBinding, HostListener, Input } from '@angular/core';
 
 //ElementRef eh uma classe q representa a ref de qualquer elemento ou tag html no DOM
 
@@ -42,7 +42,7 @@ export class ColorDirectiveDirective {
   private backgroundColor?: string;
 
   private readonly defaultColor = 'gray';
-
+  @Input() public highLightColor = null;
 
   @HostListener('mouseenter') mouseEnterr() :void{
       this.backgroundColor = "skyblue";
@@ -59,6 +59,6 @@ export class ColorDirectiveDirective {
 
 
   ngOnInit(){
-      this.backgroundColor = 
+      this.backgroundColor = this.defaultColor;
   }
 }
