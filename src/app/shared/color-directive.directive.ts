@@ -42,7 +42,8 @@ export class ColorDirectiveDirective {
 
 
   private readonly defaultColor = 'gray';
-  @Input() public highLightColor = null;
+
+  @Input() public highLightColor :string = "";
 
 
 
