@@ -49,11 +49,11 @@ export class ColorDirectiveDirective {
     @Input() public highLightColor :string = "";
 
 
-    @HostListener('mouseenter') mouseEnterr() :void{
+    @HostListener('mouseenter') mouseEnterFunc() :void{
         this.backgroundColor = this.highLightColor;
     }
 
-    @HostListener('mouseleave') mouseLeavee() :void{
+    @HostListener('mouseleave') mouseLeaveFunc() :void{
         this.backgroundColor = this.defaultColor;
     }
 
