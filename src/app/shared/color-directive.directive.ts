@@ -34,8 +34,8 @@ export class ColorDirectiveDirective {
     }
 
 
-    private readonly defaultColor = 'gray';
-    private readonly highlightColor = 'yellow';
+    private defaultColor :string;
+    private highlightColor :string;
 
 
 
@@ -62,7 +62,7 @@ export class ColorDirectiveDirective {
         return this.backgroundColor;
     }
     
-
+    // o metodo abaixo eh um dos life-cycle hooks
     ngOnInit(){
         this.backgroundColor = this.defaultColor;
     }
