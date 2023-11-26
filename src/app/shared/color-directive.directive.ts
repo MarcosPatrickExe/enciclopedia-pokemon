@@ -34,8 +34,9 @@ export class ColorDirectiveDirective {
     }
 
 
-    private defaultColor :string;
-    private highlightColor :string;
+    @Input() public defaultColor :string;
+    @Input() public highlightColor :string;
+
 
 
 
@@ -46,11 +47,8 @@ export class ColorDirectiveDirective {
     private backgroundColor?: string;
 
 
-    @Input() public highLightColor :string = "";
-
-
     @HostListener('mouseenter') mouseEnterFunc() :void{
-        this.backgroundColor = this.highLightColor;
+        this.backgroundColor = this.highlightColor;
     }
 
     @HostListener('mouseleave') mouseLeaveFunc() :void{

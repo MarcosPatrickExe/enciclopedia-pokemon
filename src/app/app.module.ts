@@ -12,7 +12,6 @@ import { HeaderMenuService } from './header-menu/header-menu.service';
 import { ColorDirectiveDirective } from './shared/color-directive.directive';
 import { HostListenerDirective } from './shared/host-listener.directive';
 
-
 @NgModule({
   declarations: [ //Area destinada somente aos componentes, diretivas e pipes que irao receber os seletores dos componentes do modulo importado chamado 'ContentsModule'
      AppComponent,
