@@ -157,12 +157,16 @@
 
     <h6 hostListener> Testando HostListener.... Clique com o mouse aqui ou passe o curso por cima e retirar o mesmo....) </h6>
     
- 
-    <div ngElsee="showAtributes">Showing the courses here! </div>
 
-    <div ngElsee="!showAtributes"> Not showing the courses hereeeeeeee! </div>
+
+ 
+    <template [ngElse]="true">Showing the courses here!> 
+        <div>lista de exemplos aqui</div>
+    </template>
+
+    <ng-template [ngElse] ="!true"> Not showing the courses hereeeeeeee! </ng-template>
     
-    <Button ngElsee (click)="changeCoursesMode()">Click Here !!</Button>
+    <button>Click Here !!</button>
 
 
 </div>

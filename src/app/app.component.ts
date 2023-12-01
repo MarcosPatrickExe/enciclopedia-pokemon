@@ -13,6 +13,7 @@ import {
     TemplateRef} from '@angular/core';
 // importando o decorator "@Component"
 
+
  
 // O decorator "@Component" eh responsavel por fornecer informacoes 
 // sobre o componente para que o compilador possa ler
