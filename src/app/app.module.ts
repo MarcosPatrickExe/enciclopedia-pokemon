@@ -11,6 +11,7 @@ import { HeaderMenuComponent } from './header-menu/header-menu.component';
 import { HeaderMenuService } from './header-menu/header-menu.service';
 import { ColorDirectiveDirective } from './shared/color-directive.directive';
 import { HostListenerDirective } from './shared/host-listener.directive';
+import { NgElseDirective } from './shared/ng-else.directive';
 
 @NgModule({
   declarations: [ //Area destinada somente aos componentes, diretivas e pipes que irao receber os seletores dos componentes do modulo importado chamado 'ContentsModule'
@@ -18,7 +19,8 @@ import { HostListenerDirective } from './shared/host-listener.directive';
    //  ComponenteTexto,
      HeaderMenuComponent,
      ColorDirectiveDirective,
-     HostListenerDirective
+     HostListenerDirective,
+     NgElseDirective
   ],
   imports: [ // adi
      BrowserModule, //somnente o modulo raiz do projeto importa esse modulo
