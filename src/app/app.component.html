@@ -146,6 +146,7 @@
         <ng-template [ngSwitchCase]="'eletric'" ngSwitchDefault >
             <p>Elétrico</p>
         </ng-template>
+        <!-- Esse 'ng-template' vem do conceito de Web Componentes -->
     </div>
 
 
@@ -156,4 +157,12 @@
 
     <h6 hostListener> Testando HostListener.... Clique com o mouse aqui ou passe o curso por cima e retirar o mesmo....) </h6>
     
+ 
+    <div ngElsee="showAtributes">Showing the courses here! </div>
+
+    <div ngElsee="!showAtributes"> Not showing the courses hereeeeeeee! </div>
+    
+    <Button ngElsee (click)="changeCoursesMode()">Click Here !!</Button>
+
+
 </div>
