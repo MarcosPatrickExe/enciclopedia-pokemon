@@ -159,12 +159,13 @@
     
 
 
- 
-    <template [ngElse]="true">Showing the courses here!> 
+    <!-- usando diretiva com asterisco -->
+    <div *ngElse="closePokeView">Showing the courses here!> 
         <div>lista de exemplos aqui</div>
-    </template>
+    </div>
 
-    <ng-template [ngElse] ="!true"> Not showing the courses hereeeeeeee! </ng-template>
+   
+    <div *ngElse ="closePokeView"> Not showing the courses hereeeeeeee! </div>
     
     <button>Click Here !!</button>
 

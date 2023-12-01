@@ -6,14 +6,14 @@ import { Directive, Input, TemplateRef, ViewContainerRef } from '@angular/core';
   selector: '[ngElse]'
 })
 export class NgElseDirective {// criando uma diretiva nao estruturada, ou seja, para usa-la, eh necessario chamar o 'template'
-
-
-  showAtributes :boolean= true;
+  
 
  // o 'set' permite escute o input da propriedade 'ngElse', executando o metodo 'set'
   @Input() set ngElse(condition :boolean){
       if(!condition){
-        
+        this._viewContainerRef.createEmbeddedView<any>(this._tempRef); // renderizando a view/tag html embutida na tag dessa diretiva la em 'app.component.html'
+      }else{
+        this._viewContainerRef.clear();
       }
   };
   // 'condition' eh o valor boolean atribuido ao input property "ngElse" no componente "Button" no html template 'app.component.html'
