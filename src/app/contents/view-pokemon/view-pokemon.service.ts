@@ -5,7 +5,7 @@ import { Type, Pokemon } from '../../types/pokemon';
 @Injectable({
   providedIn: 'root'
 })
-export class ViewPokemonService {
+export class ViewPokemonService { // classes de servico tbm podem ter metodos utilitarios!!
 
   pokemons :Pokemon[];
 
