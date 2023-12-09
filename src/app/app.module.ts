@@ -25,7 +25,7 @@ import { NgElseDirective } from './shared/ng-else.directive';
   imports: [ // adi
      BrowserModule, //somnente o modulo raiz do projeto importa esse modulo
      ContentsModule // importando o modulo do arquivo "content.module.ts", logo, nao precisa importa o componente que esta dentro dele, como o "home-menu.component"
-   ],
+  ],
   providers: [HeaderMenuService], // area destinada somente aos services que serao visiveis somente para os componentes declarados, ou seja serao globais a aplicacao
   bootstrap: [AppComponent] // componente principal
 })
