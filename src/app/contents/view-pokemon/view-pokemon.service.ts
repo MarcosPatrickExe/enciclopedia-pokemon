@@ -76,6 +76,7 @@ export class ViewPokemonService implements OnInit { // classes de servico tbm po
       ]
       */
 
+      // lembre-se que inicializar o service nesse metodo de ciclo de vida do angular nao eh uma boa pratica!
   }
 }
 

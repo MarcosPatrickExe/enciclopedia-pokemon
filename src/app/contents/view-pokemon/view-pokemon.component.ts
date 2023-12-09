@@ -27,8 +27,6 @@ export class ViewPokemonComponent implements OnInit{ //implements OnInit {
         this.pokemonList = pokeService.pokemons; // acessando propriedade ja inicializada pelo construtor da propria classe ViewPokemonService
         this.urlImage = "";
     }
-
-
     // ESSE DECORATOR "Input" OBTEM O VALOR DA PROPRIEDADE PASSADA PARA ESSE COMPONENTE E O REPASSA PARA O ATRIBUTO PRIVADO "dexNumber"
     // eslint-disable-next-line @angular-eslint/no-input-rename
     @Input('urlImg')
