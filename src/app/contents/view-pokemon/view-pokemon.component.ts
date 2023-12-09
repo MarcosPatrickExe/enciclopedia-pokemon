@@ -9,10 +9,12 @@ import * as _ from 'lodash';
 @Component({
     selector: 'app-view-pokemon',
     templateUrl: './view-pokemon.component.html',
-    styleUrls: ['./view-pokemon.component.scss']
+    styleUrls: ['./view-pokemon.component.scss'],
   // inputs: ['urlImg : urlImage']
   // outputs: ['imgHover : imageHovered']
+  // providers: [ViewPokemonService]
   // O @Input TBM PODE SER UTILIZADO COMO METADADO, AO INVÉS DE UM DECORATOR, COMO LOGO ABAIXO
+  // tbm eh possivel adicionar varios services para um so componente
 })
 
 export class ViewPokemonComponent implements OnInit{ //implements OnInit {
