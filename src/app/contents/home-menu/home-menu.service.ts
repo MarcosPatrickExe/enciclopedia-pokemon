@@ -13,12 +13,21 @@ export class HomeMenuService {
  * entao o padrao singleton sera desfeito, visto que sera gerado varias instancias diferentes para
  * esses componentes.
  */
-  constructor() { }
+
+  private pokemons: string[];
+
+  constructor() { 
+      this.pokemons =  ['squirtle', 'charmander', 'treecko', 
+      'mudkip', 'torchic', 'blaziken', 'blastoise',
+      'combusken', 'eevee']
+  }
 
   getPokemons(): string[] {
-   
-    return ['squirtle', 'charmander', 'treecko', 
-            'mudkip', 'torchic', 'blaziken', 'blastoise',
-            'combusken', 'eevee']
+      return this.getPokemons();
   }
+
+  addPokemon( pokeName: string){
+       this.pokemons.push( pokeName );
+  }
+
 }

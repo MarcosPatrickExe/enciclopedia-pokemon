@@ -2,6 +2,7 @@ import { Component, Input, Output, EventEmitter, OnInit, ViewChild } from '@angu
 //import { EventEmitter } from 'stream';
 import { ViewPokemonService } from './view-pokemon.service';
 import { Pokemon, Type } from '../../types/pokemon';
+import { HomeMenuService } from '../home-menu/home-menu.service';
 
 import * as _ from 'lodash';
 
@@ -25,7 +26,7 @@ export class ViewPokemonComponent implements OnInit{ //implements OnInit {
     type = Type;
 
 
-    constructor( private pokeService :ViewPokemonService ){
+    constructor( private pokeService :ViewPokemonService, private pokeNamers:HomeMenuService ){
         this.pokemonList = pokeService.pokemons; // acessando propriedade ja inicializada pelo construtor da propria classe ViewPokemonService
         this.urlImage = "";
     }
