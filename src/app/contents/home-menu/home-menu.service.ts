@@ -20,6 +20,8 @@ export class HomeMenuService {
       this.pokemons =  ['squirtle', 'charmander', 'treecko', 
       'mudkip', 'torchic', 'blaziken', 'blastoise',
       'combusken', 'eevee']
+
+      console.log("no construtor 'HomeMenuService'");
   }
 
   getPokemons(): string[] {
