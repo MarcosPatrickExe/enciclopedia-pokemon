@@ -26,7 +26,7 @@ export class ViewPokemonComponent implements OnInit{ //implements OnInit {
     type = Type;
 
 
-    constructor( private pokeService :ViewPokemonService, private pokeNamers:HomeMenuService ){
+    constructor( private pokeService :ViewPokemonService, public pokeNamers:HomeMenuService ){
         this.pokemonList = pokeService.pokemons; // acessando propriedade ja inicializada pelo construtor da propria classe ViewPokemonService
         this.urlImage = "";
     }
@@ -68,4 +68,8 @@ export class ViewPokemonComponent implements OnInit{ //implements OnInit {
           //tbm eh possivel fazer: { eventProperty: "Pokemon perdeu foco do mouse...."} 
     }
 
+
+    addPoke(newPoke : string){
+          this.pokeNamers.addPokemon( newPoke );
+    }
 }

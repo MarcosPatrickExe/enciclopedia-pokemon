@@ -57,6 +57,18 @@
          {{itemLodash}}
     </h2>
 
+    <p>========================================================</p>
+
+    <h1>Adicionar pokemon na lista de serviços: </h1>
+    <input id="int"  #pokeName value="wurmple" />
+    <button (click)="addPoke(pokeName.value)" >Add</button>
+
+    <ul>
+        <li *ngFor="let poke of pokeNamers.getPokemons()">
+            {{poke}}
+        </li>
+    </ul>
+
      <!-- 
         The Bootstrap 5 grid system has six classes:
 

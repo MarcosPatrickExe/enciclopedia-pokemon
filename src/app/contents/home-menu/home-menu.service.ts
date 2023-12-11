@@ -24,6 +24,7 @@ export class HomeMenuService {
       console.log("no construtor 'HomeMenuService'");
   }
 
+
   getPokemons(): string[] {
       return this.getPokemons();
   }
