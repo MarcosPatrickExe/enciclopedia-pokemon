@@ -12,6 +12,8 @@ export class HomeMenuService {
  * injecao de dependencia. Contudo, caso seja adicionado o mesmo service para componentes diferentes,
  * entao o padrao singleton sera desfeito, visto que sera gerado varias instancias diferentes para
  * esses componentes.
+ * 
+   OBS: os servicos tbm podem se comunicar entre si, sem precisar de um componente comum entre eles
  */
 
   private pokemons: string[];
