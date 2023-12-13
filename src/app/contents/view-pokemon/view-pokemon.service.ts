@@ -3,7 +3,7 @@ import { Type, Pokemon } from '../../types/pokemon';
 
 
 @Injectable({
-  providedIn: 'root'
+    providedIn: 'root'
 })
 
 // eh nos escopo de servico que tambem coloca-se as regras de negocio e chamada de funoes  do banco de dados.

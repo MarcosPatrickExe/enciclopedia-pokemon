@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import { Injectable, EventEmitter } from '@angular/core';
 
 @Injectable({
   providedIn: 'root'
@@ -15,6 +15,9 @@ export class HomeMenuService {
  * 
    OBS: os servicos tbm podem se comunicar entre si, sem precisar de um componente comum entre eles
  */
+
+  private emitterPokers = new EventEmitter<string>();
+
 
   private pokemons: string[];
 
@@ -33,6 +36,7 @@ export class HomeMenuService {
 
   addPokemon( pokeName: string){
        this.pokemons.push( pokeName );
+       this.emitterPokers.emit( pokeName);
   }
 
 }
