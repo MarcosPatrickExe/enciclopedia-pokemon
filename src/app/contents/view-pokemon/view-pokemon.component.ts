@@ -21,7 +21,7 @@ import * as _ from 'lodash';
 export class ViewPokemonComponent implements OnInit{ //implements OnInit {
     // ngOnInit(): void { }
     
-    listLodash = _.map([1, 2, 3], (n)=> `# ${n}`);// utilizando o Lodash
+    listLodash = _.map([1, 2, 3], (n)=> `# ${n}`);// utilizando o Lodash, uma mini lib
     public pokemonList :Pokemon[];
     type = Type;
 
