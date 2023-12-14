@@ -1,6 +1,6 @@
 import { Injectable, OnInit } from '@angular/core';
 import { Type, Pokemon } from '../../types/pokemon';
-
+import { HomeMenuService } from '../home-menu/home-menu.service';
 
 @Injectable({
     providedIn: 'root'
@@ -11,7 +11,9 @@ export class ViewPokemonService implements OnInit { // classes de servico tbm po
 
   pokemons :Pokemon[];
 
-  constructor() { 
+
+  constructor( private cursoServices :HomeMenuService) { 
+
       this.pokemons = [
           {
             name :"Infernape",
@@ -76,7 +78,11 @@ export class ViewPokemonService implements OnInit { // classes de servico tbm po
       ]
       */
 
-      // lembre-se que inicializar o service nesse metodo de ciclo de vida do angular nao eh uma boa pratica!
+      // lembre-se que inicializar o service nesse metodo de ciclo de vida do angular nao eh uma boa pratica! O correto eh no construtor!
+      this.cursoServices.emitterPokers.subscribe(
+           ( value ) => console.log("emitiu evento do servico 'view-pokemon-service' para 'home-menu-service'")
+      );
+
   }
 }
 

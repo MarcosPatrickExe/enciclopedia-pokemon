@@ -16,7 +16,8 @@ export class HomeMenuService {
    OBS: os servicos tbm podem se comunicar entre si, sem precisar de um componente comum entre eles
  */
 
-  private emitterPokers = new EventEmitter<string>();
+   // emitindo evento para qualquer outro servico:
+  public emitterPokers = new EventEmitter<string>();
 
 
   private pokemons: string[];
