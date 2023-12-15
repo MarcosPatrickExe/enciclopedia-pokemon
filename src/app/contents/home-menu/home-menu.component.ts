@@ -20,7 +20,7 @@ import { HomeMenuService } from './home-menu.service';
         }`
     ]
 */
-export class HomeMenuComponent {
+export class HomeMenuComponent implements OnInit{
 
     public pokemons: string[];
     public urlImage: string = 'http://lorempixel.com.br/600/200/pokémon/';
@@ -42,7 +42,7 @@ export class HomeMenuComponent {
     // como atributo dessa classe "HomeMenuComponent"....
     // eh como se fizesse o seguinte:
     // this.servico = servico;
-    constructor( private servico : HomeMenuService ) { 
+    constructor( private servico : HomeMenuService, private cursoServices :HomeMenuService ) { 
     // let buscarPokemons = new HomeMenuService();
     // ao inves de instanciar um servico manualmente como em "this.nomePortal = new HomeMenuService()", 
     // pode-se chama-lo ou instancia-lo automaticamente 
@@ -114,4 +114,12 @@ export class HomeMenuComponent {
          this.isMouseOver = !this.isMouseOver;
     }
 
+
+
+    ngOnInit(){
+        // lembre-se que inicializar o service nesse metodo de ciclo de vida do angular nao eh uma boa pratica! O correto eh no construtor!
+        this.cursoServices.emitterPokers.subscribe( // se increvendo nesse observable do Event Emitter
+                ( value ) => console.log("emitiu evento do servico 'view-pokemon-service' para 'home-menu-service'")
+        );
+    }
 }

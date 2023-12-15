@@ -37,7 +37,7 @@ export class HomeMenuService {
 
   addPokemon( pokeName: string){
        this.pokemons.push( pokeName );
-       this.emitterPokers.emit( pokeName);
+       this.emitterPokers.emit( pokeName); // emitindo a nova atualizacao
   }
 
 }

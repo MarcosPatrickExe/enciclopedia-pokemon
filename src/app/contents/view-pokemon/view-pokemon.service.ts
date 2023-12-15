@@ -12,7 +12,7 @@ export class ViewPokemonService implements OnInit { // classes de servico tbm po
   pokemons :Pokemon[];
 
 
-  constructor( private cursoServices :HomeMenuService) { 
+  constructor() { 
 
       this.pokemons = [
           {
@@ -77,12 +77,6 @@ export class ViewPokemonService implements OnInit { // classes de servico tbm po
         },
       ]
       */
-
-      // lembre-se que inicializar o service nesse metodo de ciclo de vida do angular nao eh uma boa pratica! O correto eh no construtor!
-      this.cursoServices.emitterPokers.subscribe(
-           ( value ) => console.log("emitiu evento do servico 'view-pokemon-service' para 'home-menu-service'")
-      );
-
   }
 }
 
