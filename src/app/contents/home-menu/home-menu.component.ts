@@ -99,13 +99,13 @@ export class HomeMenuComponent {
         this.valorSalvo = vSalvo; 
     }
 
-    mouseOut(valorCampo: any){
+    mouseOut( valorCampo: any ){
         alert("mouse fora do elemento!!!!");
         this.valorAtual = valorCampo;
     }
 
 
-    btnClick(elementoInput: any){ 
+    btnClick( elementoInput: any ){ 
         alert("Botao clicado!!!"); 
         console.dir( (<HTMLInputElement> elementoInput).value );
     }

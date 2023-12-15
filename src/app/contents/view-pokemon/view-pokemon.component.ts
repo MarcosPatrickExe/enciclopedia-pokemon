@@ -21,7 +21,7 @@ import * as _ from 'lodash';
 export class ViewPokemonComponent implements OnInit{ //implements OnInit {
     // ngOnInit(): void { }
     
-    listLodash = _.map([1, 2, 3], (n)=> `# ${n}`);// utilizando o Lodash, uma mini lib
+    listLodash = _.map( [1, 2, 3], (n)=> `# ${n}` );// utilizando o Lodash, uma mini lib
     public pokemonList :Pokemon[];
     type = Type;
 
@@ -32,7 +32,7 @@ export class ViewPokemonComponent implements OnInit{ //implements OnInit {
     }
     // ESSE DECORATOR "Input" OBTEM O VALOR DA PROPRIEDADE PASSADA PARA ESSE COMPONENTE E O REPASSA PARA O ATRIBUTO PRIVADO "dexNumber"
     // eslint-disable-next-line @angular-eslint/no-input-rename
-    @Input('urlImg')
+    @Input('urlImg') 
     urlImage : string; // valor inicial (nao lido)
     // O PARÂMETRO PASSADO PODE SER OPCIONAL, E DEVE SER UTILIZADO QUANDO
     // SE QUER SOMENTE ADICIONAR UM "APELIDO" PARA A VARIAVEL INTERNA 
@@ -41,7 +41,7 @@ export class ViewPokemonComponent implements OnInit{ //implements OnInit {
     // COMPONENTE, NO CASO, O "app.component.ts"
 
 
-
+ 
     // eslint-disable-next-line @angular-eslint/no-output-rename
     @Output('imgHover')
     imageHovered :any = new EventEmitter();
@@ -69,7 +69,7 @@ export class ViewPokemonComponent implements OnInit{ //implements OnInit {
     }
 
 
-    addPoke(newPoke : string){
+    addPoke( newPoke : string ){
           this.pokeNamers.addPokemon( newPoke );
     }
 }
