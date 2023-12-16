@@ -26,7 +26,8 @@ export class ViewPokemonComponent implements OnInit{ //implements OnInit {
     type = Type;
 
 
-    constructor( private pokeService :ViewPokemonService, public pokeNamers:HomeMenuService ){
+
+    constructor( private pokeService :ViewPokemonService, private pokeItensService:HomeMenuService ){
         this.pokemonList = pokeService.pokemons; // acessando propriedade ja inicializada pelo construtor da propria classe ViewPokemonService
         this.urlImage = "";
     }
@@ -69,7 +70,10 @@ export class ViewPokemonComponent implements OnInit{ //implements OnInit {
     }
 
 
-    addPoke( newPoke : string ){
-          this.pokeNamers.addPokemon( newPoke );
+    onInit(){
+        // lembre-se que inicializar o service nesse metodo de ciclo de vida do angular nao eh uma boa pratica! O correto eh no construtor!
+        this.pokeItensService.emitterPokers.subscribe( // se increvendo nesse observable do Event Emitter
+              value => console.log("emitiu evento do servico 'view-pokemon-service' para 'home-menu-service'")
+        );
     }
 }

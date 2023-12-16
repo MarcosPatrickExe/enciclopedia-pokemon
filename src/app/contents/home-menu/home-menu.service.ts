@@ -35,9 +35,9 @@ export class HomeMenuService {
       return this.getPokemons();
   }
 
-  addPokemon( pokeName: string){
-       this.itens.push( pokeName );
-       this.emitterPokers.emit( pokeName); // emitindo a nova atualizacao
+  addItem( newItem: string){
+       this.itens.push( newItem );
+       this.emitterPokers.emit( newItem); // emitindo a nova atualizacao/notificao
   }
 
 }
