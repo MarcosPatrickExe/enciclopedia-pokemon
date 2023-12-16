@@ -119,7 +119,7 @@ export class HomeMenuComponent implements OnInit{
     ngOnInit(){
         // lembre-se que inicializar o service nesse metodo de ciclo de vida do angular nao eh uma boa pratica! O correto eh no construtor!
         this.cursoServices.emitterPokers.subscribe( // se increvendo nesse observable do Event Emitter
-                ( value ) => console.log("emitiu evento do servico 'view-pokemon-service' para 'home-menu-service'")
+               value => console.log("emitiu evento do servico 'view-pokemon-service' para 'home-menu-service'")
         );
     }
 }

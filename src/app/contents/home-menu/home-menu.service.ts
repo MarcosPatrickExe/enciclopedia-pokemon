@@ -20,12 +20,12 @@ export class HomeMenuService {
   public emitterPokers = new EventEmitter<string>();
 
 
-  private pokemons: string[];
+  private itens: string[];
 
   constructor() { 
-      this.pokemons =  ['squirtle', 'charmander', 'treecko', 
-      'mudkip', 'torchic', 'blaziken', 'blastoise',
-      'combusken', 'eevee']
+      this.itens = ['ice fang', 'heavy ball', 'focus sash', 
+      'carbon', 'herb', 'pearl', 'hyper potion',
+      'cheri berry', 'attack X']
 
       console.log("no construtor 'HomeMenuService'");
   }
@@ -36,7 +36,7 @@ export class HomeMenuService {
   }
 
   addPokemon( pokeName: string){
-       this.pokemons.push( pokeName );
+       this.itens.push( pokeName );
        this.emitterPokers.emit( pokeName); // emitindo a nova atualizacao
   }
 
