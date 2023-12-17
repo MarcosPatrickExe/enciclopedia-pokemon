@@ -1,4 +1,4 @@
-import { Injectable, OnInit } from '@angular/core';
+import { Injectable } from '@angular/core';
 import { Type, Pokemon } from '../../types/pokemon';
 import { HomeMenuService } from '../home-menu/home-menu.service';
 
@@ -7,7 +7,7 @@ import { HomeMenuService } from '../home-menu/home-menu.service';
 })
 
 // eh nos escopo de servico que tambem coloca-se as regras de negocio e chamada de funoes  do banco de dados.
-export class ViewPokemonService implements OnInit { // classes de servico tbm podem ter metodos utilitarios!!
+export class ViewPokemonService { // classes de servico tbm podem ter metodos utilitarios!!
 
   pokemons :Pokemon[];
 
@@ -59,24 +59,4 @@ export class ViewPokemonService implements OnInit { // classes de servico tbm po
   }
 
 
-  ngOnInit(){
-      // inicializanod manualmente os valores da propriedade 'pokemons', sem 
-      // ser atraves do link de servico:
-    
-      /*
-      this.pokemons = [
-        {
-          name :"Swampert",
-          imgLink :"https://projectpokemon.org/home/uploads/monthly_2021_09/large.Animated.gif.99521c2463bd26f59128eac1a15784eb.gif",
-          types : [Type.WATER, Type.GROUND]
-        },
-        {
-          name :"Torterra",
-          imgLink :"https://projectpokemon.org/home/uploads/monthly_2021_09/large.Animated.gif.190d1dd23bbc3671ed3bb8149917faee.gif",
-          types : [Type.GRASS, Type.GROUND]
-        },
-      ]
-      */
-  }
 }
-
