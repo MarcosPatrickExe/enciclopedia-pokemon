@@ -23,21 +23,29 @@ export class HomeMenuService {
   private itens: string[];
 
   constructor() { 
-      this.itens = ['ice fang', 'heavy ball', 'focus sash', 
-      'carbon', 'herb', 'pearl', 'hyper potion',
-      'cheri berry', 'attack X']
+      this.itens = [
+          'ice fang', 
+          'heavy ball', 
+          'focus sash', 
+          'carbon', 
+          'herb', 
+          'pearl', 
+          'hyper potion',
+          'cheri berry', 
+          'attack X'
+      ]
 
       console.log("no construtor 'HomeMenuService'");
   }
 
 
-  getPokemons(): string[] {
-      return this.getPokemons();
+  getPokeItems(): string[] {
+      return this.itens;
   }
 
-  addItem( newItem: string){
+  addItem( newItem: string) {
        this.itens.push( newItem );
-       this.emitterPokers.emit( newItem); // emitindo a nova atualizacao/notificao
+       this.emitterPokers.emit( newItem); // emitindo a nova atualizacao/notificao para o component q estiver observando esse servico
   }
 
 }

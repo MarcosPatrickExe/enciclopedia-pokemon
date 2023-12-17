@@ -22,7 +22,7 @@ import { HomeMenuService } from './home-menu.service';
 */
 export class HomeMenuComponent {
 
-    public pokemons: string[];
+    public pokemonsItens: string[];
     public urlImage: string = 'http://lorempixel.com.br/600/200/pokémon/';
     public valorAtual: string = '100 reais';
     public componenteAtivado : boolean = true;
@@ -48,18 +48,18 @@ export class HomeMenuComponent {
     // pode-se chama-lo ou instancia-lo automaticamente 
     // utilizando injecao de dependencia com o decorator "@injectable".... 
         
-      this.pokemons = servico.getPokemons(); // acessando o servico via injecao de dependencia
+      this.pokemonsItens = servico.getPokeItems(); // acessando o servico via injecao de dependencia
     }
 
-    ifTrue():boolean {
+    ifTrue() :boolean {
         return false;
     }
    
-    getValor():number {
+    getValor() :number {
         return 5000;
     }
 
-    switchStyleClass(value :string) :string | null {
+    switchStyleClass( value :string) :string | null {
         switch(value){
             case "Celebi":
                 return "alert-success";
@@ -77,22 +77,22 @@ export class HomeMenuComponent {
     botaoClicado(){
         alert('botao clicado!!');
     }
-    
+
 
  // AO TIPAR O OBJETO DO EVENTO RECEBIDO EH ATIVADO A FERRAMENTA DE INTELI SENSE QUE PODERA EXIBIR AS PROPRIEDADES DESSE OBJETO
     inputClick( evento: KeyboardEvent){
-      console.log(
-        (<HTMLInputElement> evento.target) // CONVERTENDO UM OBJETO DO TIPO "EventTarget" 
-              // para o tipo da interface "<HTMLInputElement>" 
-              // para assim, poder acessar o atributo 'value'
-                  .value 
-      );
-    
-      // O ATRIBUTO 'target' APONTA PARA UMA TAG DO HTML (ex: body, head, h1, input, etc....)
-      // ESSAS TAGS NATIVAS DO HTML FORAM TIPADAS NO TYPESCRIPT!
+        console.log(
+            (<HTMLInputElement> evento.target) // CONVERTENDO UM OBJETO DO TIPO "EventTarget" 
+                // para o tipo da interface "<HTMLInputElement>" 
+                // para assim, poder acessar o atributo 'value'
+                    .value 
+        );
 
-      this.valorAtual = (<HTMLInputElement> evento.target).value;
-      // CONVERTENDO UM OBJETO DO TIPO "EventTarget" para o tipo da interface "HTMLInputElement"
+        // O ATRIBUTO 'target' APONTA PARA UMA TAG DO HTML (ex: body, head, h1, input, etc....)
+        // ESSAS TAGS NATIVAS DO HTML FORAM TIPADAS NO TYPESCRIPT!
+
+        this.valorAtual = (<HTMLInputElement> evento.target).value;
+        // CONVERTENDO UM OBJETO DO TIPO "EventTarget" para o tipo da interface "HTMLInputElement"
     }
 
     salvarValor( vSalvo : string ){
@@ -100,12 +100,12 @@ export class HomeMenuComponent {
     }
 
     mouseOut( valorCampo: any ){
-        alert("mouse fora do elemento!!!!");
+        alert("mouse fora do elemento!!!!"); 
         this.valorAtual = valorCampo;
     }
 
 
-    btnClick( elementoInput: any ){ 
+    btnClick( elementoInput: any ){
         alert("Botao clicado!!!"); 
         console.dir( (<HTMLInputElement> elementoInput).value );
     }
@@ -114,4 +114,8 @@ export class HomeMenuComponent {
          this.isMouseOver = !this.isMouseOver;
     }
 
+    
+    getPokeItems(){
+        return this.pokemonsItens;
+    }
 }

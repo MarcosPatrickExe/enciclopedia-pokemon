@@ -25,9 +25,11 @@ export class ViewPokemonComponent implements OnInit{ //implements OnInit {
     public pokemonList :Pokemon[];
     type = Type;
 
+    public pokeItens :string[];
 
 
-    constructor( private pokeService :ViewPokemonService, private pokeItensService:HomeMenuService ){
+
+    constructor( private pokeService :ViewPokemonService, private pokeItensService :HomeMenuService ){
         this.pokemonList = pokeService.pokemons; // acessando propriedade ja inicializada pelo construtor da propria classe ViewPokemonService
         this.urlImage = "";
     }
@@ -54,11 +56,6 @@ export class ViewPokemonComponent implements OnInit{ //implements OnInit {
     // DO TIPO "EventEmitter" PODE EMITIR UM EVENTO CUSTOMIZADO PARA O COMPONENTE PAI,
     // O QUAL PODERÁ ACESSA-LO UTILIZANDO A SINTAXE DE 'EVENT-BIND'
 
-
-    ngOnInit(){
-        console.log("valor urlImage value: "+this.urlImage);
-    }
-
     mouseOver(){
           this.imageHovered.emit( "Pokemon recebeu foco do mouse....");
             //   <objCustom>{ propQualquer: 'O mouse passou por cima!!' } 
@@ -69,11 +66,19 @@ export class ViewPokemonComponent implements OnInit{ //implements OnInit {
           //tbm eh possivel fazer: { eventProperty: "Pokemon perdeu foco do mouse...."} 
     }
 
+    addItens( itemName :string){
+         this.pokeItensService.addItem(itemName);
+    }
 
-    onInit(){
-        // lembre-se que inicializar o service nesse metodo de ciclo de vida do angular nao eh uma boa pratica! O correto eh no construtor!
+
+    ngOnInit(){
+        console.log("valor urlImage value: "+this.urlImage);
+        this.pokeItens = this.pokeItensService.getPokeItems();
+
+          // lembre-se que inicializar o service nesse metodo de ciclo de vida do angular nao eh uma boa pratica! O correto eh no construtor!
         this.pokeItensService.emitterPokers.subscribe( // se increvendo nesse observable do Event Emitter
-              value => console.log("emitiu evento do servico 'view-pokemon-service' para 'home-menu-service'")
+              value => console.log("emitiu evento do servico 'home-menu-service' para 'home-menu-service'")
         );
     }
+
 }

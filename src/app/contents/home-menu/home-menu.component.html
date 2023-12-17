@@ -3,10 +3,10 @@
         <Br />
         <h3>============= UTILIZANDO INTERPOLACAO ==============</h3>
 
-        <h5> ========= Pokémons ========= </h5>
+        <h5> ========= Pokémon itens ========= </h5>
         <ul>
-            <li style="color: black;" *ngFor="let poke of pokemons" >
-                {{poke}}
+            <li style="color: black;" *ngFor="let item of getPokeItems()" >
+                {{item}}
             </li>
         </ul>
 
@@ -62,7 +62,6 @@
 
         <!-- QUANDO NAO EXISTIR UMA PROPRIEDADE PARA UMA TAG, USE 'attr' PARA ATRIBUILA E DEPOIS USE O PROPERTY BIND PARA DEFINIR SEU VALOR -->
         <p [attr.colspan]="valorAtual"></p>
-
     </article>
 
     <Br>
@@ -161,13 +160,13 @@
     
         </div>
     </article>
-    
+
 
     <Br>
     <Br>
     <Hr>
-    
-    
+
+
     <article>
             <Br />
             <h3>============= UTILIZANDO EVENT BIND ==============</h3>
@@ -251,7 +250,7 @@
             <input type="text" 
                    #valorInput
 
-                   (keyup)="inputClick ($event)" 
+                   (keyup)="inputClick($event) " 
                    (keyup.enter)="salvarValor(valorInput.value)"
                    (mouseout)="mouseOut (valorInput.value)" 
                    
