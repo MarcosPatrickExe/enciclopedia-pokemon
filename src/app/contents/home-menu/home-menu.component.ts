@@ -54,7 +54,7 @@ export class HomeMenuComponent {
     ifTrue() :boolean {
         return false;
     }
-   
+    
     getValor() :number {
         return 5000;
     }
@@ -114,7 +114,7 @@ export class HomeMenuComponent {
          this.isMouseOver = !this.isMouseOver;
     }
 
-    
+
     getPokeItems(){
         return this.pokemonsItens;
     }
