@@ -7,9 +7,10 @@ export class HomeMenuService {
 /**
  * Vale lembrar q todo servico pode ser declarado dentro de modulos de funcionalidades ou
  * no modulo global, variando o seu escopo de acesso por outros componentes
- * dependendo do seu escopo. Contudo, mesmo se o servico for usado por diversos
+ * dependendo do local onde eh declarado. Mesmo se o servico for usado por diversos
  * componentes, a sua instancia seguirá o padrao singleton quando aplicada a 
- * injecao de dependencia. Contudo, caso seja adicionado o mesmo service para componentes diferentes,
+ * injecao de dependencia. Contudo, caso seja adicionado o mesmo service para componentes diferentes, atraves 
+ * do metadado 'providers: [...]', entao sera criada uma instancia diferente para cada servico!
  * entao o padrao singleton sera desfeito, visto que sera gerado varias instancias diferentes para
  * esses componentes.
  * 

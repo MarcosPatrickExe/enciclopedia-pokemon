@@ -6,7 +6,7 @@ import { HomeMenuService } from '../home-menu/home-menu.service';
     providedIn: 'root'
 })
 
-// eh nos escopo de servico que tambem coloca-se as regras de negocio e chamada de funoes  do banco de dados.
+// eh nos escopo de servico que tambem coloca-se as regras de negocio e chamada de funções  do banco de dados.
 export class ViewPokemonService { // classes de servico tbm podem ter metodos utilitarios!!
 
   pokemons :Pokemon[];
