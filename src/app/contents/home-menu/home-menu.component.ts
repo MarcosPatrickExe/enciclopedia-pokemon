@@ -60,6 +60,7 @@ export class HomeMenuComponent {
     }
 
     switchStyleClass( value :string) :string | null {
+        // inserindo algumas opcoes básicas para o Select
         switch(value){
             case "Celebi":
                 return "alert-success";
