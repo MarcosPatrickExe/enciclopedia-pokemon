@@ -93,7 +93,10 @@ export class ViewPokemonComponent implements OnInit{ //implements OnInit {
                   this.pokeItens.push( newItem);
               }
         );
-
+        /* a vantagem de usar um objeto do tipo EventEmitter estático se dá pela facilidade em usá-lo, visto que não precisa
+           ser instanciado automaticamente, via injeção de dependência, no construtor, como é feito com o EventEmitter denominado
+           'pokeItensService' do tipo 'HomeMenuService'.
+        */
     }
 
 }
