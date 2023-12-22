@@ -20,6 +20,9 @@ export class HomeMenuService {
    // emitindo evento para qualquer outro servico:
   public emitterPokers = new EventEmitter<string>();
 
+  static attacks = new EventEmitter<string>();
+
+
 
   private itens: string[];
 
@@ -47,6 +50,8 @@ export class HomeMenuService {
   addItem( newItem: string) {
        this.itens.push( newItem );
        this.emitterPokers.emit( newItem); // emitindo a nova atualizacao/notificao para o component q estiver observando esse servico
+
+       HomeMenuService.attacks.emit(newItem); // atribuindo o novo valor a propriedade estatica para poder ser consultada em diferentes instancias dessa classse 'HomeMenuService' 
   }
 
 } 
