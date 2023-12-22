@@ -49,4 +49,4 @@ export class HomeMenuService {
        this.emitterPokers.emit( newItem); // emitindo a nova atualizacao/notificao para o component q estiver observando esse servico
   }
 
-}
+} 

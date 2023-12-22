@@ -77,7 +77,9 @@ export class ViewPokemonComponent implements OnInit{ //implements OnInit {
 
           // lembre-se que inicializar o service nesse metodo de ciclo de vida do angular nao eh uma boa pratica! O correto eh no construtor!
         this.pokeItensService.emitterPokers.subscribe( // se increvendo nesse observable do Event Emitter
-              value => console.log("emitiu evento do servico 'home-menu-service' para 'home-menu-service'")
+              value => {
+                  console.log("emitiu evento do servico 'home-menu-service' no componente 'view-pokemon.component.ts'")
+              }
         );
     }
 
