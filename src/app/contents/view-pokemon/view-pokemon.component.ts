@@ -84,6 +84,16 @@ export class ViewPokemonComponent implements OnInit{ //implements OnInit {
                   // adicionando o novo item adicionado no serviço para a lista de 'pokeItens' local.
               }
         );
+
+
+        // alternativa para caso precise num EventEmitter estático da classe HomeMenuService:
+        HomeMenuService.attacks.subscribe(
+              (newItem) => {
+                  console.log("Foi detectado o evento do servico estático da classe 'home-menu-service' no componente 'view-pokemon.component.ts'");
+                  this.pokeItens.push( newItem);
+              }
+        );
+
     }
 
 }
