@@ -1,4 +1,6 @@
 import { Injectable, EventEmitter } from '@angular/core';
+import { HeaderMenuService } from '../../header-menu/header-menu.service';
+
 
 @Injectable({
   providedIn: 'root'
@@ -26,8 +28,8 @@ export class HomeMenuService {
   private itens: string[];
 
 
-
-  constructor() { 
+            // importando outro serviço dentro dessa classe service
+  constructor( private basicExampleService :HeaderMenuService  ) { 
       this.itens = [
           'ice fang', 
           'heavy ball', 
@@ -45,6 +47,7 @@ export class HomeMenuService {
 
 
   getPokeItems(): string[] {
+      this.basicExampleService.consoleLog("retornando listas de cursos...");
       return this.itens;
   }
 

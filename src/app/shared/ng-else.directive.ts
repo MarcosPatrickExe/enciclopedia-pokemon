@@ -25,7 +25,7 @@ export class NgElseDirective {// criando uma diretiva nao estruturada, ou seja, 
 
   // realizando injecao de dependencia, ou seja, inicializando variaveis privadas para as 2 classes importadas:
   constructor( 
-      private _tempRef :TemplateRef< any >, // 'any' indica que o template ira ser empregado em qualquer tipo de tag
+      private _tempRef :TemplateRef <any>, // 'any' indica que o template ira ser empregado em qualquer tipo de tag
       private _viewContainerRef: ViewContainerRef
   ) { 
   }
