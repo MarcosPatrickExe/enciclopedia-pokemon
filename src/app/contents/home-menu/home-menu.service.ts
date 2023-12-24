@@ -22,9 +22,9 @@ export class HomeMenuService {
 
   static attacks = new EventEmitter<string>();
 
-
-
   private itens: string[];
+
+  
 
   constructor() { 
       this.itens = [
@@ -46,6 +46,7 @@ export class HomeMenuService {
   getPokeItems(): string[] {
       return this.itens;
   }
+
 
   addItem( newItem: string) {
        this.itens.push( newItem );
