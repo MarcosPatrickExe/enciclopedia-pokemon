@@ -20,11 +20,12 @@ export class HomeMenuService {
    // emitindo evento para qualquer outro servico:
   public emitterPokers = new EventEmitter<string>();
 
+  // serviço estático para ter somente uma instancia para qualquer outro componente que for utilizá-lo
   static attacks = new EventEmitter<string>();
 
   private itens: string[];
 
-  
+
 
   constructor() { 
       this.itens = [
