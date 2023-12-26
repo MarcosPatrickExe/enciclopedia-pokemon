@@ -53,6 +53,7 @@ export class HomeMenuService {
 
 
   addItem( newItem: string) {
+      // usando o serviço abaixo, q foi importado, nessa classe de serviço:
       this.basicExampleInjectService.consoleLog(`criando um novo item com o valor '${newItem}'`);
       this.itens.push( newItem );
       this.emitterPokers.emit( newItem); // emitindo a nova atualizacao/notificao para o component q estiver observando esse servico
