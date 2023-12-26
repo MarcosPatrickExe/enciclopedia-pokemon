@@ -29,7 +29,7 @@ export class HomeMenuService {
 
 
             // importando outro serviço dentro dessa classe service
-  constructor( private basicExampleService :HeaderMenuService ){ 
+  constructor( private basicExampleInjectService :HeaderMenuService ){ 
       this.itens = [
           'ice fang', 
           'heavy ball', 
@@ -47,16 +47,16 @@ export class HomeMenuService {
 
 
   getPokeItems(): string[] {
-      this.basicExampleService.consoleLog("retornando listas de cursos...");
+      this.basicExampleInjectService.consoleLog("retornando listas de cursos...");
       return this.itens;
   }
 
 
   addItem( newItem: string) {
-       this.itens.push( newItem );
-       this.emitterPokers.emit( newItem); // emitindo a nova atualizacao/notificao para o component q estiver observando esse servico
-
-       HomeMenuService.attacks.emit(newItem); // atribuindo o novo valor a propriedade estatica para poder ser consultada em diferentes instancias dessa classse 'HomeMenuService' 
+      this.basicExampleInjectService.consoleLog(`criando um novo item com o valor '${newItem}'`);
+      this.itens.push( newItem );
+      this.emitterPokers.emit( newItem); // emitindo a nova atualizacao/notificao para o component q estiver observando esse servico
+      HomeMenuService.attacks.emit(newItem); // atribuindo o novo valor a propriedade estatica para poder ser consultada em diferentes instancias dessa classse 'HomeMenuService' 
   }
 
 } 
