@@ -10,7 +10,7 @@ import {
     AfterViewChecked,
     ViewChild, 
     ElementRef, 
-    TemplateRef} from '@angular/core';
+    TemplateRef } from '@angular/core';
 // importando o decorator "@Component"
 
 
@@ -52,7 +52,7 @@ export class AppComponent implements OnInit, OnChanges, // DoCheck,
 
     // alterando a imagem do pokemon de acordo com o numero da pokédex q eh digitado
     public changePokemon( pokemonPokedexNumber :string) :void{
-        this.pokemonUrlImage= `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${ pokemonPokedexNumber }.png`;
+        this.pokemonUrlImage = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${ pokemonPokedexNumber }.png`;
     }
 
     // esse metodo so eh executado quando o componente seletor "view-pokemon" emite um evento do tipo "imgHover"

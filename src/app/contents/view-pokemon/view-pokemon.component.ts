@@ -67,7 +67,7 @@ export class ViewPokemonComponent implements OnInit{ //implements OnInit {
     }
 
     addItens( itemName :string){
-         this.pokeItensService.addItem(itemName);
+         this.pokeItensService.addItem( itemName );
          // adicionando valor no serviço 'hom-menu-service'
     }
 

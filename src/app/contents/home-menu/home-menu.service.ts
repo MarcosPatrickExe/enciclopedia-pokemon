@@ -29,7 +29,7 @@ export class HomeMenuService {
 
 
             // importando outro serviço dentro dessa classe service
-  constructor( private basicExampleService :HeaderMenuService  ) { 
+  constructor( private basicExampleService :HeaderMenuService ){ 
       this.itens = [
           'ice fang', 
           'heavy ball', 
