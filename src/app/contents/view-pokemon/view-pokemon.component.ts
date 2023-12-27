@@ -32,6 +32,10 @@ export class ViewPokemonComponent implements OnInit{ //implements OnInit {
         name: 'Ash',
         rating: 4.54321,
         pokemonsCatched: 201,
+        insignias: 6,
+        isChampion: false,
+        pokemonTeam: ['Charizard', 'Heracross', 'Shedinja', 'Samurott'],
+        BeginningJourneyDate: new Date(2008, 6, 11),
     }
 
 
