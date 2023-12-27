@@ -28,6 +28,14 @@ export class ViewPokemonComponent implements OnInit{ //implements OnInit {
     public pokeItens :string[];
 
 
+    defaultTrainter : any = {
+        name: 'Ash',
+        rating: 4.54321,
+        pokemonsCatched: 201,
+    }
+
+
+
 
     constructor( private pokeService :ViewPokemonService, private pokeItensService :HomeMenuService ){
         this.pokemonList = pokeService.pokemons; // acessando propriedade ja inicializada pelo construtor da propria classe ViewPokemonService
