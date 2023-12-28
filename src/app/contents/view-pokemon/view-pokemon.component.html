@@ -90,7 +90,7 @@
      <p>rating:               {{defaultTrainter.rating | number:'2' }}</p> <!-- formatando o number para um valor com casas decimais especificas -->
      <p>pokemonsCatched:      {{defaultTrainter.pokemonsCatched | number}}</p>
      <p>insignias:            {{defaultTrainter.insignias | number }}</p>
-     <p>saldo em dinheiro:    {{defaultTrainter.money | currency }}</p> 
+     <p>saldo em dinheiro:    {{defaultTrainter.money | currency:'BRL' }}</p> <!-- o 'currency' significa a moeda. Por padrao, o valor eh apresentado em dolares -->
      <p>isChampion:           {{defaultTrainter.isChampion}}</p>
      <p>pokemonTeam:          {{defaultTrainter.pokemonTeam}}</p>
      <p>BeginningJourneyDate: {{defaultTrainter.BeginningJourneyDate}}</p>
