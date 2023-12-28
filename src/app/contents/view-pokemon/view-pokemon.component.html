@@ -89,7 +89,8 @@
      <p>Name:                 {{defaultTrainter.name | uppercase }}</p> <!-- utilizando pipe '|' para deixar todas as letra com caixa alta -->
      <p>rating:               {{defaultTrainter.rating | number:'2' }}</p> <!-- formatando o number para um valor com casas decimais especificas -->
      <p>pokemonsCatched:      {{defaultTrainter.pokemonsCatched | number}}</p>
-     <p>insignias:            {{defaultTrainter.insignias}}</p>
+     <p>insignias:            {{defaultTrainter.insignias | number }}</p>
+     <p>saldo em dinheiro:    {{defaultTrainter.money | currency }}</p> 
      <p>isChampion:           {{defaultTrainter.isChampion}}</p>
      <p>pokemonTeam:          {{defaultTrainter.pokemonTeam}}</p>
      <p>BeginningJourneyDate: {{defaultTrainter.BeginningJourneyDate}}</p>
