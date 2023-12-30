@@ -88,7 +88,7 @@
      <h5>Exemplos de Pipes </h5>
      <p>Name:                 {{defaultTrainter.name | uppercase }}</p> <!-- utilizando pipe '|' para deixar todas as letra com caixa alta -->
      <p>rating:               {{defaultTrainter.rating | number:'2' }}</p> <!-- formatando o number para um valor com casas decimais especificas -->
-     <p>pokemonsCatched:      {{defaultTrainter.pokemonsCatched | number}}</p> 
+     <p>pokemonsCatched:      {{defaultTrainter.pokemonsCatched | number}}</p> <!-- numeros naturais que nao precisam de formatacao nao precisam da declaração do pipe 'number'  -->
      <p>insignias:            {{defaultTrainter.insignias | number:'2.1-2' }}</p> <!-- definindo um numero obrigatorio de 2 casas decimais antes do ponto e numero máximo de 2 casas decimais depois do ponto -->
      <p>saldo em dinheiro:    {{defaultTrainter.money | currency:'BRL':true }}</p> <!-- o 'currency' significa a moeda. Por padrao, o valor eh apresentado em dolares. O 'true' habilita o simbolo da moeda para visualizacao -->
      <p>isChampion:           {{defaultTrainter.isChampion}}</p>
