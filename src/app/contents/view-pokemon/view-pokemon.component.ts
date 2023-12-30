@@ -32,7 +32,7 @@ export class ViewPokemonComponent implements OnInit{ //implements OnInit {
         name: 'Ash',
         rating: 4.54321,
         pokemonsCatched: 201,
-        insignias: 6,
+        insignias: 6.2333,
         isChampion: false,
         money: 4230.99,  // saldo de dinheiro do personagem
         pokemonTeam: ['Charizard', 'Heracross', 'Shedinja', 'Samurott'],
