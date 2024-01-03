@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { Type, Pokemon } from '../../types/pokemon';
 import { HomeMenuService } from '../home-menu/home-menu.service';
 
+
 @Injectable({
     providedIn: 'root'
 })
