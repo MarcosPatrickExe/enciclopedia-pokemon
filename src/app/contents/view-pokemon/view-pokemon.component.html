@@ -93,7 +93,7 @@
      <p>saldo em dinheiro:    {{defaultTrainter.money | currency:'BRL':true }}</p> <!-- o 'currency' significa a moeda. Por padrao, o valor eh apresentado em dolares. O 'true' habilita o simbolo da moeda para visualizacao -->
      <p>isChampion:           {{defaultTrainter.isChampion}}</p>
      <p>pokemonTeam:          {{defaultTrainter.pokemonTeam}}</p>
-     <p>BeginningJourneyDate: {{defaultTrainter.BeginningJourneyDate | date:'dd-MM-yyyy' }}</p> <!-- o pipe 'date' elimina as informações de fuso-horário que aparecem por padrão ao printar um objeto do tipo Date -->
+     <p>BeginningJourneyDate: {{defaultTrainter.BeginningJourneyDate | date:'dd-MMM-yyyy' }}</p> <!-- o pipe 'date' elimina as informações de fuso-horário que aparecem por padrão ao printar um objeto do tipo Date -->
     <!-- por padrao o formato da data é americano! Para alterar isso, basta inserir uma String apos o ':', como acima -->
 
      <p>object in JSON:       {{defaultTrainter | json }}</p> <!-- o pipe 'json' converte objetos para o formato String para visualizacao dos seus atributos e dados. Eh o resultado contrario ao 'printar' os dados do objeto sem a formatacao json, na qual sera exibido somente o tipo do objeto  -->
