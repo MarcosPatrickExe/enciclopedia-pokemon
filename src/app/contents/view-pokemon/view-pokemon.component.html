@@ -96,7 +96,7 @@
      <p>BeginningJourneyDate: {{defaultTrainter.BeginningJourneyDate | date:'dd-MMM-yyyy' }}</p> <!-- o pipe 'date' elimina as informações de fuso-horário que aparecem por padrão ao printar um objeto do tipo Date -->
     <!-- por padrao o formato da data é americano! Para alterar isso, basta inserir uma String apos o ':', como acima -->
 
-     <p>object in JSON:       {{defaultTrainter | json }}</p> <!-- o pipe 'json' converte objetos para o formato String para visualizacao dos seus atributos e dados. Eh o resultado contrario ao 'printar' os dados do objeto sem a formatacao json, na qual sera exibido somente o tipo do objeto  -->
+     <p>object in JSON:   {{defaultTrainter | json }}</p> <!-- o pipe 'json' converte objetos para o formato String para visualizacao dos seus atributos e dados. Eh o resultado contrario ao 'printar' os dados do objeto sem a formatacao json, na qual sera exibido somente o tipo do objeto  -->
      <!-- A diferença primordial dos pipers em relacao aos outros elementos do Angular (ex: components, services, etc... ) eh que
           eles nao precisam ser importados dentro dos components, uma vez que ja são importados pela biblioteca 'BrowserModule' que
           por sua vez eh importada para dentro do modulo raiz/geral do projeto, que eh o 'app.module.ts'  -->
