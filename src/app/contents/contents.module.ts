@@ -10,12 +10,14 @@ import { ComponenteTextoComponent } from '../componente-texto/componente-texto.c
 // SERVICES
 import { HomeMenuService } from './home-menu/home-menu.service';
 import { ViewPokemonComponent } from './view-pokemon/view-pokemon.component';
+import { CamelCasePipePipe } from './camel-case-pipe.pipe';
+
 
 @NgModule({
   declarations: [
     HomeMenuComponent,
     ComponenteTextoComponent, /*tbm eh possivel utilizar um componente que esteja em outra pasta. Mas isso nao eh uma boa pratica! */
-    ViewPokemonComponent
+    ViewPokemonComponent, CamelCasePipePipe
   ],
   imports: [
     CommonModule,  //modulos secundarios importam esse "common module"
