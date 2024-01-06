@@ -36,7 +36,7 @@ export class ViewPokemonComponent implements OnInit{ //implements OnInit {
         isChampion: false,
         money: 4230.99,  // saldo de dinheiro do personagem
         pokemonTeam: ['Charizard', 'Heracross', 'Shedinja', 'Samurott'],
-        BeginningJourneyDate: new Date(2008, 6, 11),
+        BeginningJourneyDate: new Date( 2008, 6, 11 ),
     }
 
 
@@ -79,7 +79,7 @@ export class ViewPokemonComponent implements OnInit{ //implements OnInit {
           //tbm eh possivel fazer: { eventProperty: "Pokemon perdeu foco do mouse...."} 
     }
 
-    addItens( itemName :string){
+    addItens( itemName :string ){
          this.pokeItensService.addItem( itemName );
          // adicionando valor no serviço 'hom-menu-service'
     }
