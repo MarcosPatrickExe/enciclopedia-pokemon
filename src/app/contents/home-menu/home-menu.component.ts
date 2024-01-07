@@ -59,7 +59,7 @@ export class HomeMenuComponent {
         return 5000;
     }
 
-    switchStyleClass( value :string) :string | null {
+    switchStyleClass( value :string) :string | null {  
         // inserindo algumas opcoes básicas para o Select
         switch(value){
             case "Celebi":
