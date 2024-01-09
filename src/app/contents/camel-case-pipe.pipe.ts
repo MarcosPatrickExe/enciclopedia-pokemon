@@ -14,10 +14,11 @@ export class CamelCasePipePipe implements PipeTransform {
          let values = value.split(' ');
          let result = '';
 
-         
+         for(let v of values){
+            result += v;
+         }
 
-
-         return null; // por padrao o pipe retorna o valor 'null'
+         return result; // por padrao o pipe retorna o valor 'null'
     }
 
 }
