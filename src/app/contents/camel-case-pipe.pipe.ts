@@ -12,6 +12,11 @@ export class CamelCasePipePipe implements PipeTransform {
     transform( value: any, ...args: unknown[] ): unknown {
     //   let val = value.split;
          let values = value.split(' ');
+         let result = '';
+
+         
+
+
          return null; // por padrao o pipe retorna o valor 'null'
     }
 
