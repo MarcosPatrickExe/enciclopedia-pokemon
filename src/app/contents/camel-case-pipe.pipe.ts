@@ -7,12 +7,12 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class CamelCasePipePipe implements PipeTransform {
 
-  
-  // metodo responsavel por recebero valor 'value' e os argumentos para a formatação do valor recebido, podendo retornar qualquer tipo de objeto, por isso o 'unknown'
-  transform(value: unknown, ...args: unknown[]): unknown {
-   //   let val = value.split;
-      
-      return null; // por padrao o pipe retorna o valor 'null'
-  }
+    // 'transform' eh o metodo sobrescrito da interfacce 'PipeTransform'
+    // metodo responsavel por recebero valor 'value' e os argumentos para a formatação do valor recebido, podendo retornar qualquer tipo de objeto, por isso o 'unknown'
+    transform(value: unknown, ...args: unknown[]): unknown {
+    //   let val = value.split;
+        
+         return null; // por padrao o pipe retorna o valor 'null'
+    }
 
 }
