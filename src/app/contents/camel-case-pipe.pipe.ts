@@ -15,9 +15,14 @@ export class CamelCasePipePipe implements PipeTransform {
          let result = '';
 
          for(let v of values){
-            result += v; // concatenando todos os valores
+            result += this.capitalize(v); // concatenando todos os valores
          }
 
          return result; // por padrao o pipe retorna o valor 'null'
+    }
+
+
+    capitalize(value :string) : string{
+        return value.substr(0, 1).toUpperCase()+value.substr(1) + value.substr(1).toLowerCase;
     }
 }
