@@ -15,7 +15,7 @@ export class CamelCasePipePipe implements PipeTransform {
          let result = '';
 
          for(let v of values){
-            result += this.capitalize(v); // concatenando todos os valores
+            result += this.capitalize(v)+' '; // concatenando todos os valores
          }
 
          return result; // por padrao o pipe retorna o valor 'null'
