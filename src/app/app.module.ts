@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { LOCALE_ID, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { ContentsModule } from './contents/contents.module';
 
@@ -28,8 +28,10 @@ import { NgElseDirective } from './shared/ng-else.directive';
      BrowserModule, //somnente o modulo raiz do projeto importa esse modulo
      ContentsModule // importando o modulo do arquivo "content.module.ts", logo, nao precisa importa o componente que esta dentro dele, como o "home-menu.component"
   ],
-  providers: [HeaderMenuService], // area destinada somente aos services que serao visiveis somente para os componentes declarados, ou seja serao globais a aplicacao
-  bootstrap: [AppComponent] // componente principal
+  providers: [
+     HeaderMenuService,  // area destinada somente aos services que serao visiveis somente para os componentes declarados, ou seja serao globais a aplicacao
+     { provide: LOCALE_ID,}  
+  ], bootstrap: [AppComponent] // componente principal
 })
 
 export class AppModule { }
