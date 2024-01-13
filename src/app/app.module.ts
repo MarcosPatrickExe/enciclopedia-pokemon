@@ -30,8 +30,9 @@ import { NgElseDirective } from './shared/ng-else.directive';
   ],
   providers: [
      HeaderMenuService,  // area destinada somente aos services que serao visiveis somente para os componentes declarados, ou seja serao globais a aplicacao
-     { 
-        provide: LOCALE_ID, 
+     
+     { // inserindo um objeto que vai ser servido para toda a aplicacao:
+        provide: LOCALE_ID, // "LOCALE_ID" funciona como um token, ou seja um identificador 
         useValue: 'pt-BR', // passando o token com o locale
      //   useClass: 
      }  
