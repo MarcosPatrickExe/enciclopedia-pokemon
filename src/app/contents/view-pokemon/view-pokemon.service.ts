@@ -16,7 +16,7 @@ export class ViewPokemonService { // classes de servico tbm podem ter metodos ut
   constructor() { 
 
       this.pokemons = [
-          {
+          { 
             name :"Infernape",
             imgLink :"https://projectpokemon.org/images/normal-sprite/infernape.gif",
             types : [Type.FIRE, Type.FIGHTING]
