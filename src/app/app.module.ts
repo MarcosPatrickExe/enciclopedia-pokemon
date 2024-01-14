@@ -37,6 +37,9 @@ import { NgElseDirective } from './shared/ng-else.directive';
      /* useClass:  // 'useClass' eh um atributo/chave opcional que ira servir para identificar a classe do 
         service q sera utilizado, semelhante a classe de servico que declaramos no construtor do componente ao fazer 
         a injecao de depedencia */
+       // factory: 
+        // tbm eh possivel utilizaro padrao 'factory' no qual eh definido um comportamente q
+        // vc precisa e sera solicitada a sua utilizacao
         
      }  
   ], bootstrap: [AppComponent] // componente principal
