@@ -3,7 +3,7 @@ import { HeaderMenuService } from '../../header-menu/header-menu.service';
 
 
 @Injectable({
-  providedIn: 'root'
+    providedIn: 'root'
 })
 export class HomeMenuService {
 /**
@@ -39,7 +39,8 @@ export class HomeMenuService {
           'pearl', 
           'hyper potion',
           'cheri berry', 
-          'attack X'
+          'attack X',
+          'X defense'
       ]
 
       console.log("no construtor 'HomeMenuService'");
