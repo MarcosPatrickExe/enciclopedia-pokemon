@@ -5,6 +5,8 @@ import { Pipe, PipeTransform } from '@angular/core';
 @Pipe({
   name: 'camelCasePipe' //o atributo 'name' é equivalente à um 'selector' declarado nos 'components'
 })
+
+
 export class CamelCasePipePipe implements PipeTransform {
 
     // 'transform' eh o metodo sobrescrito da interfacce 'PipeTransform'
@@ -21,7 +23,7 @@ export class CamelCasePipePipe implements PipeTransform {
          return result; // por padrao o pipe retorna o valor 'null'
     }
 
-
+    // FUNCAO PARA PERSONALIZAR AS PALAVRAS, COLOCANDO-AS EM CAIXA ALTA
     capitalize(value :string) : string{
         return value.substr(0, 1).toUpperCase()+value.substr(1) + value.substr(1).toLowerCase;
     }
