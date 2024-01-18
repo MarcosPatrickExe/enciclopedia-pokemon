@@ -1,7 +1,7 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
 
-
+// VALE LEMBRAR QUE EH FORTEMENTE INDICADO QUE OS PIPES NAO DEVEM SER USADOS PARA FILTRAR ARRAYS
 @Pipe({
   name: 'camelCasePipe' //o atributo 'name' é equivalente à um 'selector' declarado nos 'components'
 })
