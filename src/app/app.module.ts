@@ -38,11 +38,12 @@ import { NgElseDirective } from './shared/ng-else.directive';
         service q sera utilizado, semelhante a classe de servico que declaramos no construtor do componente ao fazer 
         a injecao de depedencia */
      // por padrao, 'useValue' tem o seguinte o valor: 'en-US'
-         
+
 
      // factory: 
      // tbm eh possivel utilizaro padrao 'factory' no qual eh definido um comportamente q
      // vc precisa e sera solicitada a sua utilizacao
+       useFactory: (settingsService :any) => settingsService.getLocale(),
      }  
   ], bootstrap: [AppComponent] // componente principal
 })
