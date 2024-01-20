@@ -99,7 +99,6 @@ export class ViewPokemonComponent implements OnInit{ //implements OnInit {
               }
         );
 
-
         // alternativa para caso precise num EventEmitter estático da classe HomeMenuService:
         /*
         HomeMenuService.attacks.subscribe(
@@ -114,5 +113,4 @@ export class ViewPokemonComponent implements OnInit{ //implements OnInit {
            'pokeItensService' do tipo 'HomeMenuService'.
         */
     }
-
 }
