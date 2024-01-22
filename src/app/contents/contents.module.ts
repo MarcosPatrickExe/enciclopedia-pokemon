@@ -18,7 +18,9 @@ import { PipeFilterArrayPipe } from './home-menu/pipe-filter-array.pipe';
   declarations: [
     HomeMenuComponent,
     ComponenteTextoComponent, /*tbm eh possivel utilizar um componente que esteja em outra pasta. Mas isso nao eh uma boa pratica! */
-    ViewPokemonComponent, CamelCasePipePipe, PipeFilterArrayPipe
+    ViewPokemonComponent, 
+    CamelCasePipePipe, 
+    PipeFilterArrayPipe
   ],
   imports: [
     CommonModule,  //modulos secundarios importam esse "common module"
