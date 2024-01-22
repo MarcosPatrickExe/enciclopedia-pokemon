@@ -5,16 +5,18 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class PipeFilterArrayPipe implements PipeTransform {
 
-  transform(value: String[], ...args: unknown[]): unknown {
+  transform(value: any, ...args: any): unknown {
 
     if(value.length===0 || args == undefined){
        return value;
     }
 
-    
+    let filterKey = args.toLowerCase();
 
-
-    return null;
+    // fazendo a busca de 'filterKey'
+    return value.filter(
+        (currValue :any) => (currValue.indexOf(filterKey) != -1)
+    );
   }
 
 }
