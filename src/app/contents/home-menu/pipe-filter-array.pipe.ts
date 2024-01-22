@@ -5,7 +5,15 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class PipeFilterArrayPipe implements PipeTransform {
 
-  transform(value: unknown, ...args: unknown[]): unknown {
+  transform(value: String[], ...args: unknown[]): unknown {
+
+    if(value.length===0 || args == undefined){
+       return value;
+    }
+
+    
+
+
     return null;
   }
 
