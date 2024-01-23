@@ -11,7 +11,7 @@ import { ComponenteTextoComponent } from '../componente-texto/componente-texto.c
 import { HomeMenuService } from './home-menu/home-menu.service';
 import { ViewPokemonComponent } from './view-pokemon/view-pokemon.component';
 import { CamelCasePipePipe } from './camel-case-pipe.pipe';
-import { PipeFilterArrayPipe } from './home-menu/pipe-filter-array.pipe';
+import { PipeFilterArrayPipe } from './view-pokemon/pipe-filter-array.pipe';
 
 
 @NgModule({
