@@ -103,7 +103,15 @@
 
     <p>Trainer House location: {{ defaultTrainter.houseLocation | camelCasePipe }}  </p>
 
-    <h4>Utilizando pipe puro diretamente no array 'pokemonTeam []':  </h4>
+    <h4>Utilizando pipe puro diretamente no array pokemonTeam []:  </h4>
     <p>Filtrando array com a seguinte palabra-chave de busca: {{ defaultTrainter.pokemonTeam | pipeFilterArray:"zard" }} </p>
-                                                                                             <!-- filtrando pokemons por um trecho do nome que pertence a um ou varios pokemons -->
+                                                                                  <!-- filtrando pokemons por um trecho do nome que pertence a um ou varios pokemons -->
+
+
+    <!-- filtrando pokemons do time do treinador e adicionando automaticamente na lista abaixo:  -->
+    <ul>
+       <li *ngFor="let poke of defaultTrainter.pokemonTeam">
+            {{ poke }}
+       </li>
+    </ul>                                                                                           
 </div>
