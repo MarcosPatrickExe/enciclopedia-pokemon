@@ -107,16 +107,20 @@
     <p>Filtrando array com a seguinte palabra-chave de busca: {{ defaultTrainter.pokemonTeam | pipeFilterArray:"zard" }} </p>
                                                                                   <!-- filtrando pokemons por um trecho do nome que pertence a um ou varios pokemons -->
 
+    <!-- O pipe puro nao percebe as modificacoes de dados realizadas em um Array ou qualquer outra estrutura 
+         de dados enviada como parâmetro 'value', que se encontra na definição do método 'transform()'.
+         Assim, quaisquer modificações feitas no array, como no exemplo abaixo que tenta adicionar um pokemon através do input para ser filtrado no array 'defaulTrainer.pokemonTeam' 
+    -->
+
     <br />
     <input type="text" placeholder="New item name here...." #newValue />
     <button (click)="addNewPokemon( newValue.value)"> Add item</button>
     
 
-
     <!-- filtrando pokemons do time do treinador e adicionando automaticamente na lista abaixo:  -->
     <ul>
        <li *ngFor="let poke of defaultTrainter.pokemonTeam">
-            {{ poke }}
+            {{ poke }}                  
        </li>
     </ul>
                                                                                               
