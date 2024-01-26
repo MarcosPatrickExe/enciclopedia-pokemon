@@ -107,6 +107,11 @@
     <p>Filtrando array com a seguinte palabra-chave de busca: {{ defaultTrainter.pokemonTeam | pipeFilterArray:"zard" }} </p>
                                                                                   <!-- filtrando pokemons por um trecho do nome que pertence a um ou varios pokemons -->
 
+    <br />
+    <input type="text" placeholder="New item name here...." #newValue />
+    <button (click)="addNewValueToPokeItens( newValue.value )">Add item</button>
+    
+
 
     <!-- filtrando pokemons do time do treinador e adicionando automaticamente na lista abaixo:  -->
     <ul>

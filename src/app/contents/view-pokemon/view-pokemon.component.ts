@@ -113,4 +113,10 @@ export class ViewPokemonComponent implements OnInit{ //implements OnInit {
            'pokeItensService' do tipo 'HomeMenuService'.
         */
     }
+
+
+
+    addNewValueToPokeItens( pokeItem: string ){
+            
+    }
 }
