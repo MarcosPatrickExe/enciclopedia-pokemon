@@ -103,7 +103,7 @@
 
     <p>Trainer House location: {{ defaultTrainter.houseLocation | camelCasePipe }}  </p>
 
-    <h4>Utilizando pipe puro diretamente no array pokemonTeam []:  </h4>
+    <h4>Utilizando pipe puro diretamente no array pokemonTeam []:  </h4>        <!-- Cuidado ao fazer nessa filtragem do array! --> 
     <p>Filtrando array com a seguinte palabra-chave de busca: {{ defaultTrainter.pokemonTeam | pipeFilterArray:"zard" }} </p>
                                                                                   <!-- filtrando pokemons por um trecho do nome que pertence a um ou varios pokemons -->
 
@@ -114,5 +114,5 @@
             {{ poke }}
        </li>
     </ul>
-    <!-- Cuidado ao fazer nessa filtragem do array! -->                                                                                           
+                                                                                              
 </div>
