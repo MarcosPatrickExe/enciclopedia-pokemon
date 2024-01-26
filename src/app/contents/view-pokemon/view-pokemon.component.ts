@@ -116,7 +116,7 @@ export class ViewPokemonComponent implements OnInit{ //implements OnInit {
 
 
 
-    addNewValueToPokeItens( pokeItem: string ){
-            
+    addNewPokemon( pokeForTeam: string ){
+        this.defaultTrainter.pokemonTeam.push( pokeForTeam )
     }
 }
