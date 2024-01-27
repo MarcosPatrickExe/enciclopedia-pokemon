@@ -113,9 +113,12 @@
     -->
 
     <br />
+
+    <label for="valueToAdd">Adicionar valor: </label>
     <input type="text" placeholder="New item name here...." #newValue />
-    <button (click)="addNewPokemon( newValue.value)"> Add item</button>
+    <button id="valueToAdd" (click)="addNewPokemon( newValue.value)"> Add item</button>
     
+
 
     <!-- filtrando pokemons do time do treinador e adicionando automaticamente na lista abaixo:  -->
     <ul>
