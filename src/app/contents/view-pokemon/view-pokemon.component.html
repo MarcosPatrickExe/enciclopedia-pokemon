@@ -115,18 +115,18 @@
     <br />
     
     <label for="valueToAdd">Adicionar valor: </label>
-    <input type="text" placeholder="New item name here...." #newValue />
-    <button id="valueToAdd" (click)="addNewPokemon( newValue.value)"> Add item</button>
+    <input id="valueToAdd" type="text" placeholder="New item name here...." #newValue />
+    <button (click)="addNewPokemon( newValue.value)"> Add item</button>
     
 
     <label for="valueToFilter">Filtrar o seguinte valor: </label>
-    <input id="valueToFilter" type="text" placeholder="Filter name here...." #newValue />
+    <input id="valueToFilter" type="text" placeholder="Filter name here...." [(ngModel)]="filterValue" />
 
 
 
-    <!-- filtrando pokemons do time do treinador e adicionando automaticamente na lista abaixo:  -->
+    <!-- filtrando pokemons do time do treinador atraves do valor do input 'valueToFilter' e apresentando automaticamente na lista abaixo:  -->
     <ul>
-       <li *ngFor="let poke of defaultTrainter.pokemonTeam">
+       <li *ngFor="let poke of defaultTrainter.pokemonTeam | pipeFilterArray">
             {{ poke }}                  
        </li>
     </ul>

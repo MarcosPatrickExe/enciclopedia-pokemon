@@ -27,6 +27,8 @@ export class ViewPokemonComponent implements OnInit{ //implements OnInit {
 
     public pokeItens :string[];
 
+    filterValue :string;
+
 
     defaultTrainter : any = {
         name: 'Ash',
