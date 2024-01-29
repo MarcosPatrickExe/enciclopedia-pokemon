@@ -1,5 +1,6 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
+// annotation for all pipes
 @Pipe({
   name: 'pipeFilterArray'
 })
