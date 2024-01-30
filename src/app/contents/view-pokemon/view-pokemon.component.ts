@@ -45,7 +45,7 @@ export class ViewPokemonComponent implements OnInit{ //implements OnInit {
     filterValue :string;
 
 
-    defaultTrainter  = {
+    defaultTrainter : TrainerModel = {
         name: 'Ash',
         rating: 4.54321,
         pokemonsCatched: 201,
