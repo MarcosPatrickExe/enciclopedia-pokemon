@@ -3,8 +3,23 @@ import { Component, Input, Output, EventEmitter, OnInit, ViewChild } from '@angu
 import { ViewPokemonService } from './view-pokemon.service';
 import { Pokemon, Type } from '../../types/pokemon';
 import { HomeMenuService } from '../home-menu/home-menu.service';
-
 import * as _ from 'lodash';
+
+
+
+interface TrainerModel{
+    name: string,
+    rating: number,
+    pokemonsCatched: number,
+    insignias: number,
+    isChampion: boolean,
+    money: number, 
+    pokemonTeam: string[],
+    BeginningJourneyDate: Date,
+    houseLocation: string
+}
+
+
 
 
 @Component({
@@ -30,7 +45,7 @@ export class ViewPokemonComponent implements OnInit{ //implements OnInit {
     filterValue :string;
 
 
-    defaultTrainter : any = {
+    defaultTrainter  = {
         name: 'Ash',
         rating: 4.54321,
         pokemonsCatched: 201,
