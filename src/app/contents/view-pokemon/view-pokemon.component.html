@@ -87,7 +87,7 @@
      <!------------------------ CRIANDO PIPES: ------------------------>
      <h2>============== USANDO PIPES =================</h2>                <!-- a ordem de execucao dos pipes é da esquerda para a direita.Assim, abaixo o 'uppercase' será o último estilo aplicado -->
      <p>Name:                 {{defaultTrainter.name | lowercase | uppercase }}</p> <!-- utilizando pipe '|' para deixar todas as letra com caixa alta -->
-     <p>rating:               {{defaultTrainter.rating | number:'2' }}</p> <!-- formatando o number para um valor com casas decimais especificas -->
+     <p>rating:               {{defaultTrainter.rating | number:'1' }}</p> <!-- formatando o number para um valor com casas decimais especificas -->
      <p>pokemonsCatched:      {{defaultTrainter.pokemonsCatched | number}}</p> <!-- numeros naturais que nao precisam de formatacao nao precisam da declaração do pipe 'number'  -->
      <p>insignias:            {{defaultTrainter.insignias | number:'2.1-2' }}</p> <!-- definindo um numero obrigatorio de 2 casas decimais antes do ponto e numero máximo de 2 casas decimais depois do ponto -->
      <p>saldo em dinheiro:    {{defaultTrainter.money | currency:'BRL':true }}</p> <!-- o 'currency' significa a moeda. Por padrao, o valor eh apresentado em dolares. O 'true' habilita o simbolo da moeda para visualizacao -->
@@ -127,7 +127,7 @@
     <!-- filtrando pokemons do time do treinador atraves do valor do input 'valueToFilter' e apresentando automaticamente na lista abaixo:  -->
     <p>Lista com valores filtrados:  </p>
     <ul>
-       <li *ngFor="let poke of defaultTrainter.pokemonTeam | pipeFilterArray:filterValue">
+       <li *ngFor="let poke of defaultTrainter.pokemonTeam | pipeFilterArray:'dinja'">
             {{ poke }}                  
        </li>
     </ul>
