@@ -43,7 +43,7 @@ import { NgElseDirective } from './shared/ng-else.directive';
      // factory: 
      // tbm eh possivel utilizaro padrao 'factory' no qual eh definido um comportamente q
      // vc precisa e sera solicitada a sua utilizacao
-       useFactory: (settingsService :any) => settingsService.getLocale(),
+     //  useFactory: (settingsService :any) => settingsService.getLocale(),
      }  
   ], bootstrap: [AppComponent] // componente principal
 })
