@@ -3,7 +3,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 
 // VALE LEMBRAR QUE EH FORTEMENTE INDICADO QUE OS PIPES NAO DEVEM SER USADOS PARA FILTRAR ARRAYS
 @Pipe({
-  name: 'camelCasePipe' //o atributo 'name' é equivalente à um 'selector' declarado nos 'components'
+    name: 'camelCasePipe' //o atributo 'name' é equivalente à um 'selector' declarado nos 'components'
 })
 
 
@@ -28,6 +28,6 @@ export class CamelCasePipePipe implements PipeTransform {
 
     // FUNCAO PARA PERSONALIZAR AS PALAVRAS, COLOCANDO-AS EM CAIXA ALTA
     capitalize(value :string) : string{
-        return value.substr(0, 1).toUpperCase()+value.substr(1) + value.substr(1).toLowerCase;
+        return value.substr(0, 1).toUpperCase()+value.substr(1) + value.substr(1).toLowerCase();
     }
 }

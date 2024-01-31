@@ -33,7 +33,7 @@ import { NgElseDirective } from './shared/ng-else.directive';
      
      { // inserindo um objeto que vai ser servido para toda a aplicacao:
         provide: LOCALE_ID, // "LOCALE_ID" funciona como um token, ou seja um identificador 
-        useValue: 'pt-BR', // passando o token com o locale
+        useValue: 'pt', // passando o token com o locale
      /* useClass:  // 'useClass' eh um atributo/chave opcional que ira servir para identificar a classe do 
         service q sera utilizado, semelhante a classe de servico que declaramos no construtor do componente ao fazer 
         a injecao de depedencia */
