@@ -30,21 +30,6 @@ import { NgElseDirective } from './shared/ng-else.directive';
   ],
   providers: [
      HeaderMenuService,  // area destinada somente aos services que serao visiveis somente para os componentes declarados, ou seja serao globais a aplicacao
-     
-     { // inserindo um objeto que vai ser servido para toda a aplicacao:
-        provide: LOCALE_ID, // "LOCALE_ID" funciona como um token, ou seja um identificador 
-        useValue: 'pt', // passando o token com o locale
-     /* useClass:  // 'useClass' eh um atributo/chave opcional que ira servir para identificar a classe do 
-        service q sera utilizado, semelhante a classe de servico que declaramos no construtor do componente ao fazer 
-        a injecao de depedencia */
-     // por padrao, 'useValue' tem o seguinte o valor: 'en-US'
-
-
-     // factory: 
-     // tbm eh possivel utilizaro padrao 'factory' no qual eh definido um comportamente q
-     // vc precisa e sera solicitada a sua utilizacao
-     //  useFactory: (settingsService :any) => settingsService.getLocale(),
-     }  
   ], bootstrap: [AppComponent] // componente principal
 })
 
