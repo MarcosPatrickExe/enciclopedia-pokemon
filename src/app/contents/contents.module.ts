@@ -16,6 +16,7 @@ import { PipeFilterArrayPipe } from './view-pokemon/pipe-filter-array.pipe';
 
 @NgModule({
   declarations: [
+    
     HomeMenuComponent,
     ComponenteTextoComponent, /*tbm eh possivel utilizar um componente que esteja em outra pasta. Mas isso nao eh uma boa pratica! */
     ViewPokemonComponent, 
