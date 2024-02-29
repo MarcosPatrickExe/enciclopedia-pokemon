@@ -18,6 +18,7 @@ enum Type {
     FLYING = "Flying",
     FIGHTING ="Fighting",
     EMPTY = 0,
+    
 }
 
 interface Pokemon{
