@@ -21,7 +21,7 @@ export class HostListenerDirective {
       this._rend.setStyle(
            this._elemRef.nativeElement,
            'background-color',  // property
-           'blue' // color
+           'green' // color
       );
 
       this._rend.setProperty(
@@ -38,7 +38,7 @@ export class HostListenerDirective {
             'red'
        );
 
-       this._rend.setProperty(this._elemRef.nativeElement ,"display", "clock")
+     //  this._rend.setProperty( this._elemRef.nativeElement ,"offsetLeft", "400")
 
        console.log(` NATIVE element type: ${typeof this._elemRef.nativeElement}`);
   }

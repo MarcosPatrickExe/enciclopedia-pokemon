@@ -116,7 +116,8 @@
                 [class.alert-danger]= "classe.value === 'Moltres'"
                 > Moltres 
             </div>
-            
+    
+
 
             <div style="font-size: 65px;" 
                     [style.color]=" (classe.value === 'Moltres' ? 'rgb(235, 17, 1)' : false) ||
@@ -267,8 +268,7 @@
             <h4 style="color: black;"
                     (mouseover) = "onMouseOverOut()"
                     (mouseout) = "onMouseOverOut()"
-                    [class.highlight]="isMouseOver === true"> 
-                 Passe o mouse sobre mim =) {{isMouseOver}}
+                    [class.highlight]="isMouseOver === true"> Passe o mouse sobre mim =) {{isMouseOver}}
             </h4>
             <!-- 'highlight' EH UMA CLASSE QUE FOI DEFINIDA NO ARQUIVO CSS, POR ISSO 
                  EH POSSIVEL USA-LA DENTRO DE UM PROPERTY BIND, POREM, QUANDO O ATRIBUTO 'isMouseOver'

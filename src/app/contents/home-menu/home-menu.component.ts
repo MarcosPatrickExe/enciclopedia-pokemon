@@ -3,7 +3,7 @@ import { HomeMenuService } from './home-menu.service';
 
 
 @Component({
-    selector: 'app-home-menu',
+    selector: 'home-menu',
     templateUrl: './home-menu.component.html',
     styleUrls: ['./home-menu.component.scss']
 })
@@ -23,7 +23,7 @@ import { HomeMenuService } from './home-menu.service';
 export class HomeMenuComponent {
 
     public pokemonsItens: string[];
-    public urlImage: string = 'http://lorempixel.com.br/600/200/pokémon/';
+     urlImage: string = "https://img.pokemondb.net/artwork/walrein.jpg"; //'http://lorempixel.com.br/600/200/pokémon/';
     public valorAtual: string = '100 reais';
     public componenteAtivado : boolean = true;
     public valorSalvo : string = '';
