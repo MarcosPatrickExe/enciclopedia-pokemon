@@ -6,7 +6,6 @@ import { Pipe, PipeTransform } from '@angular/core';
     name: 'camelCasePipe' //o atributo 'name' é equivalente à um 'selector' declarado nos 'components'
 })
 
-
 export class CamelCasePipePipe implements PipeTransform {
 
     // 'transform' eh o metodo sobrescrito da interfacce 'PipeTransform'
