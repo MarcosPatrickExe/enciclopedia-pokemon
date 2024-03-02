@@ -38,7 +38,7 @@ export class AppComponent implements OnInit, OnChanges, // DoCheck,
     public closePokeView :boolean= false;
 
     // testando esse feature
-    @ViewChild('elementRefVar') //fazendo referencia a variavel que armazena a referencia do elemento 'input' dentro do DOM
+    @ViewChild('elementRefVar') //fazendo referencia a #variavel que armazena a referencia do elemento 'input' dentro do DOM
     valueInputField :ElementRef | null = null;
 
 /*
@@ -79,7 +79,7 @@ export class AppComponent implements OnInit, OnChanges, // DoCheck,
 
     ngAfterViewChecked() :void{
         this.log("ngAfterViewChecked");
-        console.log("value of input: "+this.valueInputField?.nativeElement.value);
+        console.log("value of input em Two-Data-Binding: "+this.valueInputField?.nativeElement.value);
     }
 
     ngAfterContentInit() :void{
@@ -95,6 +95,6 @@ export class AppComponent implements OnInit, OnChanges, // DoCheck,
     }
 
     private log( currentHook: string) :void {
-        console.log("No elemento atual chamado: " +currentHook );
+       // console.log("No elemento atual chamado: " +currentHook );
     }
 }

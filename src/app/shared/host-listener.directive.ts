@@ -37,6 +37,10 @@ export class HostListenerDirective {
             'background-color',
             'red'
        );
+
+       this._rend.setProperty(this._elemRef.nativeElement ,"display", "clock")
+
+       console.log(` NATIVE element type: ${typeof this._elemRef.nativeElement}`);
   }
 
 }
