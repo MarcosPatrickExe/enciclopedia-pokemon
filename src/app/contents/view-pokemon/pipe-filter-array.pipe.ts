@@ -3,7 +3,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 // annotation for all pipes
 @Pipe({
   name: 'pipeFilterArray',
-  pure: false, // default is true in others Pipes
+  pure: true, // default is true in others Pipes
 })
 export class PipeFilterArrayPipe implements PipeTransform {
 
