@@ -7,16 +7,16 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class PipeFilterArrayPipe implements PipeTransform {
 
-    transform( arrayValue: any, args: any): unknown[] {
+    transform( arrayValue: any, args: any[]): unknown[] {
 
-        if(arrayValue.length === 0 || args == undefined){
+        if(arrayValue.length === 0 || args == undefined || args[0]==""){
             return arrayValue;
         }
 
         arrayValue = arrayValue.map(  (val: string) => val.toLowerCase() )
 
         return arrayValue.filter(
-            (currentValue :string) => currentValue.indexOf( args) != -1
+            (currentValue :string) => currentValue.includes( args[0])
         );
     }
 }

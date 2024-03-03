@@ -40,7 +40,7 @@ export class ViewPokemonComponent implements OnInit{ //implements OnInit {
 
     public pokeItens :string[];
 
-    filterValue :string;
+    filterValue :string ="";
 
 
     defaultTrainter : TrainerModel = {
