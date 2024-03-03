@@ -124,7 +124,7 @@
 
     <Br /> <Br />
     <!-- filtrando pokemons do time do treinador atraves do valor do input 'valueToFilter' e apresentando automaticamente na lista abaixo:  -->
-    <p>Lista com valores filtrados:  </p>
+    <h4>Lista com valores filtrados:  </h4>
     <ul>
        <li *ngFor="let poke of defaultTrainter.pokemonTeam | pipeFilterArray: filterValue">
             {{ poke }}                  

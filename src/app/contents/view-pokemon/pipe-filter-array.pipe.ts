@@ -7,17 +7,17 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class PipeFilterArrayPipe implements PipeTransform {
 
-    transform(value: any, ...args: any): unknown[] {
+    transform(arrayValue: any, ...args: any): unknown[] {
 
-        if(value.length === 0 || args == undefined){
-            return value;
+        if(arrayValue.length === 0 || args == undefined){
+            return arrayValue;
         }
 
         let filterKey = (args instanceof String) ? (args as string) .toLowerCase() : "";
 
         // fazendo a busca de 'filterKey'
-        return value.filter(
-            (currValue :any) => (currValue.indexOf(filterKey) != -1)
+        return arrayValue.filter(
+            (currentValue :any) => (currentValue.indexOf(filterKey) != -1)
         );
     }
 

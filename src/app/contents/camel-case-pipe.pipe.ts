@@ -27,6 +27,6 @@ export class CamelCasePipePipe implements PipeTransform {
 
     // FUNCAO PARA PERSONALIZAR AS PALAVRAS, COLOCANDO-AS EM CAIXA ALTA
     capitalize(value :string) : string{
-        return value.substr(0, 1).toUpperCase()+value.substr(1) + value.substr(1).toLowerCase();
+        return value.substr(0, 1).toUpperCase()+value.substr(1).toLowerCase();
     }
 }
