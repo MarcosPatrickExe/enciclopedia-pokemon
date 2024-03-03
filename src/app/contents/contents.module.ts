@@ -1,7 +1,10 @@
 import { LOCALE_ID, NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { CommonModule, registerLocaleData } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-//import { HttpModule } from '@angular/http';
+import localePt from '@angular/common/locales/pt';
+
+registerLocaleData(localePt);
+
 
 // COMPONENTES
 import { HomeMenuComponent } from './home-menu/home-menu.component';
@@ -36,7 +39,7 @@ import { PipeFilterArrayPipe } from './view-pokemon/pipe-filter-array.pipe';
     HomeMenuService,
     { // inserindo um objeto que vai ser servido para toda a aplicacao:
         provide: LOCALE_ID, // "LOCALE_ID" funciona como um token, ou seja um identificador 
-        useValue: 'pt', // passando o token com o locale
+        useValue: 'pt-BR', // passando o token com o locale
      /* useClass:  // 'useClass' eh um atributo/chave opcional que ira servir para identificar a classe do 
         service q sera utilizado, semelhante a classe de servico que declaramos no construtor do componente ao fazer 
         a injecao de depedencia */

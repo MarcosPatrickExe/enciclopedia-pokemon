@@ -12,7 +12,7 @@ export class PipeFilterArrayPipe implements PipeTransform {
             return value;
         }
 
-        let filterKey = args.toLowerCase();
+        let filterKey = (args instanceof String) ? (args as string) .toLowerCase() : "";
 
         // fazendo a busca de 'filterKey'
         return value.filter(

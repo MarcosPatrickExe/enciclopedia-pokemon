@@ -6,7 +6,6 @@ import { HomeMenuService } from '../home-menu/home-menu.service';
 import * as _ from 'lodash';
 
 
-
 interface TrainerModel{
     name: string,
     rating: number,
@@ -18,8 +17,6 @@ interface TrainerModel{
     BeginningJourneyDate: Date,
     houseLocation: string
 }
-
-
 
 
 @Component({
