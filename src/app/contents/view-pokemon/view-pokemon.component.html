@@ -115,7 +115,7 @@
     
     <label for="valueToAdd">  Adicionar valor:   </label>
     <input id="valueToAdd" type="text" placeholder="New item name here...." #newValue />
-    <button (click)="addNewPokemon( newValue.value)"> Add item</button>
+    <button (click) = "addNewPokemon( newValue.value)"> Add item</button>
     
     <Br /> <Br /> 
 
@@ -131,14 +131,17 @@
        </li>
     </ul>
 
-
-    <h3>Utilizando pipe IMPURO diretamente no array pokemonTeam[]:  </h3>        <!-- Cuidado ao fazer nessa filtragem do array! --> 
+ <!-- Cuidado ao fazer nessa filtragem do array! --> 
+    <!--
+    <h3>Utilizando pipe IMPURO diretamente no array pokemonTeam[]:  </h3>       
     <p>Lista com valores filtrados:  </p>
     <ul>
-       <li *ngFor="let poke of defaultTrainter.pokemonTeam | pipeFilterArray: filterValue">
+       <li *ngFor="let poke of defaultTrainter.pokemonTeam | pipeFilterArray: 'cross'">
             {{ poke }}                  
        </li>
     </ul>
+
+    -->
     
                                                                                               
 </div>

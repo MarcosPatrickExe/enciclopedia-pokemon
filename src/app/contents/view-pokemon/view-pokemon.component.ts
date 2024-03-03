@@ -50,7 +50,7 @@ export class ViewPokemonComponent implements OnInit{ //implements OnInit {
         insignias: 6.2333,
         isChampion: false,
         money: 4230.99,  // saldo de dinheiro do personagem
-        pokemonTeam: ['Charizard', 'Heracross', 'Shedinja', 'Samurott'],
+        pokemonTeam: ["Charizard", "Heracross", "Shedinja", "Samurott"],
         BeginningJourneyDate: new Date( 2008, 6, 11 ),
         houseLocation: "vila pallet em região de Kanto"
     }
