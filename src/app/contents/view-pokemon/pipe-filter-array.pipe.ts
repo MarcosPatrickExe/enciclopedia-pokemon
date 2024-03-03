@@ -9,7 +9,7 @@ export class PipeFilterArrayPipe implements PipeTransform {
 
     transform(value: any, ...args: any): unknown[] {
 
-        if(value.length===0 || args == undefined){
+        if(value.length === 0 || args == undefined){
             return value;
         }
 

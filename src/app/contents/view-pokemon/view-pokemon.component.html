@@ -70,7 +70,7 @@
         </li>
     </ul>
 
-    <h3>Último item pokémon que foi adicionado ao serviço 'home-menu-serviço': {{  this.pokeItens[this.pokeItens.length-1] }} </h3>
+    <h5 style="color: green;">Último item pokémon que foi adicionado ao serviço 'home-menu-serviço': {{  this.pokeItens[this.pokeItens.length-1] }} </h5>
      <!-- 
         The Bootstrap 5 grid system has six classes:
 
@@ -82,8 +82,8 @@
         .col-xxl- (xxlarge devices - screen width equal to or greater than 1400px)
      -->
 
-
-
+    <Hr /> 
+    
      <!------------------------ CRIANDO PIPES: ------------------------>
      <h2>============== USANDO PIPES =================</h2>                <!-- a ordem de execucao dos pipes é da esquerda para a direita.Assim, abaixo o 'uppercase' será o último estilo aplicado -->
      <p>Name:                 {{defaultTrainter.name | lowercase | uppercase }}</p> <!-- utilizando pipe '|' para deixar todas as letra com caixa alta -->
@@ -103,7 +103,7 @@
 
     <p>Trainer House location: {{ defaultTrainter.houseLocation | camelCasePipe }}  </p>
 
-    <h4>Utilizando pipe puro diretamente no array pokemonTeam []:  </h4>        <!-- Cuidado ao fazer nessa filtragem do array! --> 
+    <h3>Utilizando pipe PURO diretamente no array pokemonTeam[]:  </h3>        <!-- Cuidado ao fazer nessa filtragem do array! --> 
     <p>Filtrando array com a seguinte palabra-chave de busca: {{ defaultTrainter.pokemonTeam | pipeFilterArray:"zard" }} </p>
                                                                                   <!-- filtrando pokemons por um trecho do nome que pertence a um ou varios pokemons -->
 
@@ -111,10 +111,9 @@
          de dados enviada como parâmetro 'value', que se encontra na definição do método 'transform()'.
          Assim, quaisquer modificações feitas no array, como no exemplo abaixo que tenta adicionar um pokemon através do input para ser filtrado no array 'defaulTrainer.pokemonTeam' 
     -->
-
     <br />
     
-    <label for="valueToAdd">Adicionar valor:   </label>
+    <label for="valueToAdd">  Adicionar valor:   </label>
     <input id="valueToAdd" type="text" placeholder="New item name here...." #newValue />
     <button (click)="addNewPokemon( newValue.value)"> Add item</button>
     
@@ -131,5 +130,15 @@
             {{ poke }}                  
        </li>
     </ul>
+
+
+    <h3>Utilizando pipe IMPURO diretamente no array pokemonTeam[]:  </h3>        <!-- Cuidado ao fazer nessa filtragem do array! --> 
+    <p>Lista com valores filtrados:  </p>
+    <ul>
+       <li *ngFor="let poke of defaultTrainter.pokemonTeam | pipeFilterArray: filterValue">
+            {{ poke }}                  
+       </li>
+    </ul>
+    
                                                                                               
 </div>
