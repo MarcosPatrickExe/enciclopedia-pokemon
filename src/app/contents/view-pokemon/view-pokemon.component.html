@@ -113,16 +113,22 @@
     -->
     <br />
     
-    <label for="valueToAdd">  Adicionar valor:   </label>
-    <input id="valueToAdd" type="text" placeholder="New item name here...." #newValue />
-    <button (click) = "addNewPokemon( newValue.value)"> Add item</button>
+   
+    <div class="input-value-container">
+        <label for="valueToAdd">  Adicionar valor: </label>
+        <input id="valueToAdd" type="text" placeholder="New item name here...." #newValue />
+        <button (click) = "addNewPokemon( newValue.value)"> Add item</button>
+    </div>
     
-    <Br /> <Br /> 
+    
+    <div style="width: 72%; height: 50px; padding: 10px; display: flex; justify-content: space-between;">
+        <label for="valueToFilter"> Digite alguma palavra para iniciar a filtragem na lista abaixo:   </label>
+        <input id="valueToFilter" type="text" placeholder="Filter name here...." [(ngModel)]="filterValue" />
+    </div>
 
-    <label for="valueToFilter">  Filtrar o seguinte valor:   </label>
-    <input id="valueToFilter" type="text" placeholder="Filter name here...." [(ngModel)]="filterValue" />
 
-    <Br /> <Br />
+    <Br />
+
     <!-- filtrando pokemons do time do treinador atraves do valor do input 'valueToFilter' e apresentando automaticamente na lista abaixo:  -->
     <h4>Lista com valores filtrados:  </h4>
     <ul>                           <!--       arrayValue: any,               args: any[] -->

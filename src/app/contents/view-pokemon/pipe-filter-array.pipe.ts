@@ -15,7 +15,7 @@ export class PipeFilterArrayPipe implements PipeTransform {
         }
 
         for(let item of args){
-            console.log(`ìtem:  ${item}`);
+            console.log(`item:  ${item}`);
         }
 
         arrayValue = arrayValue.map(  (val: string) => val.toLowerCase() )

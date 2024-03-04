@@ -20,6 +20,7 @@ $typeColors: (
     "fighting": rgb(145, 13, 6),
 );
 
+
 .Fire{ background-color: map-get($typeColors, "fire" ); }
 .Water{ background-color: map-get($typeColors, "water" ); }
 .Grass{ background-color: map-get($typeColors, "grass" ); }
@@ -47,4 +48,13 @@ $typeColors: (
 
 .type-btn-style{
     margin-right: 2%;
+}
+
+
+.input-value-container{
+    width: 48%; 
+    height: 50px; 
+    padding: 10px; 
+    display: flex; 
+    justify-content: space-between;
 }
