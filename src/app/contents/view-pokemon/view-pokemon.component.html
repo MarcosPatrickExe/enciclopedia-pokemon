@@ -104,7 +104,7 @@
     <p>Trainer House location: {{ defaultTrainter.houseLocation | camelCasePipe }}  </p>
 
     <h3>Utilizando pipe PURO diretamente no array pokemonTeam[]:  </h3>        <!-- Cuidado ao fazer nessa filtragem do array! --> 
-    <p>Filtrando array com a seguinte palabra-chave de busca: {{ defaultTrainter.pokemonTeam | pipeFilterArray:[filterValue] }} </p>
+    <p>Filtrando array com a seguinte palabra-chave de busca: {{ defaultTrainter.pokemonTeam | pipeFilterArray:[filterValue, "onlyValue"] }} </p>
                                                                                   <!-- filtrando pokemons por um trecho do nome que pertence a um ou varios pokemons -->
 
     <!-- O pipe puro nao observa as modificacoes (adicao e remocao) de dados realizadas em um Array ENQUANTO o filtro esta sendo 
@@ -138,16 +138,14 @@
     </ul>
 
  <!-- Cuidado ao fazer nessa filtragem do array! --> 
-    <!--
+   
     <h3>Utilizando pipe IMPURO diretamente no array pokemonTeam[]:  </h3>       
     <p>Lista com valores filtrados:  </p>
     <ul>
-       <li *ngFor="let poke of defaultTrainter.pokemonTeam | pipeFilterArray: 'cross'">
+       <li *ngFor="let poke of defaultTrainter.pokemonTeam | pipeFilterArrayImpure: filterValue">
             {{ poke }}                  
        </li>
     </ul>
-
-    -->
     
                                                                                               
 </div>

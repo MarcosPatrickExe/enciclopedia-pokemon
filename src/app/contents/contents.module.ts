@@ -15,16 +15,17 @@ import { HomeMenuService } from './home-menu/home-menu.service';
 import { ViewPokemonComponent } from './view-pokemon/view-pokemon.component';
 import { CamelCasePipePipe } from './camel-case-pipe.pipe';
 import { PipeFilterArrayPipe } from './view-pokemon/pipe-filter-array.pipe';
+import { PipeFilterArrayImpurePipe } from './view-pokemon/pipe-filter-array-impure.pipe';
 
 
 @NgModule({
   declarations: [
-    
     HomeMenuComponent,
     ComponenteTextoComponent, /*tbm eh possivel utilizar um componente que esteja em outra pasta. Mas isso nao eh uma boa pratica! */
     ViewPokemonComponent, 
     CamelCasePipePipe, 
-    PipeFilterArrayPipe
+    PipeFilterArrayPipe, 
+    PipeFilterArrayImpurePipe
   ],
   imports: [
     CommonModule,  //modulos secundarios importam esse "common module"
