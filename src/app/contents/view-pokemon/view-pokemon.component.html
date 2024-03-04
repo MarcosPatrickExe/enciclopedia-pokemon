@@ -59,11 +59,12 @@
 
     <p>========================================================</p>
 
-    <h1>Adicionar um item para pokemons na lista de serviços: </h1>
+    <h2>Adicionar um item para pokemons na lista de serviços: </h2>
     <input id="int"  #pokeName value="wurmple" />
     <button (click)="addItens(pokeName.value)" >Add</button>
     <!-- Adicionando um input para inserir um servico digitado pelo usuario -->
-
+    
+    <Br /><Br />
     <ul>
         <li *ngFor="let poke of pokeItens">
             {{poke}}
@@ -105,7 +106,7 @@
 
     <h3>Utilizando pipe PURO diretamente no array pokemonTeam[]:  </h3>       
     <p>Filtrando array com a seguinte palabra-chave de busca:
-         <span>                       <!--    Cuidado ao fazer nessa filtragem do array com PIPEs --> 
+         <span style="font-weight: bold;">                       <!--    Cuidado ao fazer nessa filtragem do array com PIPEs --> 
               {{ defaultTrainter.pokemonTeam | pipeFilterArray:[filterValue, "onlyValue"] }}
          </span> 
     </p>

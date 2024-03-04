@@ -9,7 +9,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class PipeFilterArrayPipe implements PipeTransform {
 
     transform( arrayValue: any, args: any[]): string[] {
-        //console.log(`args 0:  ${args[0]}  ///  1: ${args[1] }`);
+        console.log(`args 0:  ${args[0]}  ///  1: ${args[1] }`);
 
         if( ((args[0] as string).length>0)  &&  (args[1] == "onlyValue") ){
             return [args[0] as string];
