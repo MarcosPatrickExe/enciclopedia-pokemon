@@ -8,15 +8,11 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class PipeFilterArrayPipe implements PipeTransform {
 
-    transform( arrayValue: any, ...args: any): unknown[] {
-
-        const args2 = [...args];
-
-        console.log(`args 0:  ${args2[0]}  ///  1: ${args2[1] }`);
-
+    transform( arrayValue: any, args: any[]): string[] {
+        //console.log(`args 0:  ${args[0]}  ///  1: ${args[1] }`);
 
         if( ((args[0] as string).length>0)  &&  (args[1] == "onlyValue") ){
-            return args[0] as string[];
+            return [args[0] as string];
 
         }else if( args[0].length==0  &&  args[1] == "onlyValue"){
             return [""];
@@ -24,7 +20,6 @@ export class PipeFilterArrayPipe implements PipeTransform {
         }else if(arrayValue.length === 0 || args == undefined || args[0]==""){
             return arrayValue;
         }
-
        
         // for(let item of args){
         //     console.log(`item:  ${item}`);
