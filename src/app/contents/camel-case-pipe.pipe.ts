@@ -29,4 +29,9 @@ export class CamelCasePipePipe implements PipeTransform {
     capitalize(value :string) : string{
         return value.substr(0, 1).toUpperCase()+value.substr(1).toLowerCase();
     }
+
+
+    public asynValue :Promise<string> = new Promise( (resolve, reject)=>{
+        setTimeout( ()=> resolve('Value will assigned') , 3000);
+    });
 }

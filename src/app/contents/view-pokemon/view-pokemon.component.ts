@@ -42,12 +42,6 @@ export class ViewPokemonComponent implements OnInit{ //implements OnInit {
 
     filterValue :string ="";
 
-    public asynValue :Promise<any> = new Promise( (resolve, reject)=>{
-        setTimeout( ()=> {
-
-        }, 3000);
-    });
-
 
     defaultTrainter : TrainerModel = {
         name: 'Ash',
