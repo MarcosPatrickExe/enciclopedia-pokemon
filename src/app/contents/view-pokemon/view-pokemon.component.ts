@@ -85,11 +85,11 @@ export class ViewPokemonComponent implements OnInit{ //implements OnInit {
 
 
     public asyncValue :Promise<string> = new Promise( (resolve, reject)=>{
-        setTimeout( ()=> resolve('Value will assigned') , 3000);
+        setTimeout( ()=> resolve('Async value by Promise. Delay: 3 seconds') , 3000);
     });
 
     public asyncObservable = new Observable<string>( obs =>{
-        setInterval( ()=> obs.next("Valor assíncrono atraves do Observable...."), 2000 );
+        setInterval( ()=> obs.next("Async value using Observable. Ddelay: 2 seconds...."), 2000 );
     })
     
 

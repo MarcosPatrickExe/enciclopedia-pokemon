@@ -156,9 +156,10 @@
 
     <h3>Utilizando Async pipe para simular uma request:  </h3>
 
-    <p> <span class="">  Promise type:  </span>      {{asyncValue}} </p>
-    <p> <span class="">  Promise structure:  </span>        {{asyncValue | json }} </p>
-    <p> <span class="">  Promise value response:  </span>         {{asyncValue | async }} </p>
-    <p> <span class="">  Promise value response:  </span>             {{asyncObservable | async }} </p>
+    <p> <span class="textBold">  Promise type:            </span>      {{asyncValue}} </p>
+    <p> <span class="textBold">  Promise JSON structure:  </span>     {{asyncValue | json }} </p>
+    <p> <span class="textBold">  Promise async value:  </span>     {{asyncValue | async }} </p>    <Br />
+
+    <p> <span class="textBold">  Observable response:  </span>     {{asyncObservable | async }} </p>
 
 </div>
