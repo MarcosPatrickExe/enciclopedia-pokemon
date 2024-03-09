@@ -70,11 +70,10 @@ export class ViewPokemonComponent implements OnInit{ //implements OnInit {
     // DESSE APELIDO, ELE PODERA SER VISTO PELO COMPONENTE Q CHAMOU ESTE 
     // COMPONENTE, NO CASO, O "app.component.ts"
 
-
  
     // eslint-disable-next-line @angular-eslint/no-output-rename
     @Output('imgHover')
-    imageHovered :any = new EventEmitter();
+    imageHovered :EventEmitter<any> = new EventEmitter();
     // O PARÂMETRO PASSADO PODE SER OPCIONAL, E DEVE SER UTILIZADO QUANDO
     // SE QUER SOMENTE ADICIONAR UM "APELIDO" PARA A VARIAVEL INTERNA 
     // DA CLASSE, COMO O "imageHovered" QUE TEM APELIDO "imgHover", E QUE ATRAVES
@@ -82,6 +81,12 @@ export class ViewPokemonComponent implements OnInit{ //implements OnInit {
     // COMPONENTE, NO CASO, O "app.component.ts". ALEM DISSO, ESSE ATRIBUTO
     // DO TIPO "EventEmitter" PODE EMITIR UM EVENTO CUSTOMIZADO PARA O COMPONENTE PAI,
     // O QUAL PODERÁ ACESSA-LO UTILIZANDO A SINTAXE DE 'EVENT-BIND'
+
+
+    public asyncValue :Promise<string> = new Promise( (resolve, reject)=>{
+        setTimeout( ()=> resolve('Value will assigned') , 3000);
+    });
+    
 
     mouseOver(){
           this.imageHovered.emit( "Pokemon recebeu foco do mouse....");
@@ -126,7 +131,6 @@ export class ViewPokemonComponent implements OnInit{ //implements OnInit {
            'pokeItensService' do tipo 'HomeMenuService'.
         */
     }
-
 
 
     addNewPokemon( pokeForTeam: string ){
