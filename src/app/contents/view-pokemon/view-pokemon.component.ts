@@ -4,6 +4,7 @@ import { ViewPokemonService } from './view-pokemon.service';
 import { Pokemon, Type } from '../../types/pokemon';
 import { HomeMenuService } from '../home-menu/home-menu.service';
 import * as _ from 'lodash';
+import { Observable } from 'rxjs';
 
 
 
@@ -86,6 +87,10 @@ export class ViewPokemonComponent implements OnInit{ //implements OnInit {
     public asyncValue :Promise<string> = new Promise( (resolve, reject)=>{
         setTimeout( ()=> resolve('Value will assigned') , 3000);
     });
+
+    public asyncObservable = new Observable<string>( obs =>{
+        setInterval( ()=> obs.next("Valor assíncrono atraves do Observable...."), 2000 );
+    })
     
 
     mouseOver(){
