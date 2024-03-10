@@ -10,7 +10,8 @@ import {
   AfterViewChecked,
   ViewChild, 
   ElementRef, 
-  TemplateRef } from '@angular/core';
+  TemplateRef 
+} from '@angular/core';
 // importando o decorator "@Component"
 
 

@@ -1,3 +1,4 @@
+
 .highlight{
     background-color: yellow;
     font-weight: bold;
@@ -19,3 +20,16 @@
     background-color: rgba(145, 94, 0, 0.5);
 }
 
+
+.main-content2 {
+    position: relative;
+    margin: 5% 10vw;
+    width: auto;
+    height: auto;
+    background-color: white;
+    border-top: 10px solid red;
+    border-left: 10px solid red;
+    border-right: 10px solid rgb(78, 78, 78);
+    border-bottom: 10px solid rgb(78, 78, 78);
+    padding: 4% 3%;
+}
