@@ -14,7 +14,6 @@ import { HostListenerDirective } from './shared/host-listener.directive';
 import { NgElseDirective } from './shared/ng-else.directive';
 
 
-
 @NgModule({
   declarations: [ //Area destinada somente aos componentes, diretivas e pipes que irão receber os seletores dos componentes do modulo importado chamado 'ContentsModule'
      AppComponent,
