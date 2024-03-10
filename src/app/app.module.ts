@@ -12,6 +12,7 @@ import { HeaderMenuService } from './header-menu/header-menu.service';
 import { ColorDirectiveDirective } from './shared/color-directive.directive';
 import { HostListenerDirective } from './shared/host-listener.directive';
 import { NgElseDirective } from './shared/ng-else.directive';
+import routing from './app.routes';
 
 
 @NgModule({
@@ -25,8 +26,9 @@ import { NgElseDirective } from './shared/ng-else.directive';
   ],
   imports: [ // adi
      BrowserModule, //somnente o modulo raiz do projeto importa esse modulo
-     ContentsModule // importando o modulo do arquivo "content.module.ts", logo, nao precisa importa o componente que esta dentro dele, como o "home-menu.component"
-  ],
+     ContentsModule, // importando o modulo do arquivo "content.module.ts", logo, nao precisa importa o componente que esta dentro dele, como o "home-menu.component"
+     routing
+   ],
   providers: [
      HeaderMenuService,  // area destinada somente aos services que serao visiveis somente para os componentes declarados, ou seja serao globais a aplicacao
   ], bootstrap: [AppComponent] // componente principal
