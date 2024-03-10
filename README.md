@@ -11,8 +11,6 @@ Site destinado aos fãs da franquia pokémon. Nele você poderá ter acesso à u
 :green_circle: NodeJS <Br />
 
 <Hr />
-
-<Br />
 <Br />
 <Br />
 
