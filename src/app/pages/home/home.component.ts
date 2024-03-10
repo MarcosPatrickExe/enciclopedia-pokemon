@@ -22,7 +22,7 @@ import {
   templateUrl: './home.component.html', // aponta para o arquivo html do componente
   styleUrls: ['./home.component.scss'] // aponta para o arquivo de estilo do componente
 })
-export class AppComponent implements OnInit, OnChanges, // DoCheck,
+export class HomeComponent implements OnInit, OnChanges, // DoCheck,
                        AfterContentInit, AfterContentChecked,
                       AfterViewInit, AfterViewChecked, OnDestroy {
 

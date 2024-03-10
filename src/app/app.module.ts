@@ -13,22 +13,17 @@ import { ColorDirectiveDirective } from './shared/color-directive.directive';
 import { HostListenerDirective } from './shared/host-listener.directive';
 import { NgElseDirective } from './shared/ng-else.directive';
 import Routing from './app.routes';
-import { HomeComponent } from './pages/home/home.component';
+import { HomeModule } from './pages/home/home.module';
 
 
 @NgModule({
   declarations: [ //Area destinada somente aos componentes, diretivas e pipes que irão receber os seletores dos componentes do modulo importado chamado 'ContentsModule'
      AppComponent,
-   //  ComponenteTexto,
-     HeaderMenuComponent,
-     ColorDirectiveDirective,
-     HostListenerDirective,
-     NgElseDirective,
-     HomeComponent
   ],
   imports: [ // adi
      BrowserModule, //somnente o modulo raiz do projeto importa esse modulo
      ContentsModule, // importando o modulo do arquivo "content.module.ts", logo, nao precisa importa o componente que esta dentro dele, como o "home-menu.component"
+     HomeModule,
      Routing,
    ],
   providers: [
