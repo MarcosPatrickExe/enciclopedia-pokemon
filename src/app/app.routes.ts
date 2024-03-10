@@ -7,6 +7,6 @@ const ROUTES: Routes = [
     {  path:'', component: AppComponent}
 ]
 
-const routing: ModuleWithProviders<RouterModule> = RouterModule.forRoot( ROUTES ) ;
+const Routing: ModuleWithProviders<RouterModule> = RouterModule.forRoot( ROUTES ) ;
 
-export default routing ;
+export default Routing ;
