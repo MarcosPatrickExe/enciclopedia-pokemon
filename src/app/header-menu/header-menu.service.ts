@@ -7,7 +7,7 @@ export class HeaderMenuService {
 
   constructor() { }
 
-  consoleLog(msg : string){
+  consoleLog( msg : string ){
       console.log( msg );
   }
   
