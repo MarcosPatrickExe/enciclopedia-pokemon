@@ -61,4 +61,4 @@ export class HomeMenuService {
       HomeMenuService.attacks.emit(newItem); // atribuindo o novo valor a propriedade estatica para poder ser consultada em diferentes instancias dessa classse 'HomeMenuService' 
   }
 
-} 
+}
