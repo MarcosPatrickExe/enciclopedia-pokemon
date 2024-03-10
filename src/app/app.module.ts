@@ -19,7 +19,6 @@ import { HeaderMenuComponent } from './header-menu/header-menu.component';
   ],
   imports: [ // adi
      BrowserModule, //somnente o modulo raiz do projeto importa esse modulo
-     ContentsModule, // importando o modulo do arquivo "content.module.ts", logo, nao precisa importa o componente que esta dentro dele, como o "home-menu.component"
      HomeModule,
      Routing,
    ],

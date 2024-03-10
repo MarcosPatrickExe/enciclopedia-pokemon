@@ -1,6 +1,5 @@
-import {  Component,  } from '@angular/core';
+import { Component, } from '@angular/core';
 // importando o decorator "@Component"
-
 
  
 // O decorator "@Component" eh responsavel por fornecer informacoes 
