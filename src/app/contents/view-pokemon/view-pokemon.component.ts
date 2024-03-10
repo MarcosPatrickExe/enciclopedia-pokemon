@@ -84,6 +84,7 @@ export class ViewPokemonComponent implements OnInit{ //implements OnInit {
     // O QUAL PODERÁ ACESSA-LO UTILIZANDO A SINTAXE DE 'EVENT-BIND'
 
 
+    // na area de chamadas asincronas, podem ser usadas tanto Promises como Observables (programacao reativa)
     public asyncValue :Promise<string> = new Promise( (resolve, reject)=>{
         setTimeout( ()=> resolve('Async value by Promise. Delay: 3 seconds') , 3000);
     });
