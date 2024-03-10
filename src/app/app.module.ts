@@ -13,6 +13,7 @@ import { ColorDirectiveDirective } from './shared/color-directive.directive';
 import { HostListenerDirective } from './shared/host-listener.directive';
 import { NgElseDirective } from './shared/ng-else.directive';
 import Routing from './app.routes';
+import { HomeComponent } from './pages/home/home.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import Routing from './app.routes';
      HeaderMenuComponent,
      ColorDirectiveDirective,
      HostListenerDirective,
-     NgElseDirective
+     NgElseDirective,
+     HomeComponent
   ],
   imports: [ // adi
      BrowserModule, //somnente o modulo raiz do projeto importa esse modulo

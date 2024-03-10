@@ -4,6 +4,7 @@ import { ModuleWithProviders } from '@angular/core';
 
 
 const ROUTES: Routes = [
+    {  path:'', component: AppComponent},
     {  path:'', component: AppComponent}
 ]
 
