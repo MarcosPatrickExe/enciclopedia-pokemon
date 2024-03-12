@@ -31,6 +31,4 @@ export class HeaderMenuComponent { //implements OnInit
           this.menuDropDownIsOpen = false;
       }
   }
-
-  //ngOnInit(): void { }
 }
