@@ -7,7 +7,7 @@ import { HomeMenuComponent } from './contents/home-menu/home-menu.component';
 
 const ROUTES: Routes = [
     { path:'', component: HomeComponent },
-    { path:'pokedex', component: HomeMenuComponent}
+    { path:'pokedex', component: HomeMenuComponent }
 ]
 
 const Routing: ModuleWithProviders<RouterModule> = RouterModule.forRoot( ROUTES ) ;
