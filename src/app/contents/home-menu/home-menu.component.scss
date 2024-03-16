@@ -34,7 +34,7 @@ $skyBorder: rgb(88, 85, 250);
     background-color: white;
     border-top: 15px solid red;
     border-left: 20px solid red;
-    border-right: 20px solid rgb(78, 78, 78);
-    border-bottom: 15px solid rgb(78, 78, 78);
+    border-right: 20px solid $blueBorder;
+    border-bottom: 15px solid $skyBorder;
     padding: 4% 3%;
 }
