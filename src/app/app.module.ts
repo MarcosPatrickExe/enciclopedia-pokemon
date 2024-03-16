@@ -9,6 +9,7 @@ import { HeaderMenuService } from './header-menu/header-menu.service';
 import Routing from './app.routes';
 import { HomeModule } from './pages/home/home.module';
 import { HeaderMenuComponent } from './header-menu/header-menu.component';
+import { LoginComponent } from './pages/login/login/login.component';
 //import { ComponenteTexto } from './componente-texto/componente-texto.component';
 
 
@@ -16,6 +17,7 @@ import { HeaderMenuComponent } from './header-menu/header-menu.component';
   declarations: [ //Area destinada somente aos componentes, diretivas e pipes que irão receber os seletores dos componentes do modulo importado chamado 'ContentsModule'
      AppComponent,
      HeaderMenuComponent,
+     LoginComponent,
   ],
   imports: [ // adi
      BrowserModule, //somnente o modulo raiz do projeto importa esse modulo
