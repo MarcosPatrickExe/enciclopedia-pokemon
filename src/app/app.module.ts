@@ -10,6 +10,7 @@ import Routing from './app.routes';
 import { HomeModule } from './pages/home/home.module';
 import { HeaderMenuComponent } from './header-menu/header-menu.component';
 import { LoginComponent } from './pages/login/login.component';
+import { AboutComponent } from './pages/about/about.component';
 //import { ComponenteTexto } from './componente-texto/componente-texto.component';
 
 
@@ -18,6 +19,7 @@ import { LoginComponent } from './pages/login/login.component';
      AppComponent,
      HeaderMenuComponent,
      LoginComponent,
+     AboutComponent,
   ],
   imports: [ // adi
      BrowserModule, //somnente o modulo raiz do projeto importa esse modulo
