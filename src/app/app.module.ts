@@ -9,7 +9,7 @@ import { HeaderMenuService } from './header-menu/header-menu.service';
 import Routing from './app.routes';
 import { HomeModule } from './pages/home/home.module';
 import { HeaderMenuComponent } from './header-menu/header-menu.component';
-import { LoginComponent } from './pages/login/login/login.component';
+import { LoginComponent } from './pages/login/login.component';
 //import { ComponenteTexto } from './componente-texto/componente-texto.component';
 
 
