@@ -2,7 +2,8 @@
 
 $colorContainer: rgba(255, 255, 255, 0.89);
 $defaultGrayWindow: rgb(78, 78, 78);
-$blueBorder: rgb(52, 49, 255);
+$blueBorder: #2220be;
+$skyBorder: rgb(88, 85, 250);
 
 
 .text{
@@ -25,7 +26,7 @@ $blueBorder: rgb(52, 49, 255);
     background-color: $colorContainer;
     border-top: 10px solid red;
     border-left: 10px solid red;
-    border-right: 10px solid $defaultGrayWindow ;
+    border-right: 10px solid $skyBorder ;
     border-bottom: 10px solid $blueBorder;
     padding: 4% 3%;
 }
