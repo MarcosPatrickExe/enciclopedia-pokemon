@@ -1,6 +1,8 @@
 /* :root{ --largura-da-borda: 5px; }*/
 
 $colorContainer: rgba(255, 255, 255, 0.89);
+$defaultGrayWindow: rgb(78, 78, 78);
+$blueBorder: rgb(52, 49, 255);
 
 
 .text{
@@ -23,8 +25,8 @@ $colorContainer: rgba(255, 255, 255, 0.89);
     background-color: $colorContainer;
     border-top: 10px solid red;
     border-left: 10px solid red;
-    border-right: 10px solid rgb(78, 78, 78);
-    border-bottom: 10px solid rgb(78, 78, 78);
+    border-right: 10px solid $defaultGrayWindow ;
+    border-bottom: 10px solid $blueBorder;
     padding: 4% 3%;
 }
 
