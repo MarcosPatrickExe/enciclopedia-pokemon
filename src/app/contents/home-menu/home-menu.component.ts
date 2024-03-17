@@ -19,6 +19,8 @@ import { HomeMenuService } from './home-menu.service';
 
         }`
     ]
+
+    // essa forma tbm eh aplicavel em diretivas!
 */
 export class HomeMenuComponent {
 
