@@ -20,7 +20,7 @@ export class HeaderMenuComponent { //implements OnInit
 
   menuClicked(){
       this.menuDropDownIsOpen = !this.menuDropDownIsOpen;
-    //  this.styleClassOpen = this.menuDropDownIsOpen ? "open" : "";
+    //  this.styleClassOpen = this.menuDropDownIsOpen ? "open" : "";  // formato com operador ternario
   }
 
   // evento acionado toda vez que a janela é redimensionada
