@@ -9,11 +9,11 @@
 
         <ul>
             <li><a routerLink="/" class="active"> Home</a></li>
-            <li><a routerLinkActive="active"  routerLink="/pokedex"> Pokedex</a></li><!-- routerLinkActive, instead routerLink, provide a class 'active' when 'a' tag become active -->
-            <li style="line-height: 1.1;"><a href="#">Montar time!</a></li>
+            <li><a routerLinkActive="active" routerLink="/pokedex"> Pokedex</a></li><!-- routerLinkActive, instead routerLink, provide a class 'active' when 'a' tag become active -->
+            <li style="line-height: 1.1;"><a  href="#">Montar time!</a></li>
             <li><a href="#">Cadastro</a></li>
             <li><a href="#">Login</a></li>
-            <li style="line-height: 1.1;"><a href="#">Sobre <br>   nos</a></li>
+            <li style="line-height: 1.1;" routerLinkActive="active" routerLink="/about"><a>About us </a></li>
         </ul>
 
         <div id="menu-icon" (click)="menuClicked()">
@@ -31,10 +31,10 @@
     <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#">Pokedex</a></li>
-        <li style="line-height: 1.1;"><a href="#">Montar time!</a></li>
+        <li style="line-height: 1.1;"><a routerLinkActive="active" routerLink="about" href="#">Montar time!</a></li>
         <li><a href="#">Cadastro</a></li>
         <li><a href="#">Login</a></li>
-        <li style="line-height: 1.1;"><a href="#">Sobre nós</a></li>
+        <li style="line-height: 1.1;" routerLinkActive="active" routerLink="about">Sobre o criador</li>
     </ul>
 </div>
 <!-- MOBILE MENU -->
