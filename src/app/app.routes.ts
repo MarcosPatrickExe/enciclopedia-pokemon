@@ -12,4 +12,4 @@ const ROUTES: Routes = [
 
 const Routing: ModuleWithProviders<RouterModule> = RouterModule.forRoot( ROUTES ) ;
 
-export default Routing ;
+export default Routing;
