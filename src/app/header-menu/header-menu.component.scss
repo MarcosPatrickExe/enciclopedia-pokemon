@@ -61,14 +61,17 @@
             text-align: center; /* center horizontally */
             transform: skewX(-20deg);
             padding: 1.5vh 0; /* vertically horizontally */
+            display: flex;
+            align-items: center;
+            justify-content: center;
 
             a{
                overflow: hidden;
-               text-decoration: none;
+               text-decoration: wavy;
                font-size: 1.9vw;
                color: white;
-               display: inline-block; /*previne skewX of "li" */
-               transform: skewX(20deg); /*previne skewX of "li" */
+               display: block; /*previne skewX of "li" */
+               transform: skewX(15deg); /*previne skewX of "li" */
             }
         }
 
