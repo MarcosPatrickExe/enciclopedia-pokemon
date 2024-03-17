@@ -27,15 +27,13 @@ export class HomeComponent implements OnInit, OnChanges, // DoCheck,
                        AfterContentInit, AfterContentChecked,
                       AfterViewInit, AfterViewChecked, OnDestroy {
 
-  cursos: string[]; //declarando o atributo
+  
   pokemonUrlImage: string = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png";
   messageOfViewPokemonComponente :string ="";
   typeSelected ?: string;
 
-  //declarando e inicializando atributo
-  title :string = "introducao-angular";
+  
   title2 : string = 'Esse eh um titulo escrito da classe AppComponent'; // texto que ira aparecer na tela inicial
-  nomeSite: string = 'http://loiane.training';  //declarando e inicializando atributo
   public closePokeView :boolean= false;
 
   // testando esse feature
@@ -48,7 +46,7 @@ export class HomeComponent implements OnInit, OnChanges, // DoCheck,
 */
 
   constructor(){
-      this.cursos = ['Java', 'Python' ,'PHP', 'JavaScript'];
+     
   }
 
   // alterando a imagem do pokemon de acordo com o numero da pokédex q eh digitado

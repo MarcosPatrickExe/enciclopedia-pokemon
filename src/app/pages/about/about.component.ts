@@ -7,7 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+     this.cursos = ['Java', 'Python' ,'PHP', 'JavaScript'];
+  }
+
+  //declarando e inicializando atributo
+  title :string = "introducao-angular";
+  cursos: string[]; //declarando o atributo
+  nomeSite: string = 'http://loiane.training';  //declarando e inicializando atributo
 
   ngOnInit(): void {
   }
