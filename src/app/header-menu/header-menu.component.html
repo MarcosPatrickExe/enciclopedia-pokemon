@@ -27,14 +27,14 @@
 
 
  <!-- MOBILE MENU --->
- <div [ngClass]="menuDropDownIsOpen === true ? 'open' : 'drop-down-menu-box'" >
+ <div *ngClass="menuDropDownIsOpen === true ? 'open' : 'drop-down-menu-box'" >
     <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#">Pokedex</a></li>
         <li style="line-height: 1.1;"><a routerLinkActive="active" routerLink="about" href="#">Montar time!</a></li>
         <li><a href="#">Cadastro</a></li>
         <li><a href="#">Login</a></li>
-        <li style="line-height: 1.1;" routerLinkActive="active" routerLink="about">Sobre o criador</li>
+        <li style="line-height: 1.1;" routerLinkActive="active" routerLink="about"><a href="#"> Sobre o criador </a></li>
     </ul>
 </div>
 <!-- MOBILE MENU -->

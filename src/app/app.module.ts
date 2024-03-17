@@ -11,6 +11,7 @@ import { HomeModule } from './pages/home/home.module';
 import { HeaderMenuComponent } from './header-menu/header-menu.component';
 import { LoginComponent } from './pages/login/login.component';
 import { AboutComponent } from './pages/about/about.component';
+import { NotFoundPageComponent } from './pages/not-found/not-found-page.component';
 //import { ComponenteTexto } from './componente-texto/componente-texto.component';
 
 
@@ -20,6 +21,7 @@ import { AboutComponent } from './pages/about/about.component';
      HeaderMenuComponent,
      LoginComponent,
      AboutComponent,
+     NotFoundPageComponent,
   ],
   imports: [ // adi
      BrowserModule, //somnente o modulo raiz do projeto importa esse modulo
