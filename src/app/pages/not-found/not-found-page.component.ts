@@ -13,3 +13,4 @@ export class NotFoundPageComponent implements OnInit {
   }
 
 }
+
