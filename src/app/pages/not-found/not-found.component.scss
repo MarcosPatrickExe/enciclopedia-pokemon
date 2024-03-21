@@ -3,6 +3,7 @@
     position: relative;
     width: 90%;
     height: 100%;
+    margin: auto;
     display: grid;
     place-content: center;
    /* border: 3px solid black; */
@@ -14,7 +15,7 @@
     .not-found{
         color: white;
         font-style: italic;
-        font-size: 6vw;
+        font-size: 3vw;
         position: relative;
         float: right;
         top: 30%;
