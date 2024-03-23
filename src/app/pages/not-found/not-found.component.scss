@@ -21,11 +21,18 @@
         top: 30%;
     }
 
+
     .image-content{
         border: 2px solid black;
         padding: 0 21vw;
         height: 49vw;
         border-radius: 20px;
         background: linear-gradient(155deg, rgba(255, 255, 255, 0.3) 0%, rgba(40, 40, 40, 0.99) 40%, rgba(88, 88, 88, 0.1) 100%  );
+        
+
+        img-psy{
+            width: 31vw;
+            height: auto;
+        }
     }
 }
