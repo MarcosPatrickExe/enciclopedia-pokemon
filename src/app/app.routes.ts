@@ -6,7 +6,7 @@ import { HomeMenuComponent } from './contents/home-menu/home-menu.component';
 import { AboutComponent } from './pages/about/about.component';
 import { NotFoundPageComponent } from './pages/not-found/not-found-page.component';
 
-
+ 
 const ROUTES: Routes = [
     { path:'', component: HomeComponent },
     { path:'pokedex', component: HomeMenuComponent },

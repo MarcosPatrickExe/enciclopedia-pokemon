@@ -1,34 +1,31 @@
 
 .container-not-found{
     position: relative;
-    width: 90%;
-    height: 100%;
     margin: auto;
-    display: grid;
-    place-content: center;
-   /* border: 3px solid black; */
-    padding: 0;
-    margin-top: 20px;
-    margin-bottom: 20px;
-
-
-    .not-found-h4{
-        color: white;
-        font-style: italic;
-        font-size: 3vw;
-        position: relative;
-        float: right;
-        top: 30%;
-    }
+    border: 10px solid blue;
+    padding: 3% 0;
+    display: flex;
+    justify-content: center;
 
 
     .image-content{
-        border: 2px solid white;
+        border: 7px solid white;
         padding: 0 21vw;
         height: 49vw;
+        width: 80%;
         border-radius: 20px;
         background: linear-gradient( 155deg, rgba(255, 255, 255, 0.3) 0%, rgba(40, 40, 40, 0.99) 40%, rgba(88, 88, 88, 0.1) 100%  );
         
+        
+        .not-found-h4{
+            color: white;
+            font-style: italic;
+            font-size: 3vw;
+            position: relative;
+            float: right;
+            top: 30%;
+        }
+
         #img-psy{
             width: 50%;
             height: auto;
