@@ -25,7 +25,7 @@
     }
 }
 
-$defaultImage: '';
+$defaultImage: "../src/assets/pokeball_blue.jpg";
 
 @function change-to-ocean-pokemon( $newImagePath ){
     $defaultImage: newImagePath;
