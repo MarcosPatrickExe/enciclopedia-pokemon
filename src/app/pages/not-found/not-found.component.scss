@@ -3,6 +3,13 @@
 
 $defaultImage: "../src/assets/ocean_pokemon_wallpaper.jpg";
 
+body{
+    // background-color: rgb(88, 88, 88); 
+     background-image: url($defaultImage); 
+     background-repeat: no-repeat;
+     background-size: auto;
+     background-color: none;
+ }
 
 .container-not-found{
     width: 100%;

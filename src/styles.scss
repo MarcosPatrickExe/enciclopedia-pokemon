@@ -31,7 +31,7 @@ $defaultImage: "../src/assets/pokeball_blue.jpg";
     $defaultImage: newImagePath;
 }
 
-
+ 
 body{
    // background-color: rgb(88, 88, 88); 
     background-image: url($defaultImage); 
