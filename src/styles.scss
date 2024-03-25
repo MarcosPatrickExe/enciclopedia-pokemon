@@ -10,6 +10,8 @@
 // o import acima eh o mesmo que:
 // @import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
 
+@import "../src/app/template.scss";
+
 
 *{
     margin: 0;
@@ -23,12 +25,6 @@
     *{
         font-size: 2.2vw;
     }
-}
-
-$defaultImage: "../src/assets/pokeball_blue.jpg";
-
-@function change-to-ocean-pokemon( $newImagePath ){
-    $defaultImage: newImagePath;
 }
 
  
