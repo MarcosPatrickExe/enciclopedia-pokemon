@@ -32,7 +32,7 @@ body{
    // background-color: rgb(88, 88, 88); 
     background-image: url($defaultImage); 
     background-repeat: no-repeat;
-    background-size: auto;
-    background-color: none;
+    background-position: center center;
+    background-attachment: fixed;
 }
 
