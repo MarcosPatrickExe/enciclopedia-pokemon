@@ -39,3 +39,17 @@ h1, h2, h3{
     height: auto;
     background-color: rgba(0, 30, 75, 0.7);
 }
+
+
+.background-img-home{
+    width: 100%;
+    height: auto;
+    background-image: url("../../../assets/pokeball_blue.jpg"); 
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.color-layer{
+    background-color: rgba(0, 25, 49, 0.7);
+}
