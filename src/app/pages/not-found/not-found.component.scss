@@ -51,3 +51,12 @@ $defaultImage: "assets/ocean_pokemon_wallpaper.jpg";
     }
 }
 
+
+.background-img-not-found{
+    width: 100%;
+    height: auto;
+    background-image: url("../../../assets/ocean_pokemon_wallpaper.jpg"); 
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
