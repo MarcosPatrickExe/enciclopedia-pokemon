@@ -5,54 +5,6 @@
 $defaultImage: "assets/ocean_pokemon_wallpaper.jpg";
 
 
-.container-not-found{
-    width: 100%;
-    height: auto;
- //   border: 6px solid blue;
-    padding: 5% 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-
-    .gradient-div{
-      //  border: 7px solid white;
-        height: auto;
-        width: 80%;
-        border-radius: 20px;
-        background: linear-gradient( 155deg, rgba(255, 255, 255, 0.8) 0%,  rgba(255, 255, 255, 0.3) 14%, rgba(65, 65, 65, 0.99) 40%, rgba(26, 26, 26, 0.4) 100%  );
-        display: flex;
-        justify-content: center;
-
-
-        .both-elements{
-            position: relative;
-            width: 70%;
-            height: auto;
-          //  border: 6px solid rgb(255, 67, 67);
-
-            .not-found-h4{
-                position: absolute;
-                color: white;
-                font-style: italic;
-                font-size: 3.0vw;
-                top: 30%;
-                left: 47%;
-            }
-    
-            #img-psy{
-                margin: 5% 11%;
-                width: 50%;
-                height: auto;
-              //  border: 2px solid yellow;
-            }
-        }
-        
-    }
-}
-
-
-
 .background-img-not-found{
     width: 100%;
     height: auto;
@@ -63,6 +15,55 @@ $defaultImage: "assets/ocean_pokemon_wallpaper.jpg";
 
     .color-layer-for-bg{
       background-color: rgba(77, 23, 2, 0.7);
+
+
+
+        .container-not-found{
+          width: 100%;
+          height: auto;
+        //   border: 6px solid blue;
+          padding: 5% 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+
+          .gradient-div{
+            //  border: 7px solid white;
+              height: auto;
+              width: 80%;
+              border-radius: 20px;
+              background: linear-gradient( 155deg, rgba(255, 255, 255, 0.8) 0%,  rgba(255, 255, 255, 0.3) 14%, rgba(65, 65, 65, 0.99) 40%, rgba(26, 26, 26, 0.4) 100%  );
+              display: flex;
+              justify-content: center;
+
+
+              .both-elements{
+                  position: relative;
+                  width: 70%;
+                  height: auto;
+                //  border: 6px solid rgb(255, 67, 67);
+
+                  .not-found-h4{
+                      position: absolute;
+                      color: white;
+                      font-style: italic;
+                      font-size: 3.0vw;
+                      top: 30%;
+                      left: 47%;
+                  }
+          
+                  #img-psy{
+                      margin: 5% 11%;
+                      width: 50%;
+                      height: auto;
+                    //  border: 2px solid yellow;
+                  }
+              }
+              
+          }
+        }
+
   }
 }
 
