@@ -13,18 +13,7 @@
 }
 
 
-.main-content2 {
-    position: relative;
-    margin: 5% 10vw;
-    width: auto;
-    height: auto;
-    background-color: white;
-    border-top: 15px solid rgb(170, 3, 3);
-    border-left: 20px solid red;
-    border-right: 20px solid $skyBorder ;
-    border-bottom: 15px solid $blueBorder;
-    padding: 4% 3%;
-}
+
 
 h1, h2, h3{
     color: rgb(78, 78, 78);;
@@ -51,9 +40,22 @@ h1, h2, h3{
 
     .color-layer{
         background-color: rgba(0, 25, 49, 0.7);
-    }
 
-    
+
+        .main-content2 {
+            position: relative;
+            margin: 5% 10vw;
+            width: auto;
+            height: auto;
+            background-color: white;
+            border-top: 15px solid rgb(170, 3, 3);
+            border-left: 20px solid red;
+            border-right: 20px solid $skyBorder ;
+            border-bottom: 15px solid $blueBorder;
+            padding: 4% 3%;
+        }
+
+    }
 
 }
 
