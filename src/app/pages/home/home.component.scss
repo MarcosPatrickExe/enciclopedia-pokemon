@@ -48,8 +48,12 @@ h1, h2, h3{
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
+
+    .color-layer{
+        background-color: rgba(0, 25, 49, 0.7);
+    }
+
+    
+
 }
 
-.color-layer{
-    background-color: rgba(0, 25, 49, 0.7);
-}
