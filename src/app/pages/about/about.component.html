@@ -1,30 +1,39 @@
-<div class="main-content">
 
-    <h1>{{title}}</h1>
-    <h2 class="text">Marcos Patrick</h2>
-    <h3 class="text">Saraiva da</h3>
-    <h4 class="text">Silva</h4>
+<div class="background-img-about">
+    <div class="color-layer-2">
 
-    <h2>Nome do portal: <a href="http://loiane.training"> {{nomeSite}} </a> </h2>
-    <!-- utilizando interpolacao basica para acessar a variavel "tamanhoNome" do typescript--> -->
 
-    <!-- Verificandos cursos existentes atraves da diretiva '*ngFor' -->
-    <ul>
-        <li *ngFor="let nomeCurso of cursos">
-            <h3>  {{nomeCurso}}  </h3>
-        </li>
-    </ul>
+        <div class="main-content">
 
-<!-- Ou tbm pode ser escrito com o uso do ng-template: -->
-    <ng-template ngFor let-nomeCurso let-count="index" [ngForOf]="cursos">
-        <h3> -> {{count}} Testando o "ng-template" com o "ngFor"</h3>
-    </ng-template>
-<!--
+            <h1>{{title}}</h1>
+            <h2 class="text">Marcos Patrick</h2>
+            <h3 class="text">Saraiva da</h3>
+            <h4 class="text">Silva</h4>
 
-    <Br />
+            <h2>Nome do portal: <a href="http://loiane.training"> {{nomeSite}} </a> </h2>
+            <!-- utilizando interpolacao basica para acessar a variavel "tamanhoNome" do typescript--> -->
 
-    <h3> Renderizando componente "app-home-menu" logo abaixo: </h3>
-    <app-home-menu></app-home-menu>
-    <h3>============ Fim do componente "app-home-menu" ============</h3>
--->
+            <!-- Verificandos cursos existentes atraves da diretiva '*ngFor' -->
+            <ul>
+                <li *ngFor="let nomeCurso of cursos">
+                    <h3>  {{nomeCurso}}  </h3>
+                </li>
+            </ul>
+
+        <!-- Ou tbm pode ser escrito com o uso do ng-template: -->
+            <ng-template ngFor let-nomeCurso let-count="index" [ngForOf]="cursos">
+                <h3> -> {{count}} Testando o "ng-template" com o "ngFor"</h3>
+            </ng-template>
+        <!--
+
+            <Br />
+
+            <h3> Renderizando componente "app-home-menu" logo abaixo: </h3>
+            <app-home-menu></app-home-menu>
+            <h3>============ Fim do componente "app-home-menu" ============</h3>
+        -->
+        </div>
+
+
+    </div>    
 </div>
