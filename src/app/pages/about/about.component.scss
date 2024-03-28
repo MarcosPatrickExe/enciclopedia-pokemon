@@ -11,16 +11,24 @@
     background-attachment: fixed;
 
 
-    .main-content {
-        position: relative;
-        margin: 5% 10vw;
-        width: auto;
-        height: auto;
-        background-color: $colorContainer;
-        border-top: 15px solid rgb(170, 3, 3);
-        border-left: 20px solid red;
-        border-right: 20px solid $skyBorder ;
-        border-bottom: 15px solid $blueBorder;
-        padding: 4% 3%;
+    .color-layer-2{
+        background-color: rgba(49, 0, 41, 0.7);
+
+        
+        .main-content {
+            position: relative;
+            margin: 5% 10vw;
+            width: auto;
+            height: auto;
+            background-color: $colorContainer;
+            border-top: 15px solid rgb(170, 3, 3);
+            border-left: 20px solid red;
+            border-right: 20px solid $skyBorder ;
+            border-bottom: 15px solid $blueBorder;
+            padding: 4% 3%;
+        }
     }
+
+
+    
 }
