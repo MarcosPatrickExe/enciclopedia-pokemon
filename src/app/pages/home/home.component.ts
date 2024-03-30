@@ -45,9 +45,7 @@ export class HomeComponent implements OnInit, OnChanges, // DoCheck,
   templateReference :TemplateRef<string> | null = null;
 */
 
-  constructor(){
-     
-  }
+  constructor(){  }
 
   // alterando a imagem do pokemon de acordo com o numero da pokédex q eh digitado
   public changePokemon( pokemonPokedexNumber :string) :void{
