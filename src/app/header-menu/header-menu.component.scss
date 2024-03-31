@@ -49,7 +49,13 @@
         overflow: hidden;
         display: flex;
         align-items: center; /*  vertically */
-        justify-content: end; /* horizontally */
+        justify-content: space-between; /* horizontally */
+
+        #head #navbar #pokeball{
+            display: none;
+            margin-left: 20px;
+        }
+
 
         ul{
             position: relative;
@@ -101,9 +107,7 @@
     }
 }
 
-#pokeball{
-    display: none;
-}
+
 
 #menu-icon{
     display: none;
@@ -166,7 +170,7 @@
         width: 100%;
     }
 */
-    #pokeball{
+    #head #navbar #pokeball{
         display: block;
     }
 
