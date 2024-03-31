@@ -30,12 +30,6 @@
             width: 100%;
             height: auto;
         }
-    /*
-        background-image: url('../../assets/pokemon-logotype.png');
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: contain;
-        */
     }
 }
 
@@ -74,13 +68,13 @@
             margin-left: 10px;
             margin-right: 10px;
             font-family: 'Advent Pro', sans-serif;
-            min-height: 100%; /* forces 'li' to 100% */
-            width: 10vw;/* viewport width */
+            min-height: 100%; 
+            width: 10vw;
             border-top: 2px solid white;
             overflow: hidden;
             text-align: center; /* center horizontally */
             transform: skewX(-20deg);
-            padding: 1.5vh 0; /* vertically horizontally */
+            padding: 1.5vh 0; 
             display: flex;
             align-items: center;
             justify-content: center;
@@ -113,77 +107,6 @@
 
 #menu-icon{
     display: none;
-}
-
-
-@media (max-width: 500px){
-    #head #navbar ul li{
-        display: none ;
-    }
-    #menu-icon{
-        display: block;
-    }
-/*
-    #pokemon-logo{
-        height: calc(100% - 10px);
-        width: 100%;
-    }
-*/
-    #pokeball{
-        display: block;
-    }
-
-  //  #pokemon-logo{  width: 10%;   }
-
-    #circle-profile-icon{
-        border: 2px solid white;
-        border-radius: 100px;
-    }
-    #icon-person{
-        font-size: 100%;
-    }
-}
-
-@media (min-width: 501px ) and (max-width: 831px){
-    
-    //   #pokemon-logo{  padding: 2%;  }
-    #circle-profile-icon{
-        width: 50px;
-        height: 50px;
-        border: 2px solid white;
-        border-radius: 100px;
-    }
-    #icon-person{
-        font-size: 2.6vw;
-    }
-}
-
-
-@media (min-width: 832px ) and (max-width: 1000px){
-    //   #pokemon-logo{   padding: 15%;  }
-    #circle-profile-icon{
-        width: 50px;
-        height: 50px;
-        border: 5px solid white;
-        border-radius: 50px;
-    }
-    #icon-person{
-        font-size: 2.846vw;
-    }
-}
-
-
-@media (min-width: 1001px ) and (max-width: 10000px){
-    //   #pokemon-logo{   padding: 15%;  }
-    #circle-profile-icon{
-        width: 80px;
-        height: 80px;
-        border: 5px solid white;
-        border-radius: 50px;
-    }
-    #icon-person{
-        font-size: 2.846vw;
-    }
 }
 
 
@@ -228,6 +151,77 @@
 }
 
 
+
+
+@media (max-width: 500px){
+    #head #navbar ul li{
+        display: none ;
+    }
+    #menu-icon{
+        display: block;
+    }
+/*
+    #pokemon-logo{
+        height: calc(100% - 10px);
+        width: 100%;
+    }
+*/
+    #pokeball{
+        display: block;
+    }
+
+ 
+    #circle-profile-icon{
+        width: 30px;
+        height: 30px;
+        border: 2px solid white;
+        border-radius: 100px;
+    }
+    #icon-person{
+        font-size: 2.6vw;
+    }
+}
+
+@media (min-width: 501px ) and (max-width: 831px){
+    
+    #circle-profile-icon{
+        width: 30px;
+        height: 30px;
+        border: 2px solid white;
+        border-radius: 100px;
+    }
+    #icon-person{
+        font-size: 2.6vw;
+    }
+}
+
+
+@media (min-width: 832px ) and (max-width: 1000px){
+   
+    #circle-profile-icon{
+        width: 50px;
+        height: 50px;
+        border: 5px solid white;
+        border-radius: 50px;
+    }
+    #icon-person{
+        font-size: 2.846vw;
+    }
+}
+
+
+@media (min-width: 1001px ) and (max-width: 10000px){
+  
+    #circle-profile-icon{
+        width: 80px;
+        height: 80px;
+        border: 6px solid white;
+        border-radius: 50px;
+    }
+    #icon-person{
+        font-size: 3.1vw;
+    }
+}
 
 
 /*
