@@ -7,7 +7,16 @@
     height: 9.6vw;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+
+
+    #circle-profile-icon{
+        width: 10vh;
+        height: auto;
+        background-color: rgb(48, 48, 48);
+        border: 8px solid white;
+        border-radius: 50px;
+    }
 
 
     #pokemon-logo{
@@ -25,16 +34,9 @@
         background-size: contain;
         */
     }
-/*
-    #circle-profile-icon{
-        width: 10vh;
-        height: auto;
-        background-color: rgb(48, 48, 48);
-        border: 8px solid white;
-        border-radius: 50px;
-    }
-    */
+
 }
+
 
 
 #head{
