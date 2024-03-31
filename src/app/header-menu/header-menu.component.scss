@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@500&display=swap');
 
 
+
+
+
+
 #red-div{
     background-image: linear-gradient( to bottom, rgb(236, 32, 5) 60%, rgb(92, 12, 1) );
     width: 100%;
@@ -10,14 +14,15 @@
     justify-content: center;
 
     #pokemon-logo{
-        height: 20vh;
-        width: 50vw;
+        width: auto;
+        height: auto;
+    
         background-image: url('https://th.bing.com/th/id/R.ddd5084dff8d7606019645f62c1712c6?rik=RJm8gtkd41am8Q&riu=http%3a%2f%2fpluspng.com%2fimg-png%2fpokemon-logo-png-pokemon-logo-png-2000.png&ehk=%2bFdpvqx7Vk1jcWsSaxVIqArQSByK89fRtNQoRFktAhY%3d&risl=&pid=ImgRaw&r=0');
         background-repeat: no-repeat;
         background-position: center center;
         background-size: contain;
     }
-
+/*
     #circle-profile-icon{
         width: 10vh;
         height: auto;
@@ -25,6 +30,7 @@
         border: 8px solid white;
         border-radius: 50px;
     }
+    */
 }
 
 
@@ -34,7 +40,7 @@
     height: 23.3%;
 
     #navbar{
-        background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.61) 30%, rgb(51, 51, 51));
+        background-image: linear-gradient( to right bottom, rgba(0, 0, 0, 0.61) 30%, rgb(51, 51, 51) );
        /* background-color: rgb(151, 48, 0); */
         background-size: contain;
         height: auto; 
@@ -104,7 +110,7 @@
 
 @media (max-width: 500px){
     #head #navbar ul li{
-        display: none;
+        display: none ;
     }
     #menu-icon{
         display: block;
@@ -122,17 +128,22 @@
     #pokeball{
         display: block;
     }
-}
 
+    #pokemon-logo{  height: 1.3vw;  }
 
-@media (min-width: 501px ) and (max-width: 891px){
-    #pokemon-logo{
-        height: 80%;
+    #circle-profile-icon{
+         width: 30%;
     }
 }
 
 
+@media (min-width: 501px ) and (max-width: 891px){
+    #pokemon-logo{  height: 70%;  }
+}
+
+
 @media (min-width: 892px) and (max-width: 2000px){
+    #pokemon-logo{  height: 80%;  }
 }
 
 
