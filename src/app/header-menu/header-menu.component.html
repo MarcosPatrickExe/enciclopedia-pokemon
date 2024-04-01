@@ -34,7 +34,7 @@
 
 
  <!-- MOBILE MENU --->
- <div *ngClass="menuDropDownIsOpen === true ? 'open' : 'drop-down-menu-box'" >
+ <div [ngClass]=" (menuDropDownIsOpen == true) ? 'open' : 'drop-down-menu-box'" title="drop down menu" >
     <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#">Pokedex</a></li>
