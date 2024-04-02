@@ -23,7 +23,7 @@ export class HeaderMenuComponent { //implements OnInit
     //  this.styleClassOpen = this.menuDropDownIsOpen ? "open" : "";  // formato com operador ternario
   }
 
-  // evento acionado toda vez que a janela é redimensionada
+  // evento acionado toda vez que a janela é redimensionada, o 'event' pode ter tipo redefinido
   resizeEvent(event :any ){
       console.log("window:resize event oject: "+event.constructor );  
 
