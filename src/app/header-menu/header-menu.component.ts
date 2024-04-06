@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 
 
-export class HeaderMenuComponent { //implements OnInit
+export class HeaderMenuComponent{ //implements OnInit
 
   nomePortal :string;
   urlImagem :string = 'http://lorempixel.com/400/200/nature/';
