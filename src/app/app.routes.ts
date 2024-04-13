@@ -11,7 +11,7 @@ const ROUTES: Routes = [
     { path:'', component: HomeComponent },
     { path:'pokedex', component: HomeMenuComponent },
     { path:'about', component: AboutComponent },
-    { path:'**', component: NotFoundPageComponent }
+    { path:'**', component: NotFoundPageComponent } // unknown route
 ]
 
 const Routing: ModuleWithProviders<RouterModule> = RouterModule.forRoot( ROUTES ) ;
