@@ -32,7 +32,8 @@
            background-color: orangered; // this colors servers to identify the div
            display: flex;
            flex-direction: column;
-           align-items: center;
+           align-items: center; /* horizontally */
+           justify-content: center; /* vertically */
 
            .sub-title-login{
               font-size: 90%;
