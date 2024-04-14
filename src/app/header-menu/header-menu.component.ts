@@ -5,7 +5,7 @@ import { Component, OnInit, HostListener } from '@angular/core';
 @Component({
   selector: 'app-header-menu',
   templateUrl: './header-menu.component.html',
-  styleUrls: ['./header-menu.component.scss']
+  styleUrls: ['./header-menu.component.scss'] 
 })
 
 
