@@ -28,18 +28,20 @@
         height: 50%;
         display: flex;
         flex-direction: row;
+        margin-left: 10px;
         justify-content: space-between;
 
     
-        #circle-profile-icon{
+        .circle-profile-icon{
             background-color: rgb(139, 93, 93);
             margin-left: 2%;
-            padding: 0;
+            margin-right: 2%;
             overflow: hidden;
             display: grid;
             align-items: center;
             justify-content: center;
-            width: 60%;
+            padding: 0 10px;
+            width: auto;
             height: 100%;
         }
 
@@ -50,7 +52,7 @@
            flex-direction: column;
            align-items: center; /* vertically */
            justify-content: center;  /* horizontally */
-           width: 80%;
+           width: auto;
 
            .sub-title-login{
               font-size: 90%;
