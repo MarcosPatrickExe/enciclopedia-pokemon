@@ -26,7 +26,7 @@ export class HeaderMenuComponent{ //implements OnInit
 
   // evento acionado toda vez que a janela é redimensionada, o 'event' pode ter tipo redefinido
   resizeEvent( event :any ){
-      console.log(`window:resize event oject:  type of event ${event} `+event.constructor );  
+      console.log(`window:resize event oject:  type of event ${event}  || event constructor: `+event.constructor );  
 
       if(event.target.innerWidth > 500 && this.menuDropDownIsOpen ){
           this.menuDropDownIsOpen = false;
