@@ -21,9 +21,10 @@
         z-index: 5;
     }
 
+    
     .div-linearr{
         background-color: blue;
-        width: 16%;
+        width: auto;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -37,6 +38,8 @@
             display: grid;
             align-items: center;
             justify-content: center;
+            width: 60%;
+            height: 100%;
         }
 
         .div-login-text{
@@ -46,6 +49,7 @@
            flex-direction: column;
            align-items: center; /* vertically */
            justify-content: center;  /* horizontally */
+           width: 80%;
 
            .sub-title-login{
               font-size: 90%;
