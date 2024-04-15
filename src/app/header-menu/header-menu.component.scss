@@ -39,7 +39,7 @@
             display: grid;
             align-items: center;
             justify-content: center;
-            width: auto;
+            width: 40%;
             height: 100%;
         }
 
@@ -50,7 +50,7 @@
            flex-direction: column;
            align-items: center; /* vertically */
            justify-content: center;  /* horizontally */
-           width: auto;
+           width: 60%;
            padding: 0 10px;
 
            .sub-title-login{
