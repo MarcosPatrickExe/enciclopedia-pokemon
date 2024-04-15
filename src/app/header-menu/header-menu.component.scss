@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@500&display=swap');
 
+:root{
+    --ratio: 0.8;
+}
+
 
 #red-div{
     background-image: linear-gradient( to bottom, rgb(236, 32, 5) 60%, rgb(92, 12, 1) );
@@ -53,7 +57,7 @@
         
 
            .sub-title-login{
-              font-size: 80%;
+              font-size: clamp(80%, 80%, 100%);
               font-weight: bold;
               margin: 0;
               white-space: nowrap;  /* make text have only one line  */
