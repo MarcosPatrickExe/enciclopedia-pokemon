@@ -38,5 +38,6 @@ export class HeaderMenuComponent{ //implements OnInit
   @HostListener('window:resize', ['$event'])
   onResize( event :any ) {
       this.innerWidth = window.innerWidth;
+      this.innerHeight = window.innerHeight;
   }
 }
